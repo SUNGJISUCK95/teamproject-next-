@@ -16,6 +16,7 @@ export function Loginform(){
     const pwdRef = useRef(null);
     const router = useRouter();
     const logdate = useAuthStore((s)=>s.login);
+    const logout = useAuthStore((s)=>s.logout);
     const socialisLogin = useAuthStore((s)=>s.isLogin);
     const isLoginAccessToken = useAuthStore((s)=>s.accessToken);
     //로그인 페이지에 직접 입력하는 경우 칸에 값이 입력됨에 따라 변화함을 감지
@@ -79,6 +80,7 @@ export function Loginform(){
             router.push("/");
         }
         else{
+            logout();
             await Swal.fire({icon: 'error',text : "로그인에 실패. 확인후 다시 진행해주세요."});
             setFormData({uid:"", upass:""});
             idRef.current.focus();
@@ -91,6 +93,7 @@ export function Loginform(){
                 <div className='loginDataBox'>아이디 : <input type="text"
                                                            name="uid"
                                                            onChange={handleformchange}
+                                                           value = {formData.uid}
                                                            ref = {idRef}
                                                            placeholder='아이디'/>
                 </div>
@@ -99,6 +102,7 @@ export function Loginform(){
                 <div className='loginDataBox'>비밀번호 : <input type="password"
                                                             name="upass"
                                                             onChange={handleformchange}
+                                                            value = {formData.upass}
                                                             ref= {pwdRef}
                                                             placeholder='비밀번호'/>
                 </div>
