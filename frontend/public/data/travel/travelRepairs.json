@@ -1,0 +1,94 @@
+[
+  {
+    "region": "서울 한강 잠실지구",
+    "rname": "자전거 정비소",
+    "lat": "37.5293717",
+    "lng": "127.0829972",
+    "rlike": "3.0",
+    "score": "60",
+    "evaluation": "3",
+    "tag": [
+      "자전거수리",
+      "자전거세차",
+      "자전거분해",
+      "정비자전거",
+      "셀프수리자전거정비"
+    ],
+    "image1": "/images/travel_repairs/repair/repair_1.jfif",
+    "image2": "/images/travel_repairs/repair/repair_2.jfif",
+    "image3": "/images/travel_repairs/repair/repair_3.jfif",
+    "fullImage1": "/images/travel_foods/godosic_full_1.webp",
+    "fullImage2": "/images/travel_foods/godosic_full_2.webp",
+    "fullImage3": "/images/travel_foods/godosic_full_3.webp",
+    "description": "지하에 있어 자전거 입고 및 출고를 해드리고 있습니다. 감사합니다."
+  },
+  {
+    "region": "서울 한강 잠실지구",
+    "rname": "경태의 자전거 이야기",
+    "lat": "37.5320414",
+    "lng": "127.0736422",
+    "rlike": "3.6",
+    "score": "87",
+    "evaluation": "3",
+    "tag": [
+      "자양동자전거",
+      "광진구자전거",
+      "서울자전거수리",
+      "한강자전거수리",
+      "화양동자전거"
+    ],
+    "image1": "/images/travel_repairs/gyeongtae/gyeongtae_1.jfif",
+    "image2": "/images/travel_repairs/gyeongtae/gyeongtae_2.jfif",
+    "image3": "/images/travel_repairs/gyeongtae/gyeongtae_3.jfif",
+    "fullImage1": "/images/travel_foods/byeolmi_full_1.webp",
+    "fullImage2": "/images/travel_foods/byeolmi_full_2.webp",
+    "fullImage3": "/images/travel_foods/byeolmi_full_3.webp",
+    "description": "방문 하시기전 문의 주시고 예약 방문 해주세요."
+  },
+  {
+    "region": "서울 한강 잠실지구",
+    "rname": "로드는오늘도뚠뚠",
+    "lat": "37.5351471",
+    "lng": "127.0655682",
+    "rlike": "2.0",
+    "score": "50",
+    "evaluation": "3",
+    "tag": [
+      "자전거세차",
+      "구동계분해세차",
+      "자전거분해세차",
+      "자전거구동계세차",
+      "구동계세차"
+    ],
+    "image1": "/images/travel_repairs/ddunddun/ddunddun_1.jpg",
+    "image2": "/images/travel_repairs/ddunddun/ddunddun_2.jpg",
+    "image3": "/images/travel_repairs/ddunddun/ddunddun_3.jpg",
+    "fullImage1": "/images/travel_foods/dandi_full_1.webp",
+    "fullImage2": "/images/travel_foods/dandi_full_2.webp",
+    "fullImage3": "/images/travel_foods/dandi_full_3.webp",
+    "description": "100% 예약제 자전거 세차 전용샵입니다."
+  },
+  {
+    "region": "서울 한강 잠실지구",
+    "rname": "닥터모빌리티",
+    "lat": "37.5373893",
+    "lng": "127.0667712",
+    "rlike": "4.0",
+    "score": "90",
+    "evaluation": "3",
+    "tag": [
+      "전동제품판매",
+      "전동제품수리",
+      "일반자전거판매",
+      "자전거수리",
+      "자전거용품"
+    ],
+    "image1": "/images/travel_repairs/doctor/doctor_1.jpg",
+    "image2": "/images/travel_repairs/doctor/doctor_2.jpg",
+    "image3": "/images/travel_repairs/doctor/doctor_3.jpg",
+    "fullImage1": "/images/travel_foods/meandi_full_1.webp",
+    "fullImage2": "/images/travel_foods/meandi_full_2.webp",
+    "fullImage3": "/images/travel_foods/meandi_full_3.webp",
+    "description": "각종 전기자전거 및 전동킥보드 등 전동관련 모든 제품 판매 및 수리가능..."
+  }
+]

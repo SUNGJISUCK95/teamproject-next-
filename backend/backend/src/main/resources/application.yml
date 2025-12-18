@@ -1,0 +1,20 @@
+# src/main/resources/application.yml
+server:
+  tomcat:
+    uri-encoding: UTF-8
+  port: 9000
+
+
+kakaopay:
+  pay:
+    host: "https://kapi.kakao.com"
+    admin-key: "611a2356678d16e731039b0a169d0380"
+    cid: "TC0ONETIME"
+
+    # API 호출 경로
+    ready-url: "https://kapi.kakao.com/v1/payment/ready"
+    approve-url: "https://kapi.kakao.com/v1/payment/approve"
+    # 리다이렉트 URL (Controller의 메서드와 매핑되어야 함)
+    success-redirect-url: "http://localhost:8080/kakaopay/success"
+    cancel-redirect-url: "http://localhost:8080/kakaopay/cancel"
+    fail-redirect-url: "http://localhost:8080/kakaopay/fail"

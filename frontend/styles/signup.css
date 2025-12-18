@@ -1,0 +1,328 @@
+/* 기본 변수 설정 (기존 청색 계열 유지) */
+:root {
+    /* 기존 청색 계열을 유지하되, 네이버 스타일의 깔끔한 색상 요소를 참고 */
+    --color-blue: #007bff; /* 기존 청색 계열 */
+    --color-border: #dadada; /* 연한 회색 테두리 */
+    --color-text: #212121; /* 진한 텍스트 */
+    --color-label: #888; /* 레이블 텍스트 */
+    --color-warning: #ff0000; /* 경고 메시지 */
+}
+
+/* 메인페이지 세팅 시작 */
+.SignUpPage{
+    width: 100%;
+    max-width: 960px; /* 네이버처럼 폼 영역의 최대 너비 제한 */
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    background-color: #fff; /* 배경을 흰색으로 변경하여 깔끔하게 */
+}
+
+.SignTitle{
+    padding-bottom: 30px;
+    margin-top: 2rem;
+    font-size: 2rem;
+    color: var(--color-text);
+    font-weight: 700;
+    text-align: center;
+    width: 100%;
+}
+/*--------------------->메인페이지 세팅 끝 */
+
+/* 섹션 스타일링 */
+.IdPassSection, .PrivateInfoSection, .PrivateConnInfoSection{
+    width : 100%;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    padding: 0;
+    border : none; /* 테두리 제거 */
+    border-radius: 0;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    box-sizing: border-box;
+    /* 각 섹션 구분선 (하단 여백) */
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.IdPassSection h3, .PrivateInfoSection h3 {
+    display: none; /* '반드시 입력해주세요' 등의 문구는 제거 */
+}
+
+.IdPassSection h1, .PrivateInfoSection h1, .PrivateConnInfoSection h1 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--color-text);
+    width: 100%;
+    text-align: left; /* 제목 좌측 정렬 */
+    margin-bottom: 20px;
+}
+
+/* ConsoleBoxWrapper (JSX에서 추가해야 하는 Wrapper) */
+.ConsoleBoxWrapper {
+    position: relative;
+    width: 100%;
+    margin-bottom: 15px; /* 기본 간격 */
+}
+
+/* 입력 필드 기본 스타일 (네이버 스타일) */
+.IdPassSection input,
+.PrivateInfoBox input,
+.PrivateConnInfoBox input{
+    width: 100%;
+    height: 44px;
+    padding: 10px 0 10px 0; /* 상하 패딩 유지 */
+    font-size: 1rem;
+    color: var(--color-text);
+    border: none;
+    border-bottom: 1px solid var(--color-border); /* 하단 선만 남김 */
+    border-radius: 0;
+    text-align: left; /* 텍스트 좌측 정렬 */
+    box-sizing: border-box;
+    margin-bottom: 0; /* Wrapper가 간격을 조정하므로 input 마진 제거 */
+    outline: none; 
+}
+
+/* 입력 필드 포커스 시 스타일 */
+.IdPassSection input:focus,
+.PrivateInfoBox input:focus,
+.PrivateConnInfoBox input:focus{
+    border-bottom: 2px solid var(--color-blue);
+}
+
+
+/* IdPassSection */
+.IdPassSection .IdPassTitle{
+    display: none; 
+}
+.IdBox, .PassBox {
+    position: relative;
+    width: 100%;
+}
+
+/* 🚨 수정된 부분: 아이디 중복확인 버튼 스타일 (passlook과 유사하게 변경) */
+.IdDuplCheck {
+    font-size: 0.9rem;
+    position: absolute;
+    right: 0;
+    top: 10px; /* passlook 버튼과 동일한 위치로 조정 */
+    transform: none;
+    height: 24px; /* 높이 조정 */
+    line-height: 24px;
+    padding: 0;
+    border: none; /* 테두리 제거 */
+    background: none; /* 배경색 제거 */
+    color: var(--color-blue); /* 청색 계열로 텍스트 색상 변경 */
+    cursor: pointer;
+    z-index: 10;
+}
+
+.IdDuplCheck:hover {
+    background: none;
+    text-decoration: underline; /* 호버 시 밑줄 효과 추가 */
+}
+
+/* ConsoleBoxWrapper 내의 레이블 스타일 조정 (플레이스홀더/경고 메시지) */
+
+/* NamePlaceholderIn: 입력 전 (input 안에 표시) */
+.ConsoleBoxWrapper .NamePlaceholderIn {
+    font-size: 1rem;
+    color: var(--color-label);
+    position: absolute;
+    left: 0;
+    top: 10px; /* input의 패딩과 유사하게 설정 */
+    transform: none; 
+    transition: all 0.2s ease-out;
+    pointer-events: none; 
+    text-align: left;
+    width: auto;
+}
+
+/* NamePlaceholderOut/Waring: 입력 후 or 포커스 시 (input 위로 작게 이동) */
+.ConsoleBoxWrapper .NamePlaceholderOut,
+.ConsoleBoxWrapper .NamePlaceholderOutWaring {
+    font-size: 0.75rem; 
+    top: -15px; /* 입력 필드 상단으로 올림 */
+    left: 0;
+    /* color: var(--color-label); */
+    transform: none;
+    text-align: left;
+    /* 경고 메시지가 길어질 경우를 대비해 input 너비에 맞춤 */
+    width: 100%; 
+}
+
+
+/* 패스워드 입력칸 아래의 경고 메시지 (passcheck)를 위한 조정 */
+.PassBox .ConsoleBoxWrapper:nth-child(2) .NamePlaceholderIn{
+    top: 10px; /* 두 번째 인풋박스 하단에 위치하도록 조정 */
+}
+.PassBox .ConsoleBoxWrapper:nth-child(2) .NamePlaceholderOut,
+.PassBox .ConsoleBoxWrapper:nth-child(2) .NamePlaceholderOutWaring{
+    top: 45px; /* 두 번째 인풋박스 하단에 위치하도록 조정 */
+}
+
+
+/* 경고 메시지 스타일 */
+.NamePlaceholderOutWaring{
+    color: var(--color-warning); 
+    font-weight: 500;
+}
+
+/* 비밀번호 가리기/확인 버튼 */
+.passlook{
+    font-size: 0.9rem;
+    position: absolute;
+    top: 10px;
+    right: 0;
+    border: none;
+    background: none;
+    color: var(--color-blue); /* 청색 계열로 텍스트 색상 변경 */
+    cursor: pointer;
+    z-index: 10;
+}
+
+/* PrivateInfoBox */
+.PrivateInfoBox{
+    padding-top: 10px;
+}
+
+/* 성별 셀렉트 박스 */
+.PrivateInfoBox #gender {
+    width: 100%;
+    height: 44px;
+    font-size: 1rem;
+    color: var(--color-text);
+    border: 1px solid var(--color-border);
+    border-radius: 6px;
+    text-align: left;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    appearance: none; 
+    padding: 0 10px;
+    background: #fff url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="%23888888" d="M7 10l5 5 5-5z"/></svg>') no-repeat right 10px center;
+    background-size: 15px;
+    cursor: pointer;
+}
+
+/* 주소 검색 버튼 */
+button.MainAddress{
+    font-size: 1rem;
+    height: 44px;
+    line-height: 44px;
+    width: 100%;
+    background-color: #fff;
+    color: var(--color-blue);
+    border: 1px solid var(--color-blue);
+    border-radius: 6px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+/* 도로명 주소 readOnly 인풋 */
+input.MainAddress{
+    color: #666;
+    background-color: #f7f7f7;
+    border: 1px solid var(--color-border);
+    border-radius: 6px;
+    text-align: left;
+    padding: 10px;
+    cursor: default;
+    height: 44px;
+    margin-bottom: 15px;
+}
+input.MainAddress:focus {
+    border: 1px solid var(--color-border); /* readOnly는 포커스 효과 제거 */
+}
+
+/* PrivateConnInfoBox */
+.PrivateConnInfoBox{
+    margin-bottom: 10px;
+}
+
+.EmailAddressBox{
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap; 
+    align-items: flex-end; 
+    margin-bottom: 15px;
+}
+
+.EmailAddressBox .EmailAddressFront{
+    flex: 1; 
+    width: auto;
+    position: relative;
+    /* ConsoleBoxWrapper가 이미 마진을 가지고 있으므로, 여기에 추가적인 마진을 줄 필요가 없음 */
+}
+
+.EmailAddressBox .EmailAddressBack{
+    top: -20px;
+    flex: 0 0 auto; 
+    width : auto; 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 10px; 
+    position: relative;
+    padding-bottom: 1px;
+}
+
+.EmailAddressBox .EmailAddressBack span{
+    font-size: 1rem;
+    color: var(--color-text);
+    margin-right: 5px;
+}
+
+.EmailAddressBox #emailList{
+    font-size: 1rem;
+    min-width: 100px;
+    width: auto;
+    border: 1px solid var(--color-border);
+    border-radius: 6px;
+    height: 44px;
+    margin-bottom: 0;
+}
+
+/* 전화번호 입력 필드 관련 조정 */
+.PrivateConnInfoBox #phone {
+    margin-bottom: 5px;
+}
+
+/* 최종 버튼 섹션 */
+.lastButtoBox{
+    width: 100%;
+    padding: 0 20px;
+}
+
+.lastButton{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row; 
+    margin-bottom: 15%;
+}
+
+.lastButton button{
+    width: 48%; 
+    font-size : 1.2rem;
+    height: 50px;
+    line-height: 50px;
+    padding: 0;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.lastButton button[type='reset']{
+    background-color: #f7f7f7;
+    color: var(--color-text);
+    border: 1px solid var(--color-border);
+}
+
+.lastButton button[type='submit']{
+    background-color: var(--color-blue);
+    color: #fff;
+}

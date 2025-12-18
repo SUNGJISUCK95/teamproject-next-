@@ -1,0 +1,69 @@
+
+
+/* ... (product-page-container, product-category-nav 스타일은 동일) ... */
+
+/* === 2. 세부 필터 메뉴 (카테고리/프레임) === */
+.product-sub-filters {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* 그룹들을 가운데 정렬 */
+    gap: 2rem; /* 그룹(카테고리, 프레임) 사이의 세로 간격 */
+    margin-bottom: 3rem;
+    margin-top: 2rem;
+}
+
+/* 2-1. (수정) .filter-group */
+.filter-group {
+    display: flex;
+    flex-direction: column; /* 제목과 버튼을 세로로 쌓음 */
+    align-items: center; /* 제목과 버튼을 가운데 정렬 */
+    gap: 1rem; /* 제목과 버튼 사이의 간격 */
+
+    /* 'data-title' 관련 속성 모두 제거 */
+    /* (position, padding-left 제거) */
+}
+
+/* 2-2. (신규) 그룹 제목 h4 스타일 */
+.filter-group-title {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #888;
+    margin: 0; /* h4 기본 마진 제거 */
+}
+
+/* 2-3. (신규) 버튼들을 감싸는 래퍼 */
+.filter-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem; /* 버튼 사이 간격 */
+    flex-wrap: wrap; /* 화면이 좁아지면 줄바꿈 */
+}
+
+/* 2-4. (기존) .filter-group::before 제거 */
+/*
+.filter-group::before {
+  (이 블록 전체를 삭제)
+}
+*/
+
+/* 2-5. (기존) .filter-btn 스타일 (동일) */
+.filter-btn {
+    background: none;
+    border: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #aaa;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.filter-btn:hover {
+    color: #333;
+}
+
+.filter-btn.active {
+    color: #000000;
+}
+
+/* ... (product-grid, product-card 스타일은 동일) ... */

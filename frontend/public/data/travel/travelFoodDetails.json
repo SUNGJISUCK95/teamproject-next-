@@ -1,0 +1,491 @@
+[
+  {
+    "fname": "고도식 송리단길",
+    "flike": "4.7",
+    "score": "90",
+    "tag": [
+      "다코숨은맛집",
+      "식사모임",
+      "데이트"
+    ],
+    "location": "송리단길",
+    "food": "고깃집, 알등심",
+    "address": "서울특별시 송파구 백제고분로45길 28",
+    "localAddress": "서울특별시 송파구 송파동 55-7",
+    "business": [
+      {
+        "day": "월",
+        "houers": "16:00 - 22:40",
+        "last": "22:00"
+      },
+      {
+        "day": "화",
+        "houers": "16:00 - 22:40",
+        "last": "22:00"
+      },
+      {
+        "day": "수",
+        "houers": "16:00 - 22:40",
+        "last": "22:00"
+      },
+      {
+        "day": "목",
+        "houers": "16:00 - 22:40",
+        "last": "22:00"
+      },
+      {
+        "day": "금",
+        "houers": "16:00 - 22:40",
+        "last": "22:00"
+      },
+      {
+        "day": "토",
+        "houers": "12:00 - 22:40",
+        "last": "22:00"
+      },
+      {
+        "day": "일",
+        "houers": "12:00 - 22:40",
+        "last": "22:00"
+      }
+    ],
+    "phone": "02-422-8692",
+    "other": [
+      "시끌벅적한",
+      "깔끔한",
+      "점심식사",
+      "저녁식사"
+    ],
+    "menu": [
+      {
+        "mname": "알등심 160g",
+        "price": "17000"
+      },
+      {
+        "mname": "고도식 세트메뉴 2인",
+        "price": "48000"
+      },
+      {
+        "mname": "철판 볶음밥",
+        "price": "5000"
+      },
+      {
+        "mname": "된장술밥",
+        "price": "9000"
+      },
+      {
+        "mname": "삼겹살 160g",
+        "price": "17000"
+      },
+      {
+        "mname": "청어알 한우육회 100g",
+        "price": "17000"
+      },
+      {
+        "mname": "얼큰 순두부찌개",
+        "price": "7000"
+      },
+      {
+        "mname": "고도식 세트메뉴 3-4인",
+        "price": "79000"
+      }
+    ],
+    "mainImages": [
+      "/images/travel_foods/godosic/godosic_1.webp",
+      "/images/travel_foods/godosic/godosic_2.webp",
+      "/images/travel_foods/godosic/godosic_3.webp"
+    ],
+    "imageList": [
+      {
+        "category": "음식",
+        "images": [
+          "/images/travel_foods/godosic/food/godosic_food_1.webp",
+          "/images/travel_foods/godosic/food/godosic_food_2.webp",
+          "/images/travel_foods/godosic/food/godosic_food_3.webp",
+          "/images/travel_foods/godosic/food/godosic_food_4.webp",
+          "/images/travel_foods/godosic/food/godosic_food_5.webp",
+          "/images/travel_foods/godosic/food/godosic_food_6.webp",
+          "/images/travel_foods/godosic/food/godosic_food_7.webp",
+          "/images/travel_foods/godosic/food/godosic_food_8.webp",
+          "/images/travel_foods/godosic/food/godosic_food_9.webp"
+        ]
+      },
+      {
+        "category": "실내",
+        "images": [
+          "/images/travel_foods/godosic/inside/godosic_inside_1.webp",
+          "/images/travel_foods/godosic/inside/godosic_inside_2.webp",
+          "/images/travel_foods/godosic/inside/godosic_inside_3.webp",
+          "/images/travel_foods/godosic/inside/godosic_inside_4.webp",
+          "/images/travel_foods/godosic/inside/godosic_inside_5.webp",
+          "/images/travel_foods/godosic/inside/godosic_inside_6.webp",
+          "/images/travel_foods/godosic/inside/godosic_inside_7.webp",
+          "/images/travel_foods/godosic/inside/godosic_inside_8.webp",
+          "/images/travel_foods/godosic/inside/godosic_inside_9.webp"
+        ]
+      },
+      {
+        "category": "실외",
+        "images": [
+          "/images/travel_foods/godosic/outside/godosic_outside_1.webp",
+          "/images/travel_foods/godosic/outside/godosic_outside_2.webp",
+          "/images/travel_foods/godosic/outside/godosic_outside_3.webp",
+          "/images/travel_foods/godosic/outside/godosic_outside_4.webp",
+          "/images/travel_foods/godosic/outside/godosic_outside_5.webp",
+          "/images/travel_foods/godosic/outside/godosic_outside_6.webp",
+          "/images/travel_foods/godosic/outside/godosic_outside_7.webp",
+          "/images/travel_foods/godosic/outside/godosic_outside_8.webp",
+          "/images/travel_foods/godosic/outside/godosic_outside_9.webp"
+        ]
+      },
+      {
+        "category": "주차",
+        "images": [
+        ]
+      }
+    ]
+  },
+  {
+    "fname": "별미곱창 2호점",
+    "flike": "4.2",
+    "score": "88",
+    "tag": [
+      "술모임",
+      "회식"
+    ],
+    "location": "방이동",
+    "food": "곱창, 소곱창",
+    "address": "서울특별시 송파구 올림픽로32길 22 별미곱창 3호점",
+    "localAddress": "서울특별시 송파구 방이동 64-8",
+    "business": [
+      {
+        "houers": "11:00 - 00:00",
+        "last": "23:00"
+      },
+      {
+        "houers": "11:00 - 00:00",
+        "last": "23:00"
+      },
+      {
+        "houers": "11:00 - 00:00",
+        "last": "23:00"
+      },
+      {
+        "houers": "11:00 - 00:00",
+        "last": "23:00"
+      },
+      {
+        "houers": "11:00 - 00:00",
+        "last": "23:00"
+      },
+      {
+        "houers": "11:00 - 00:00",
+        "last": "23:00"
+      },
+      {
+        "houers": "11:00 - 00:00",
+        "last": "23:00"
+      }
+    ],
+    "phone": "0507-1394-4545",
+    "other": [
+      "시끌벅적한",
+      "야장",
+      "점심식사",
+      "저녁식사",
+      "테라스",
+      "야외테라스"
+    ],
+    "menu": [
+      {
+        "mname": "모듬곱창",
+        "price": "25000"
+      },
+      {
+        "mname": "볶음밥",
+        "price": "4000"
+      },
+      {
+        "mname": "소곱창",
+        "price": "25000"
+      },
+      {
+        "mname": "소대창",
+        "price": "25,000"
+      }
+    ],
+    "mainImages": [
+      "/images/travel_foods/byeolmi/byeolmi_1.webp",
+      "/images/travel_foods/byeolmi/byeolmi_2.webp",
+      "/images/travel_foods/byeolmi/byeolmi_3.webp"
+    ],
+    "imageList": [
+      {
+        "category": "음식",
+        "images": [
+          "/images/travel_foods/byeolmi/food/byeolmi_food_1.webp",
+          "/images/travel_foods/byeolmi/food/byeolmi_food_2.webp",
+          "/images/travel_foods/byeolmi/food/byeolmi_food_3.webp",
+          "/images/travel_foods/byeolmi/food/byeolmi_food_4.webp"
+        ]
+      },
+      {
+        "category": "실내",
+        "images": [
+          "/images/travel_foods/byeolmi/inside/byeolmi_inside_1.webp",
+          "/images/travel_foods/byeolmi/inside/byeolmi_inside_2.webp",
+          "/images/travel_foods/byeolmi/inside/byeolmi_inside_3.webp",
+          "/images/travel_foods/byeolmi/inside/byeolmi_inside_4.webp"
+        ]
+      },
+      {
+        "category": "실외",
+        "images": [
+          "/images/travel_foods/byeolmi/outside/byeolmi_outside_1.webp",
+          "/images/travel_foods/byeolmi/outside/byeolmi_outside_2.webp",
+          "/images/travel_foods/byeolmi/outside/byeolmi_outside_3.webp",
+          "/images/travel_foods/byeolmi/outside/byeolmi_outside_4.webp"
+        ]
+      },
+      {
+        "category": "주차",
+        "images": [
+          "/images/travel_foods/byeolmi/parking/byeolmi_parking_1.webp",
+          "/images/travel_foods/byeolmi/parking/byeolmi_parking_2.webp",
+          "/images/travel_foods/byeolmi/parking/byeolmi_parking_3.webp"
+        ]
+      }
+    ]
+  },
+  {
+    "fname": "단디 송리단길",
+    "flike": "4.3",
+    "score": "88",
+    "tag": [
+      "다코숨은맛집",
+      "데이트",
+      "혼밥"
+    ],
+    "location": "송리단길",
+    "food": "덮밥, 호르몬동",
+    "address": "서울특별시 송파구 백제고분로45길 7",
+    "localAddress": "서울특별시 송파구 송파동 45-5",
+    "business": [
+      {
+        "day": "월",
+        "houers": "11:30 - 21:30",
+        "last": "21:00"
+      },
+      {
+        "day": "화",
+        "houers": "11:30 - 21:30",
+        "last": "21:00"
+      },
+      {
+        "day": "수",
+        "houers": "11:30 - 21:30",
+        "last": "21:00"
+      },
+      {
+        "day": "목",
+        "houers": "11:30 - 21:30",
+        "last": "21:00"
+      },
+      {
+        "day": "금",
+        "houers": "11:30 - 21:30",
+        "last": "21:00"
+      },
+      {
+        "day": "토",
+        "houers": "11:30 - 21:30",
+        "last": "21:00"
+      },
+      {
+        "day": "일",
+        "houers": "11:30 - 21:30",
+        "last": "21:00"
+      }
+    ],
+    "phone": "0507-1322-5335",
+    "other": [
+      "깔끔한",
+      "캐주얼한",
+      "점심식사",
+      "저녁식사",
+      "바자리",
+      "예약가능"
+    ],
+    "menu": [
+      {
+        "mname": "호르몬동",
+        "price": "12000"
+      },
+      {
+        "mname": "부타동",
+        "price": "10500"
+      },
+      {
+        "mname": "특호르몬동",
+        "price": "15500"
+      },
+      {
+        "mname": "단디다마고",
+        "price": "5500"
+      }
+    ],
+    "mainImages": [
+      "/images/travel_foods/dandi/dandi_1.webp",
+      "/images/travel_foods/dandi/dandi_2.webp",
+      "/images/travel_foods/dandi/dandi_3.webp"
+    ],
+    "imageList": [
+      {
+        "category": "음식",
+        "images": [
+          "/images/travel_foods/dandi/food/dandi_food_1.webp",
+          "/images/travel_foods/dandi/food/dandi_food_2.webp",
+          "/images/travel_foods/dandi/food/dandi_food_3.webp",
+          "/images/travel_foods/dandi/food/dandi_food_4.webp"
+        ]
+      },
+      {
+        "category": "실내",
+        "images": [
+          "/images/travel_foods/dandi/inside/dandi_inside_1.webp",
+          "/images/travel_foods/dandi/inside/dandi_inside_2.webp",
+          "/images/travel_foods/dandi/inside/dandi_inside_3.webp",
+          "/images/travel_foods/dandi/inside/dandi_inside_4.webp"
+        ]
+      },
+      {
+        "category": "실외",
+        "images": [
+          "/images/travel_foods/dandi/outside/dandi_outside_1.webp",
+          "/images/travel_foods/dandi/outside/dandi_outside_2.webp",
+          "/images/travel_foods/dandi/outside/dandi_outside_3.webp",
+          "/images/travel_foods/dandi/outside/dandi_outside_4.webp"
+        ]
+      },
+      {
+        "category": "주차",
+        "images": [
+          "/images/travel_foods/dandi/parking/dandi_parking_1.webp"
+        ]
+      }
+    ]
+  },
+  {
+    "fname": "미엔아이 송리단길",
+    "flike": "4.3",
+    "score": "87",
+    "tag": [
+      "다코숨은맛집",
+      "혼밥",
+      "데이트"
+    ],
+    "location": "송리단길",
+    "food": "우육면, 꿔바로우",
+    "address": "서울특별시 송파구 오금로16길 5 ",
+    "localAddress": "서울특별시 송파구 송파동 55",
+    "business": [
+      {
+        "houers": "11:20 - 21:00",
+        "last": "20:00"
+      },
+      {
+        "houers": "11:20 - 21:00",
+        "last": "20:00"
+      },
+      {
+        "houers": "11:20 - 21:00",
+        "last": "20:00"
+      },
+      {
+        "houers": "11:20 - 21:00",
+        "last": "20:00"
+      },
+      {
+        "houers": "11:20 - 21:00",
+        "last": "20:00"
+      },
+      {
+        "houers": "11:20 - 21:00",
+        "last": "20:00"
+      },
+      {
+        "houers": "11:20 - 21:00",
+        "last": "20:00"
+      }
+    ],
+    "phone": "0507-1333-0652",
+    "other": [
+      "캐주얼한",
+      "깔끔한",
+      "점심식사",
+      "저녁식사",
+      "바자리",
+      "다찌석"
+    ],
+    "menu": [
+      {
+        "mname": "대만우육미엔",
+        "price": "9500"
+      },
+      {
+        "mname": "미엔아이꿔바",
+        "price": "6000"
+      },
+      {
+        "mname": "마약차오판",
+        "price": "11000"
+      },
+      {
+        "mname": "마라우육미엔",
+        "price": "10500"
+      }
+    ],
+    "mainImages": [
+      "/images/travel_foods/meandi/meandi_1.webp",
+      "/images/travel_foods/meandi/meandi_2.webp",
+      "/images/travel_foods/meandi/meandi_3.webp"
+    ],
+    "imageList": [
+      {
+        "category": "음식",
+        "images": [
+          "/images/travel_foods/meandi/food/meandi_food_1.webp",
+          "/images/travel_foods/meandi/food/meandi_food_2.webp",
+          "/images/travel_foods/meandi/food/meandi_food_3.webp",
+          "/images/travel_foods/meandi/food/meandi_food_4.webp"
+        ]
+      },
+      {
+        "category": "실내",
+        "images": [
+          "/images/travel_foods/meandi/inside/meandi_inside_1.webp",
+          "/images/travel_foods/meandi/inside/meandi_inside_2.webp",
+          "/images/travel_foods/meandi/inside/meandi_inside_3.webp",
+          "/images/travel_foods/meandi/inside/meandi_inside_4.webp"
+        ]
+      },
+      {
+        "category": "실외",
+        "images": [
+          "/images/travel_foods/meandi/outside/meandi_outside_1.webp",
+          "/images/travel_foods/meandi/outside/meandi_outside_2.webp",
+          "/images/travel_foods/meandi/outside/meandi_outside_3.webp",
+          "/images/travel_foods/meandi/outside/meandi_outside_4.webp"
+        ]
+      },
+      {
+        "category": "주차",
+        "images": [
+          "/images/travel_foods/meandi/parking/meandi_parking_1.webp",
+          "/images/travel_foods/meandi/parking/meandi_parking_2.webp",
+          "/images/travel_foods/meandi/parking/meandi_parking_3.webp"
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,533 @@
+/* 고객센터 */
+.support-page {
+  text-align: center;
+  padding: 140px 20px 60px 20px;
+}
+
+.support-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+/* 탭 */
+.support-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  margin-bottom: 40px;
+  border-bottom: 1px solid #ddd;
+}
+
+.support-tabs button {
+  background: none;
+  border: none;
+  font-size: 1.1rem;
+  padding-bottom: 10px;
+  cursor: pointer;
+  position: relative;
+}
+
+.support-tabs button.active {
+  font-weight: 600;
+  color: #0077cc;
+}
+
+.support-tabs button.active::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #0077cc;
+}
+
+/* FAQ */
+.faq-section {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.faq-item {
+  border-bottom: 1px solid #eee;
+  padding: 15px 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.faq-item:hover {
+  background: #f9f9f9;
+}
+
+.faq-question {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 10px 0;
+}
+
+.faq-text {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: -5px;
+}
+
+.faq-q {
+  font-weight: 500;
+  font-size: 16px;
+  color: #222;
+}
+
+.faq-category {
+  font-size: 12px;
+  color: #999;
+  margin-top: 4px;
+}
+
+.faq-answer {
+  padding: 15px 25px;
+  background: #eeeeee;
+  line-height: 1.6;
+  font-size: 14px;
+  color: #333;
+  white-space: pre-line;
+}
+
+/* A/S 안내 */
+.as-section {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+  color: #444;
+}
+
+.as-section ul {
+  padding: 0;
+}
+
+.as-section .c-red {
+  color: #E40046;
+}
+
+.as-title {
+  font-size: 1.125rem;
+  font-weight: 700;
+  padding: 1.25rem 0;
+  margin: 0;
+}
+
+.as-desc {
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.as-div {
+  padding: 1.25rem;
+}
+
+.as-div.main {
+  padding-bottom: 30px;
+  border-bottom: 1px solid #eee;
+}
+
+.as-box {
+  font-size: 13px;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 1.25rem !important;
+  margin: 1.25rem 0;
+}
+
+.as-img-box img {
+  width: 100%;
+  height: auto;
+}
+
+/* 자료실 */
+.resources-section {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: "Pretendard", sans-serif;
+  color: #222;
+}
+
+/* 필터 */
+.resources-header {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+}
+
+.resources-filter {
+  padding: 8px 12px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  background: #fff;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.resources-filter:hover {
+  border-color: #999;
+}
+
+/* 리스트 */
+.resources-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.resources-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #e5e5e5;
+  padding: 12px 8px;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.resources-item:hover {
+  background: #f8f8f8;
+}
+
+.file-icon {
+  flex-shrink: 0;
+  margin-right: 10px;
+  font-size: 16px;
+  color: #333;
+}
+
+.file-title {
+  flex: 1;
+  text-align: left;
+  font-size: 15px;
+  line-height: 1.4;
+  color: #222;
+}
+
+.file-type {
+  flex-shrink: 0;
+  font-size: 13px;
+  color: #555;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.file-type i {
+  font-size: 13px;
+}
+
+.no-data {
+  text-align: center;
+  color: #888;
+  padding: 40px 0;
+  font-size: 15px;
+}
+
+/* 페이지네이션 */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+  gap: 5px;
+}
+
+.pagination button {
+  padding: 6px 12px;
+  border: 1px solid #ddd;
+  background: #fff;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.pagination button:hover:not(:disabled) {
+  background: #f2f2f2;
+}
+
+.pagination button.active {
+  background: #222;
+  color: #fff;
+  border-color: #222;
+}
+
+.pagination button.active:hover {
+  background: #222;
+}
+
+.pagination button:disabled {
+  color: #aaa;
+  cursor: not-allowed;
+  background: #f9f9f9;
+}
+
+/* 반응형 */
+@media (max-width: 767px) {
+  .resources-section {
+    padding: 20px 10px;
+  }
+
+  .file-title {
+    font-size: 14px;
+  }
+
+  .file-type {
+    font-size: 12px;
+  }
+
+  .pagination button {
+    padding: 5px 10px;
+    font-size: 13px;
+  }
+}
+
+/* 고객센터 안내 */
+.support-contact {
+  margin-top: 80px;
+  background: #f8f8f8;
+  padding: 40px;
+  border-radius: 20px;
+}
+
+.support-label {
+  color: #777;
+  font-size: 28px;
+  margin-bottom: 40px;
+}
+
+.support-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.support-buttons button {
+  padding: 12px 30px;
+  border-radius: 30px;
+  border: 1px solid #ccc;
+  background: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.support-buttons button:hover {
+  background: #0077cc;
+  color: white;
+}
+
+/* ===========================
+   💬 챗봇 팝업 전체 스타일
+=========================== */
+.chatbot-popup {
+  position: fixed;
+  bottom: 40px;
+  right: 120px;
+  z-index: 2000;
+  width: 340px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  background: #fff;
+  overflow: hidden;
+  animation: fadeInUp 0.3s ease;
+}
+
+/* 반응형 */
+@media (max-width: 767px) {
+  .chatbot-popup {
+    bottom: 80px;
+    right: 20px;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* ===========================
+   🪟 챗봇 윈도우
+=========================== */
+.chatbot-window {
+  display: flex;
+  flex-direction: column;
+  height: 420px;
+}
+
+/* ===========================
+   🔵 헤더
+=========================== */
+.chatbot-header {
+  background: #007bff;
+  color: #fff;
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chatbot-header h4 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.chatbot-header-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.refresh-btn,
+.close-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.refresh-btn {
+  font-size: 1rem;
+}
+
+/* ===========================
+   💬 본문 영역 (메시지)
+=========================== */
+.chatbot-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  gap: 6px;
+  overflow-y: auto;
+  background: #fafafa;
+  max-height: 400px;
+  scroll-behavior: smooth; /* 👈 자동 스크롤 부드럽게 */
+}
+
+/* ===========================
+   💬 말풍선 스타일
+=========================== */
+.chat-msg {
+  max-width: 80%;
+  padding: 8px 12px;
+  border-radius: 14px;
+  line-height: 1.4;
+  font-size: 0.9rem;
+  word-wrap: break-word;
+  text-align: left;
+}
+
+.chat-msg.bot {
+  background: #e9ecef;
+  align-self: flex-start;
+}
+
+.chat-msg.user {
+  background: #007bff;
+  color: #fff;
+  align-self: flex-end;
+}
+
+/* ===========================
+   ⌨️ 입력창
+=========================== */
+.chatbot-input {
+  display: flex;
+  padding: 8px;
+  border-top: 1px solid #ddd;
+  background: #fff;
+}
+
+.chatbot-input input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+}
+
+.chatbot-input input:focus {
+  border-color: #007bff;
+}
+
+.chatbot-input button {
+  margin-left: 8px;
+  background: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 14px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.chatbot-input button:hover {
+  background: #0056b3;
+}
+
+/* ✅ 비활성화 상태 스타일 */
+.chatbot-input button:disabled {
+  background-color: #ccc;      /* 회색 배경 */
+  color: #666;                 /* 흐린 글자색 */
+  cursor: not-allowed;         /* 클릭 불가 커서 */
+  opacity: 0.8;                /* 살짝 투명도 */
+}
+
+/* ===========================
+   🕒 로딩 메시지 (답변 중)
+=========================== */
+.chat-msg.bot.loading {
+  background: #f1f1f1;
+  font-style: italic;
+  color: #555;
+}
+
+.chatbot-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 6px;
+}
+
+.chatbot-link-btn {
+  display: inline-flex; /* flex로 변경 */
+  align-items: center; /* 수직 가운데 정렬 */
+  justify-content: center;
+  width: 100%;
+  gap: 5px; /* 아이콘과 글자 간격 */
+  margin-top: 6px;
+  padding: 6px 12px;
+  background-color: #0077cc;
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+}
+
+.chatbot-link-btn:hover {
+  background-color: #005fa3;
+}

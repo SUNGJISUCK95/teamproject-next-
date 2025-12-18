@@ -1,0 +1,22 @@
+plugins {
+	id 'java'
+	id 'org.springframework.boot' version '3.5.7'
+	id 'io.spring.dependency-management' version '1.1.7'
+}
+
+// 루트 프로젝트 자체는 빌드 아티팩트(jar)를 만들지 않습니다.
+bootJar.enabled = false
+jar.enabled = false
+
+// 하위 프로젝트 공통 설정
+subprojects {
+    repositories {
+        mavenCentral()
+    }
+
+    // Spring Boot 관련 의존성 관리 및 플러그인은 backend 모듈에서만 적용되도록 설정할 수 있습니다.
+    // 하지만, 공통적인 의존성 버전 관리를 위해 여기서 dependency-management만 적용하는 것도 가능합니다.
+    apply plugin: 'io.spring.dependency-management'
+
+    // 공통적으로 사용되는 설정이 있다면 여기에 추가합니다.
+}

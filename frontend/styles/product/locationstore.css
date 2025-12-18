@@ -1,0 +1,162 @@
+/* src/styles/locationstore.css (수정본) */
+
+.store-locator-container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+
+.store-locator-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    min-height: 70vh;
+}
+
+/* --- 왼쪽 패널 --- */
+.store-list-panel {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    /* (수정) 테두리 제거 및 높이 자동 조절 */
+    border: none;
+    height: auto;
+    min-height: 70vh;
+}
+
+/* 2. (수정) 검색창 스타일 변경 */
+.search-bar {
+    padding: 0;
+    /* (수정) 이미지처럼 하단 테두리만 */
+    border-bottom: 1px solid #e0e0e0;
+    position: relative; /* 아이콘 배치를 위해 */
+}
+
+/* 3. (추가) Font Awesome 검색 아이콘 (::before 사용) */
+.search-bar::before {
+    font-family: "Font Awesome 6 Free"; /* Font Awesome 6 */
+    font-weight: 900;
+    content: "\f002"; /* fa-search 아이콘 */
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #888;
+}
+
+.search-bar input {
+    width: 100%;
+    /* (수정) 테두리 제거, 아이콘 자리 확보 */
+    border: none;
+    padding: 1.25rem 1rem 1.25rem 3rem; /* left padding 추가 */
+    font-size: 1rem;
+    box-sizing: border-box;
+    outline: none; /* 클릭 시 파란 테두리 제거 */
+}
+
+/* 4. (추가) 설명 텍스트 스타일 */
+.store-description {
+    font-size: 0.9rem;
+    color: #666;
+    padding: 1.5rem 1rem;
+    margin: 0;
+    line-height: 1.6;
+    background-color: #fcfcfc;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+/* 5. (수정) 목록 ul 태그 스타일 */
+.store-list {
+    flex-grow: 1;
+    padding: 0;
+    margin: 0;
+    overflow-y: auto;
+}
+
+/* 6. (수정) 목록 li 아이템 스타일 (아이콘 추가) */
+/* .store-list-item 대신 .store-list-styled .store-list-item 사용 */
+.store-list-styled .store-list-item {
+    list-style: none;
+    /* (수정) li에 flex 대신 relative 사용 및 패딩 변경 */
+    position: relative;
+    padding: 1rem 1rem 1rem 3.5rem; /* 아이콘 공간 확보 */
+    border-bottom: 1px solid #f0f0f0;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+.store-list-styled .store-list-item:hover {
+    background-color: #f9f9f9;
+}
+
+/* 7. (추가) 지도 마커 아이콘 (li::before 사용) */
+.store-list-styled .store-list-item::before {
+    font-family: "Font Awesome 6 Free", serif;
+    font-weight: 900;
+    content: "\f3c5"; /* fa-map-marker-alt (location-dot) */
+    position: absolute;
+    left: 1.25rem;
+    top: 1.75rem;
+    color: #333;
+    font-size: 1.2rem;
+}
+/* (추가) '프리미엄 스토어' 같은 빨간 아이콘 예시 */
+.store-list-styled .store-list-item.premium::before {
+    color: #e53935;
+}
+
+/* 8. (수정) li 내부 태그들 스타일 */
+.store-list-styled .store-list-item strong {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #222;
+    display: block; /* p태그와 줄바꿈 */
+    margin-bottom: 0.25rem;
+}
+
+.store-list-styled .store-list-item p {
+    font-size: 0.9rem;
+    color: #555;
+    margin: 0.25rem 0 0 0;
+    line-height: 1.5;
+}
+
+/* 9. (추가) 전화번호 p 태그에 아이콘 (::before 사용) */
+.store-list-styled .store-list-item p:last-of-type::before {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    content: "\f095"; /* fa-phone */
+    margin-right: 6px;
+    font-size: 0.8rem;
+    color: #777;
+}
+
+/* --- 오른쪽 패널 --- */
+.store-map-panel {
+    flex: 2;
+    min-height: 500px;
+    height: 70vh;
+    /* (수정) 테두리 색상 연하게 */
+    border: 1px solid #f0f0f0;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .store-locator-content {
+        flex-direction: column;
+    }
+    .store-list-panel, .store-map-panel {
+        height: 400px;
+    }
+}
+
+/* (추가) StoreLocation.jsx의 active 클래스 스타일 */
+.store-list-item.active {
+    background-color: #f0f5ff; /* 선택 시 배경색 */
+}

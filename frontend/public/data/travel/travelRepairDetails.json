@@ -1,0 +1,461 @@
+[
+  {
+    "rname": "자전거 정비소",
+    "rlike": "3.0",
+    "score": "60",
+    "tag": [
+      "자전거수리",
+      "자전거세차",
+      "자전거분해정비",
+      "자전거셀프수리",
+      "자전거정비"
+    ],
+    "location": "자양로3길",
+    "repair": "자전거 정비, 분해세차, 분해정비",
+    "address": "서울 광진구 자양로3길 67 지하1층",
+    "localAddress": "서울 광진구 자양동 666-10",
+    "business": [
+      {
+        "day": "월",
+        "houers": "정기휴무 (매주 월요일)",
+        "last": ""
+      },
+      {
+        "day": "화",
+        "houers": "정기휴무 (매주 화요일)",
+        "last": ""
+      },
+      {
+        "day": "수",
+        "houers": "15:30 - 19:00",
+        "last": ""
+      },
+      {
+        "day": "목",
+        "houers": "15:30 - 19:00",
+        "last": ""
+      },
+      {
+        "day": "금",
+        "houers": "15:30 - 19:00",
+        "last": ""
+      },
+      {
+        "day": "토",
+        "houers": "15:30 - 19:00",
+        "last": ""
+      },
+      {
+        "day": "일",
+        "houers": "11:00 - 19:00",
+        "last": ""
+      }
+    ],
+    "phone": "0507-1393-4728",
+    "other": [
+      "입고",
+      "출고"
+    ],
+    "menu": [
+      {
+        "rname": "기본점검",
+        "price": "5000"
+      },
+      {
+        "rname": "분해세차",
+        "price": "70000"
+      },
+      {
+        "rname": "튜브교체",
+        "price": "10000"
+      },
+      {
+        "rname": "속선교체",
+        "price": "10000"
+      },
+      {
+        "rname": "겉선교체",
+        "price": "10000"
+      },
+      {
+        "rname": "오버홀",
+        "price": "180000"
+      }
+    ],
+    "mainImages": [
+      "/images/travel_repairs/repair/repair_1.jfif",
+      "/images/travel_repairs/repair/repair_2.jfif",
+      "/images/travel_repairs/repair/repair_3.jfif"
+    ],
+    "imageList": [
+      {
+        "category": "업체",
+        "images": [
+          "/images/travel_repairs/repair/company/repair_company_1.jfif",
+          "/images/travel_repairs/repair/company/repair_company_2.jfif",
+          "/images/travel_repairs/repair/company/repair_company_3.jfif",
+          "/images/travel_repairs/repair/company/repair_company_4.jfif"
+        ]
+      },
+      {
+        "category": "블로그",
+        "images": [
+          "/images/travel_repairs/repair/blog/repair_blog_1.jfif",
+          "/images/travel_repairs/repair/blog/repair_blog_2.jfif",
+          "/images/travel_repairs/repair/blog/repair_blog_3.jfif",
+          "/images/travel_repairs/repair/blog/repair_blog_4.jfif",
+          "/images/travel_repairs/repair/blog/repair_blog_5.jfif",
+          "/images/travel_repairs/repair/blog/repair_blog_6.jfif",
+          "/images/travel_repairs/repair/blog/repair_blog_7.jfif",
+          "/images/travel_repairs/repair/blog/repair_blog_8.jfif",
+          "/images/travel_repairs/repair/blog/repair_blog_9.jfif",
+          "/images/travel_repairs/repair/blog/repair_blog_10.jfif",
+          "/images/travel_repairs/repair/blog/repair_blog_11.jfif",
+          "/images/travel_repairs/repair/blog/repair_blog_12.jfif"
+        ]
+      }
+    ]
+  },
+  {
+    "rname": "경태의 자전거 이야기",
+    "rlike": "3.6",
+    "score": "87",
+    "tag": [
+      "자양동자전거",
+      "광진구자전거",
+      "서울자전거수리",
+      "한강자전거수리",
+      "화양동자전거"
+    ],
+    "location": "자양번영로3길",
+    "repair": "예약, 라이딩 생활, 정비",
+    "address": "서울 광진구 자양번영로3길 28 노란색 건물",
+    "localAddress": "서울 광진구 자양동 582-13",
+    "business": [
+      {
+        "day": "월",
+        "houers": "정기휴무 (매주 월요일)",
+        "last": ""
+      },
+      {
+        "day": "화",
+        "houers": "11:00 - 18:00",
+        "last": ""
+      },
+      {
+        "day": "수",
+        "houers": "11:00 - 18:00",
+        "last": ""
+      },
+      {
+        "day": "목",
+        "houers": "11:00 - 18:00",
+        "last": ""
+      },
+      {
+        "day": "금",
+        "houers": "11:00 - 18:00",
+        "last": ""
+      },
+      {
+        "day": "토",
+        "houers": "11:00 - 18:00",
+        "last": ""
+      },
+      {
+        "day": "일",
+        "houers": "정기휴무 (매주 일요일)",
+        "last": ""
+      }
+    ],
+    "phone": "0507-1425-5929",
+    "other": [
+      "소비쿠폰(신용·체크카드)",
+      "제로페이"
+    ],
+    "menu": [
+      {
+        "rname": "기본점검",
+        "price": "6000"
+      },
+      {
+        "rname": "분해세차",
+        "price": "65000"
+      },
+      {
+        "rname": "튜브교체",
+        "price": "8000"
+      },
+      {
+        "rname": "속선교체",
+        "price": "8000"
+      },
+      {
+        "rname": "겉선교체",
+        "price": "8000"
+      },
+      {
+        "rname": "오버홀",
+        "price": "200000"
+      }
+    ],
+    "mainImages": [
+      "/images/travel_repairs/gyeongtae/gyeongtae_1.jfif",
+      "/images/travel_repairs/gyeongtae/gyeongtae_2.jfif",
+      "/images/travel_repairs/gyeongtae/gyeongtae_3.jfif"
+    ],
+    "imageList": [
+      {
+        "category": "업체",
+        "images": [
+          "/images/travel_repairs/gyeongtae/company/gyeongtae_company_1.jfif",
+          "/images/travel_repairs/gyeongtae/company/gyeongtae_company_2.jfif",
+          "/images/travel_repairs/gyeongtae/company/gyeongtae_company_3.jfif",
+          "/images/travel_repairs/gyeongtae/company/gyeongtae_company_4.jfif"
+        ]
+      },
+      {
+        "category": "블로그",
+        "images": [
+          "/images/travel_repairs/gyeongtae/blog/gyeongtae_blog_1.jfif",
+          "/images/travel_repairs/gyeongtae/blog/gyeongtae_blog_2.jfif",
+          "/images/travel_repairs/gyeongtae/blog/gyeongtae_blog_3.jfif",
+          "/images/travel_repairs/gyeongtae/blog/gyeongtae_blog_4.jfif",
+          "/images/travel_repairs/gyeongtae/blog/gyeongtae_blog_5.jfif",
+          "/images/travel_repairs/gyeongtae/blog/gyeongtae_blog_6.jfif",
+          "/images/travel_repairs/gyeongtae/blog/gyeongtae_blog_7.jfif",
+          "/images/travel_repairs/gyeongtae/blog/gyeongtae_blog_8.jfif",
+          "/images/travel_repairs/gyeongtae/blog/gyeongtae_blog_9.jfif",
+          "/images/travel_repairs/gyeongtae/blog/gyeongtae_blog_10.jfif",
+          "/images/travel_repairs/gyeongtae/blog/gyeongtae_blog_11.jfif",
+          "/images/travel_repairs/gyeongtae/blog/gyeongtae_blog_12.jfif"
+        ]
+      }
+    ]
+  },
+  {
+    "rname": "로드는오늘도뚠뚠",
+    "rlike": "2.0",
+    "score": "50",
+    "tag": [
+      "자전거세차",
+      "구동계분해세차",
+      "자전거분해세차",
+      "자전거구동계세차",
+      "구동계세차"
+    ],
+    "location": "뚝섬로26길",
+    "repair": "예약",
+    "address": "서울 광진구 뚝섬로26길 33 1층 로드는 오늘도 뚠뚠",
+    "localAddress": "서울 광진구 자양동 47-46",
+    "business": [
+      {
+        "day": "월",
+        "houers": "08:00 - 18:00",
+        "last": ""
+      },
+      {
+        "day": "화",
+        "houers": "08:00 - 18:00",
+        "last": ""
+      },
+      {
+        "day": "수",
+        "houers": "08:00 - 18:00",
+        "last": ""
+      },
+      {
+        "day": "목",
+        "houers": "08:00 - 18:00",
+        "last": ""
+      },
+      {
+        "day": "금",
+        "houers": "08:00 - 18:00",
+        "last": ""
+      },
+      {
+        "day": "토",
+        "houers": "08:00 - 18:00",
+        "last": ""
+      },
+      {
+        "day": "일",
+        "houers": "08:00 - 18:00",
+        "last": ""
+      }
+    ],
+    "phone": "0507-1393-4728",
+    "other": [
+      "주차 불가"
+    ],
+    "menu": [
+      {
+        "rname": "기본점검",
+        "price": "5800"
+      },
+      {
+        "rname": "분해세차",
+        "price": "80000"
+      },
+      {
+        "rname": "튜브교체",
+        "price": "12000"
+      },
+      {
+        "rname": "속선교체",
+        "price": "12000"
+      },
+      {
+        "rname": "겉선교체",
+        "price": "12000"
+      },
+      {
+        "rname": "오버홀",
+        "price": "188000"
+      }
+    ],
+    "mainImages": [
+      "/images/travel_repairs/ddunddun/ddunddun_1.jpg",
+      "/images/travel_repairs/ddunddun/ddunddun_2.jpg",
+      "/images/travel_repairs/ddunddun/ddunddun_3.jpg"
+    ],
+    "imageList": [
+      {
+        "category": "업체",
+        "images": [
+          "/images/travel_repairs/ddunddun/company/ddunddun_company_1.jfif",
+          "/images/travel_repairs/ddunddun/company/ddunddun_company_2.jfif",
+          "/images/travel_repairs/ddunddun/company/ddunddun_company_3.jfif",
+          "/images/travel_repairs/ddunddun/company/ddunddun_company_4.jfif"
+        ]
+      },
+      {
+        "category": "블로그",
+        "images": [
+          "/images/travel_repairs/ddunddun/blog/ddunddun_blog_1.jfif",
+          "/images/travel_repairs/ddunddun/blog/ddunddun_blog_2.jfif",
+          "/images/travel_repairs/ddunddun/blog/ddunddun_blog_3.jfif",
+          "/images/travel_repairs/ddunddun/blog/ddunddun_blog_4.jfif",
+          "/images/travel_repairs/ddunddun/blog/ddunddun_blog_5.jfif",
+          "/images/travel_repairs/ddunddun/blog/ddunddun_blog_6.jfif",
+          "/images/travel_repairs/ddunddun/blog/ddunddun_blog_7.jfif",
+          "/images/travel_repairs/ddunddun/blog/ddunddun_blog_8.jfif",
+          "/images/travel_repairs/ddunddun/blog/ddunddun_blog_9.jfif",
+          "/images/travel_repairs/ddunddun/blog/ddunddun_blog_10.jfif",
+          "/images/travel_repairs/ddunddun/blog/ddunddun_blog_11.jfif",
+          "/images/travel_repairs/ddunddun/blog/ddunddun_blog_12.jfif"
+        ]
+      }
+    ]
+  },
+  {
+    "rname": "닥터모빌리티",
+    "rlike": "4.0",
+    "score": "90",
+    "tag": [
+      "전동제품판매",
+      "전동제품수리",
+      "일반자전거판매",
+      "자전거수리",
+      "자전거용품"
+    ],
+    "location": "능동로7길",
+    "repair": "스마트 자전거, 스타카토 자전거",
+    "address": "서울 광진구 능동로7길 41-2 1층 자전거가게",
+    "localAddress": "서울 광진구 자양동 47-46",
+    "business": [
+      {
+        "day": "월",
+        "houers": "08:00 - 18:00"
+      },
+      {
+        "day": "화",
+        "houers": "10:20 - 20:00"
+      },
+      {
+        "day": "수",
+        "houers": "10:20 - 20:00"
+      },
+      {
+        "day": "목",
+        "houers": "10:20 - 20:00"
+      },
+      {
+        "day": "금",
+        "houers": "10:20 - 20:00"
+      },
+      {
+        "day": "토",
+        "houers": "10:20 - 20:00"
+      },
+      {
+        "day": "일",
+        "houers": "10:20 - 20:00"
+      }
+    ],
+    "phone": "0507-1393-4728",
+    "other": [
+      "주차가능"
+    ],
+    "menu": [
+      {
+        "rname": "기본점검",
+        "price": "6200"
+      },
+      {
+        "rname": "분해세차",
+        "price": "62000"
+      },
+      {
+        "rname": "튜브교체",
+        "price": "9000"
+      },
+      {
+        "rname": "속선교체",
+        "price": "9000"
+      },
+      {
+        "rname": "겉선교체",
+        "price": "9000"
+      },
+      {
+        "rname": "오버홀",
+        "price": "162000"
+      }
+    ],
+    "mainImages": [
+      "/images/travel_repairs/doctor/doctor_1.jpg",
+      "/images/travel_repairs/doctor/doctor_2.jpg",
+      "/images/travel_repairs/doctor/doctor_3.jpg"
+    ],
+    "imageList": [
+      {
+        "category": "업체",
+        "images": [
+          "/images/travel_repairs/doctor/company/doctor_company_1.jfif",
+          "/images/travel_repairs/doctor/company/doctor_company_2.jfif",
+          "/images/travel_repairs/doctor/company/doctor_company_3.jfif",
+          "/images/travel_repairs/doctor/company/doctor_company_4.jfif"
+        ]
+      },
+      {
+        "category": "블로그",
+        "images": [
+          "/images/travel_repairs/doctor/blog/doctor_blog_1.jfif",
+          "/images/travel_repairs/doctor/blog/doctor_blog_2.jfif",
+          "/images/travel_repairs/doctor/blog/doctor_blog_3.jfif",
+          "/images/travel_repairs/doctor/blog/doctor_blog_4.jfif",
+          "/images/travel_repairs/doctor/blog/doctor_blog_5.jfif",
+          "/images/travel_repairs/doctor/blog/doctor_blog_6.jfif",
+          "/images/travel_repairs/doctor/blog/doctor_blog_7.jfif",
+          "/images/travel_repairs/doctor/blog/doctor_blog_8.jfif",
+          "/images/travel_repairs/doctor/blog/doctor_blog_9.jfif",
+          "/images/travel_repairs/doctor/blog/doctor_blog_10.jfif",
+          "/images/travel_repairs/doctor/blog/doctor_blog_11.jfif",
+          "/images/travel_repairs/doctor/blog/doctor_blog_12.jfif"
+        ]
+      }
+    ]
+  }
+]

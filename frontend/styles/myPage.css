@@ -1,0 +1,130 @@
+/* ------------------------------------------- */
+/* 1. 전체 레이아웃 컨테이너 (.myPageContainer) */
+/* ------------------------------------------- */
+.myPageContainer {
+    /* 뷰포트 너비 내에서 중앙 정렬 및 최대 너비 제한 */
+    width: 80%;
+    max-width: 1200px;
+    margin: 40px auto; /* 상하 40px, 좌우 자동 (가운데 정렬) */
+
+    /* 사이드바와 정보 영역을 가로로 배치 */
+    display: flex;
+    flex-direction: row; /* 기본 가로 정렬 */
+    gap: 30px; /* 두 영역 사이의 간격 */
+
+    /* 폰트 크기 및 색상 설정 (SignUp.jsx 참고) */
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* ------------------------------------------- */
+/* 2. 사이드바 영역 (.sideBar) */
+/* ------------------------------------------- */
+.sideBar {
+    /* 전체 컨테이너의 약 25% 비율 차지 */
+    flex: 0 0 250px; /* grow: 0, shrink: 0, basis: 250px (고정 너비) */
+    padding: 20px;
+    background-color: #e9ecef;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.sideBarTitle {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    border-bottom: 2px solid var(--color-blue, #007bff);
+    padding-bottom: 10px;
+}
+
+.sideBarList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sideBarList li {
+    font-size: 1.1rem;
+    padding: 10px 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.sideBarList a{
+    text-decoration-line: none;
+    color: inherit;
+}
+.sideBarList a:visited{
+    color: inherit;
+}
+
+.sideBarList li:hover {
+    background-color: #dee2e6;
+    padding-left: 5px;
+}
+
+/* ------------------------------------------- */
+/* 3. 개인정보 영역 (.infoSection) */
+/* ------------------------------------------- */
+.infoSection {
+    /* 남은 공간을 모두 차지하도록 설정 */
+    flex-grow: 1;
+    padding: 30px;
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.infoSectionTitle {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+    color: var(--color-blue, #007bff);
+}
+
+.infoList {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 40px;
+}
+
+.infoList li {
+    font-size: 1.2rem;
+    padding: 10px 0;
+    border-bottom: 1px dashed #ced4da;
+}
+
+.infoList li:last-child {
+    border-bottom: none;
+}
+
+/* ------------------------------------------- */
+/* 4. 버튼 영역 (.withdrawButton) */
+/* ------------------------------------------- */
+.withdrawButton {
+    display: block; /* 블록 요소로 만들어 너비를 차지하게 함 */
+    margin: 20px 0 0 auto; /* 오른쪽 정렬 */
+    padding: 10px 25px;
+    font-size: 1.2rem;
+    color: white;
+    background-color: #dc3545; /* 빨간색 계열 */
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.withdrawButton:hover {
+    background-color: #c82333;
+}
+
+/* 미디어 쿼리: 화면이 좁아질 경우 세로 정렬로 변경 */
+@media (max-width: 768px) {
+    .myPageContainer {
+        flex-direction: column;
+        width: 90%; /* 좁은 화면에서는 너비를 더 넓게 사용 */
+    }
+
+    .sideBar {
+        flex-basis: auto; /* 고정 너비 해제 */
+    }
+}

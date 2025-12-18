@@ -1,0 +1,96 @@
+[
+  {
+    "region": "서울 한강 잠실지구",
+    "fname": "고도식 송리단길",
+    "lat": "37.5103054",
+    "lng": "127.1086519",
+    "flike": "4.7",
+    "score": "90",
+    "evaluation": "3",
+    "tag": [
+      "고깃집",
+      "알등심",
+      "다코숨은맛집",
+      "식사모임",
+      "시끌벅적한"
+    ],
+    "image1": "/images/travel_foods/godosic/godosic_1.webp",
+    "image2": "/images/travel_foods/godosic/godosic_2.webp",
+    "image3": "/images/travel_foods/godosic/godosic_3.webp",
+    "fullImage1": "/images/travel_foods/godosic/godosic_full_1.webp",
+    "fullImage2": "/images/travel_foods/godosic/godosic_full_2.webp",
+    "fullImage3": "/images/travel_foods/godosic/godosic_full_3.webp",
+    "description": "다코 90점 넘는거 보고 방문했는데 굉장히 만족스러운 식사를 했습니다! 고기가 참 맛있네요 된장술밥과 볶음밥은 고기보다는 살짝..."
+  },
+  {
+    "region": "서울 한강 잠실지구",
+    "fname": "별미곱창 2호점",
+    "lat": "37.5139898",
+    "lng": "127.1092812",
+    "flike": "4.2",
+    "score": "88",
+    "evaluation": "3",
+    "tag": [
+      "곱창",
+      "소곱창",
+      "술모임",
+      "시끌벅적한",
+      "테라스"
+    ],
+    "image1": "/images/travel_foods/byeolmi/byeolmi_1.webp",
+    "image2": "/images/travel_foods/byeolmi/byeolmi_2.webp",
+    "image3": "/images/travel_foods/byeolmi/byeolmi_3.webp",
+    "fullImage1": "/images/travel_foods/byeolmi/byeolmi_full_1.webp",
+    "fullImage2": "/images/travel_foods/byeolmi/byeolmi_full_2.webp",
+    "fullImage3": "/images/travel_foods/byeolmi/byeolmi_full_3.webp",
+    "description": "별미는 언제먹어도 맛있어요 볶음밥 1인분인데 양많고 맛있어요"
+  },
+  {
+    "region": "서울 한강 잠실지구",
+    "fname": "단디 송리단길",
+    "lat": "37.5092155",
+    "lng": "127.1103053",
+    "flike": "4.3",
+    "score": "88",
+    "evaluation": "3",
+    "tag": [
+      "덮밥",
+      "호르몬동",
+      "다코숨은맛집",
+      "데이트",
+      "깔끔한",
+      "바자리"
+    ],
+    "image1": "/images/travel_foods/dandi/dandi_1.webp",
+    "image2": "/images/travel_foods/dandi/dandi_2.webp",
+    "image3": "/images/travel_foods/dandi/dandi_3.webp",
+    "fullImage1": "/images/travel_foods/dandi/dandi_full_1.webp",
+    "fullImage2": "/images/travel_foods/dandi/dandi_full_2.webp",
+    "fullImage3": "/images/travel_foods/dandi/dandi_full_3.webp",
+    "description": "한끼한상으로 딱 적당하게 잘 나오기때문에 혼밥손님들도 많고 점심시간에도 북적북적합니다 느끼하지않게 곁들임과의 조화가 좋으요"
+  },
+  {
+    "region": "서울 한강 잠실지구",
+    "fname": "미엔아이 송리단길",
+    "lat": "37.5108602",
+    "lng": "127.1091",
+    "flike": "4.3",
+    "score": "87",
+    "evaluation": "3",
+    "tag": [
+      "우육면",
+      "꿔바로우",
+      "다코숨은맛집",
+      "혼밥",
+      "캐주얼한",
+      "바자리"
+    ],
+    "image1": "/images/travel_foods/meandi/meandi_1.webp",
+    "image2": "/images/travel_foods/meandi/meandi_2.webp",
+    "image3": "/images/travel_foods/meandi/meandi_3.webp",
+    "fullImage1": "/images/travel_foods/meandi/meandi_full_1.webp",
+    "fullImage2": "/images/travel_foods/meandi/meandi_full_2.webp",
+    "fullImage3": "/images/travel_foods/meandi/meandi_full_3.webp",
+    "description": "꿔바로우위에 콩가루를 뿌려주셨는데 맛나요!! 내부인테리어도 대만느낌으로 잘꾸며져있고 네이버 리뷰하면 망고맥주도 서비스로 줍니다..."
+  }
+]

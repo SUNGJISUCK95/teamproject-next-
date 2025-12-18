@@ -1,0 +1,93 @@
+[
+  {
+    "region": "서울 한강 잠실지구",
+    "hname": "잠실 라운지 호텔 - LOUNGE",
+    "lat": "37.515848",
+    "lng": "127.1096215",
+    "hlike": "4.9",
+    "score": "90",
+    "evaluation": "3",
+    "tag": [
+      "잠실숙소",
+      "잠실호텔",
+      "잠실모텔",
+      "잠실라운지",
+      "호텔",
+      "방이동호텔"
+    ],
+    "image1": "/images/travel_hotels/lounge/lounge_1.webp",
+    "image2": "/images/travel_hotels/lounge/lounge_2.webp",
+    "image3": "/images/travel_hotels/lounge/lounge_3.webp",
+    "fullImage1": "/images/travel_hotels/lounge/lounge_full_1.webp",
+    "fullImage2": "/images/travel_hotels/lounge/lounge_full_2.webp",
+    "fullImage3": "/images/travel_hotels/lounge/lounge_full_3.webp",
+    "description": "도심 속 여유, 라운지 호텔에서의 특별한 하루..."
+  },
+  {
+    "region": "서울 한강 잠실지구",
+    "hname": "잠실 자자호텔",
+    "lat": "37.5157842",
+    "lng": "127.1124089",
+    "hlike": "3.9",
+    "score": "80",
+    "evaluation": "3",
+    "tag": [
+      "잠실숙소",
+      "잠실호텔",
+      "잠실모텔"
+    ],
+    "image1": "/images/travel_hotels/zaza/zaza_1.webp",
+    "image2": "/images/travel_hotels/zaza/zaza_2.webp",
+    "image3": "/images/travel_hotels/zaza/zaza_3.webp",
+    "fullImage1": "/images/travel_hotels/zaza/zaza_full_1.webp",
+    "fullImage2": "/images/travel_hotels/zaza/zaza_full_2.webp",
+    "fullImage3": "/images/travel_hotels/zaza/zaza_full_3.webp",
+    "description": "1객실당 차량은 1대로 제한되어 있으니, 이용에 참고 부탁드립니다."
+  },
+  {
+    "region": "서울 한강 잠실지구",
+    "hname": "잠실 HL Hotel",
+    "lat": "37.515589",
+    "lng": "127.110027",
+    "hlike": "4.2",
+    "score": "85",
+    "evaluation": "3",
+    "tag": [
+      "잠실숙소",
+      "잠실호텔",
+      "잠실모텔",
+      "잠실HL",
+      "방이동호텔"
+    ],
+    "image1": "/images/travel_hotels/hl/hl_1.webp",
+    "image2": "/images/travel_hotels/hl/hl_2.webp",
+    "image3": "/images/travel_hotels/hl/hl_3.webp",
+    "fullImage1": "/images/travel_hotels/hl/hl_full_1.webp",
+    "fullImage2": "/images/travel_hotels/hl/hl_full_2.webp",
+    "fullImage3": "/images/travel_hotels/hl/hl_full_3.webp",
+    "description": "★고대기대여 + 렌즈케이스 + 리뉴액 무료제공★  ★당일 숙박예약 손님은 익일 새벽2시까지 입실 바랍니다★"
+  },
+  {
+    "region": "서울 한강 잠실지구",
+    "hname": "잠실 셀레네",
+    "lat": "37.515587",
+    "lng": "127.109201",
+    "hlike": "4.2",
+    "score": "85",
+    "evaluation": "3",
+    "tag": [
+      "잠실숙소",
+      "잠실호텔",
+      "잠실모텔",
+      "잠실셀레네",
+      "방이동호텔"
+    ],
+    "image1": "/images/travel_hotels/sellene/sellene_1.webp",
+    "image2": "/images/travel_hotels/sellene/sellene_2.webp",
+    "image3": "/images/travel_hotels/sellene/sellene_3.webp",
+    "fullImage1": "/images/travel_hotels/sellene/sellene_full_1.webp",
+    "fullImage2": "/images/travel_hotels/sellene/sellene_full_2.webp",
+    "fullImage3": "/images/travel_hotels/sellene/sellene_full_3.webp",
+    "description": "Deluxe Twin 객실 안내..."
+  }
+]

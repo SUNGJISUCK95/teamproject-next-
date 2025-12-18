@@ -1,0 +1,162 @@
+[
+
+    {
+        "pid" : "1",
+        "category" : "lifestyle",
+        "image" : "/bicycleimages/life/CELLOBIKE/2023-20-TOMO-SE-9_1.-DARK-CHAMELEON.png",
+        "name" : "20 토모 SE 9",
+        "price" : 750000,
+        "color" : "다크 카멜레온",
+        "subInfo" : "도심주행에 최적화된 스프린트 타입 접이식 자전거",
+        "description" : [
+            "쉽게 접고 펼 수 있는 알루미늄 프레임",
+            "시마노 SORA 9단 변속시스템 (1x9)"
+        ]
+    },
+    {
+        "pid" : "2",
+        "category" : "lifestyle",
+        "image" : "/bicycleimages/life/CELLOBIKE/2023-700C-DIO-D5_BLACK-MATT.png",
+        "name" : "700C 디오 D5",
+        "price" : 890000,
+        "color" : "블랙 (무광)",
+        "subInfo" : "출퇴근 및 일상 도심 라이딩을 위한 다목적 어반 하이브리드",
+        "description" : [
+            "편안한 주행을 위한 하이브리드용 에어 서스펜션 SR선투어 NCX 적용",
+            "시마노 DEORE 30단 구동계 적용",
+            "시마노 MT200 유압식 디스크브레이크 적용"
+        ]
+    },
+    {
+        "pid" : "3",
+        "category" : "lifestyle",
+        "image" : "/bicycleimages/life/CELLOBIKE/2023-20-TOMO-SE-8_2.-CRYSTAL-GRAY.png",
+        "name" : "20 토모 SE 8",
+        "price" : 650000,
+        "color" : "크리스탈 그레이",
+        "subInfo" : "접이식 자전거, 도심주행에 최적화된 스프린트 타입",
+        "description" : [
+            "쉽게 접고 펼 수 있는 알루미늄 프레임",
+            "시마노 CLARIS 8단 변속시스템 (1x8)"
+        ]
+    },
+    {
+        "pid" : "4",
+        "category" : "lifestyle",
+        "image" : "/bicycleimages/life/CELLOBIKE/2023-20-TOMO-SE-7_2.-CHAMELEON-MID-SILVER.png",
+        "name" : "20 토모 SE 7",
+        "price" : 550000,
+        "color" : "카멜레온 미드 실버",
+        "subInfo" : "접이식 자전거, 도심주행에 최적화된 스프린트 타입",
+        "description" : [
+            "쉽게 접고 펼 수 있는 알루미늄 프레임",
+            "시마노 ALTUS 7단 변속시스템 (1x7)"
+        ]
+    },
+  {
+    "pid" : "5",
+    "category" : "lifestyle",
+    "image" : "/bicycleimages/life/CELLOBIKE/2023-20-TOMO-SE-9_1.-DARK-CHAMELEON.png",
+    "name" : "20 토모 SE 9",
+    "price" : 750000,
+    "color" : "다크 카멜레온",
+    "subInfo" : "도심주행에 최적화된 스프린트 타입 접이식 자전거",
+    "description" : [
+      "쉽게 접고 펼 수 있는 알루미늄 프레임",
+      "시마노 SORA 9단 변속시스템 (1x9)"
+    ]
+  },
+  {
+    "pid" : "6",
+    "category" : "lifestyle",
+    "image" : "/bicycleimages/life/CELLOBIKE/2023-700C-DIO-D5_BLACK-MATT.png",
+    "name" : "700C 디오 D5",
+    "price" : 890000,
+    "color" : "블랙 (무광)",
+    "subInfo" : "출퇴근 및 일상 도심 라이딩을 위한 다목적 어반 하이브리드",
+    "description" : [
+      "편안한 주행을 위한 하이브리드용 에어 서스펜션 SR선투어 NCX 적용",
+      "시마노 DEORE 30단 구동계 적용",
+      "시마노 MT200 유압식 디스크브레이크 적용"
+    ]
+  },
+  {
+    "pid" : "7",
+    "category" : "lifestyle",
+    "image" : "/bicycleimages/life/CELLOBIKE/2023-20-TOMO-SE-8_2.-CRYSTAL-GRAY.png",
+    "name" : "20 토모 SE 8",
+    "price" : 650000,
+    "color" : "크리스탈 그레이",
+    "subInfo" : "접이식 자전거, 도심주행에 최적화된 스프린트 타입",
+    "description" : [
+      "쉽게 접고 펼 수 있는 알루미늄 프레임",
+      "시마노 CLARIS 8단 변속시스템 (1x8)"
+    ]
+  },
+  {
+    "pid" : "8",
+    "category" : "lifestyle",
+    "image" : "/bicycleimages/life/CELLOBIKE/2023-20-TOMO-SE-7_2.-CHAMELEON-MID-SILVER.png",
+    "name" : "20 토모 SE 7",
+    "price" : 550000,
+    "color" : "카멜레온 미드 실버",
+    "subInfo" : "접이식 자전거, 도심주행에 최적화된 스프린트 타입",
+    "description" : [
+      "쉽게 접고 펼 수 있는 알루미늄 프레임",
+      "시마노 ALTUS 7단 변속시스템 (1x7)"
+    ]
+  },
+  {
+    "pid" : "9",
+    "category" : "lifestyle",
+    "image" : "/bicycleimages/life/CELLOBIKE/2023-20-TOMO-SE-9_1.-DARK-CHAMELEON.png",
+    "name" : "20 토모 SE 9",
+    "price" : 750000,
+    "color" : "다크 카멜레온",
+    "subInfo" : "도심주행에 최적화된 스프린트 타입 접이식 자전거",
+    "description" : [
+      "쉽게 접고 펼 수 있는 알루미늄 프레임",
+      "시마노 SORA 9단 변속시스템 (1x9)"
+    ]
+  },
+  {
+    "pid" : "10",
+    "category" : "lifestyle",
+    "image" : "/bicycleimages/life/CELLOBIKE/2023-700C-DIO-D5_BLACK-MATT.png",
+    "name" : "700C 디오 D5",
+    "price" : 890000,
+    "color" : "블랙 (무광)",
+    "subInfo" : "출퇴근 및 일상 도심 라이딩을 위한 다목적 어반 하이브리드",
+    "description" : [
+      "편안한 주행을 위한 하이브리드용 에어 서스펜션 SR선투어 NCX 적용",
+      "시마노 DEORE 30단 구동계 적용",
+      "시마노 MT200 유압식 디스크브레이크 적용"
+    ]
+  },
+  {
+    "pid" : "11",
+    "category" : "lifestyle",
+    "image" : "/bicycleimages/life/CELLOBIKE/2023-20-TOMO-SE-8_2.-CRYSTAL-GRAY.png",
+    "name" : "20 토모 SE 8",
+    "price" : 650000,
+    "color" : "크리스탈 그레이",
+    "subInfo" : "접이식 자전거, 도심주행에 최적화된 스프린트 타입",
+    "description" : [
+      "쉽게 접고 펼 수 있는 알루미늄 프레임",
+      "시마노 CLARIS 8단 변속시스템 (1x8)"
+    ]
+  },
+  {
+    "pid" : "12",
+    "category" : "lifestyle",
+    "image" : "/bicycleimages/life/CELLOBIKE/2023-20-TOMO-SE-7_2.-CHAMELEON-MID-SILVER.png",
+    "name" : "20 토모 SE 7",
+    "price" : 550000,
+    "color" : "카멜레온 미드 실버",
+    "subInfo" : "접이식 자전거, 도심주행에 최적화된 스프린트 타입",
+    "description" : [
+      "쉽게 접고 펼 수 있는 알루미늄 프레임",
+      "시마노 ALTUS 7단 변속시스템 (1x7)"
+    ]
+  }
+]

@@ -1,0 +1,112 @@
+[
+  {
+    "bid": 3,
+    "uid": "test111",
+    "writer": "ADMIN",
+    "title": "산악 자전거 사용 후기",
+    "content": "험한 산악 코스에서도 안정적인 주행이 가능해 만족스러웠습니다.",
+    "imageUrl": "/images/board/review/review_c01.jpg",
+    "thumbnailUrl": "/images/board/review/review_t01.jpg",
+    "categoryTag": "review",
+    "status": "PUBLIC"
+  },
+  {
+    "bid": 3,
+    "uid": "test111",
+    "writer": "ADMIN",
+    "title": "출퇴근용 하이브리드 자전거",
+    "content": "가벼운 무게와 편안한 포지션 덕분에 출퇴근이 한결 편해졌습니다.",
+    "imageUrl": "/images/board/review/review_c02.jpg",
+    "thumbnailUrl": "/images/board/review/review_t02.jpg",
+    "categoryTag": "review",
+    "status": "PUBLIC"
+  },
+  {
+    "bid": 3,
+    "uid": "test111",
+    "writer": "ADMIN",
+    "title": "로드 자전거 장거리 라이딩",
+    "content": "장거리 라이딩에서도 피로감이 적고 반응성이 좋아 만족합니다.",
+    "imageUrl": "/images/board/review/review_c03.jpg",
+    "thumbnailUrl": "/images/board/review/review_t03.jpg",
+    "categoryTag": "review",
+    "status": "PUBLIC"
+  },
+  {
+    "bid": 3,
+    "uid": "test111",
+    "writer": "ADMIN",
+    "title": "초보자를 위한 입문용 모델",
+    "content": "첫 자전거로 선택했는데 조작성과 안정감이 좋아 추천할 만합니다.",
+    "imageUrl": "/images/board/review/review_c04.jpg",
+    "thumbnailUrl": "/images/board/review/review_t04.jpg",
+    "categoryTag": "review",
+    "status": "PUBLIC"
+  },
+  {
+    "bid": 3,
+    "uid": "test111",
+    "writer": "ADMIN",
+    "title": "전기 자전거 주행 체험기",
+    "content": "오르막길에서 전기 모터의 도움이 크게 느껴졌습니다.",
+    "imageUrl": "/images/board/review/review_c05.jpg",
+    "thumbnailUrl": "/images/board/review/review_t05.jpg",
+    "categoryTag": "review",
+    "status": "PUBLIC"
+  },
+  {
+    "bid": 3,
+    "uid": "test111",
+    "writer": "ADMIN",
+    "title": "주말 라이딩용 크로스 바이크",
+    "content": "포장도로와 비포장도로 모두 무난하게 주행할 수 있었습니다.",
+    "imageUrl": "/images/board/review/review_c06.jpg",
+    "thumbnailUrl": "/images/board/review/review_t06.jpg",
+    "categoryTag": "review",
+    "status": "PUBLIC"
+  },
+  {
+    "bid": 3,
+    "uid": "test111",
+    "writer": "ADMIN",
+    "title": "가벼운 카본 프레임 체감",
+    "content": "카본 프레임 덕분에 가속이 훨씬 빠르고 업힐이 쉬워졌습니다.",
+    "imageUrl": "/images/board/review/review_c07.jpg",
+    "thumbnailUrl": "/images/board/review/review_t07.jpg",
+    "categoryTag": "review",
+    "status": "PUBLIC"
+  },
+  {
+    "bid": 3,
+    "uid": "test111",
+    "writer": "ADMIN",
+    "title": "편안한 안장과 포지션",
+    "content": "장시간 라이딩에도 안장과 포지션이 편안해 만족도가 높습니다.",
+    "imageUrl": "/images/board/review/review_c08.jpg",
+    "thumbnailUrl": "/images/board/review/review_t08.jpg",
+    "categoryTag": "review",
+    "status": "PUBLIC"
+  },
+  {
+    "bid": 3,
+    "uid": "test111",
+    "writer": "ADMIN",
+    "title": "브레이크 성능 체감 후기",
+    "content": "다운힐에서도 제동력이 뛰어나 안정감 있게 제어할 수 있었습니다.",
+    "imageUrl": "/images/board/review/review_c09.jpg",
+    "thumbnailUrl": "/images/board/review/review_t09.jpg",
+    "categoryTag": "review",
+    "status": "PUBLIC"
+  },
+  {
+    "bid": 3,
+    "uid": "test111",
+    "writer": "ADMIN",
+    "title": "전체적인 만족도 평가",
+    "content": "가격 대비 성능, 디자인, 주행감 모두 만족스러운 모델입니다.",
+    "imageUrl": "/images/board/review/review_c10.jpg",
+    "thumbnailUrl": "/images/board/review/review_t10.jpg",
+    "categoryTag": "review",
+    "status": "PUBLIC"
+  }
+]

@@ -1,0 +1,212 @@
+/* src/styles/cart/Checkout.css */
+
+.checkout-page-container {
+    width: 100%;
+    max-width: 1280px; /* 더 넓은 레이아웃 */
+    margin: 2rem auto;
+    padding: 0 1rem;
+    box-sizing: border-box;
+}
+
+/* 2단 컬럼 레이아웃 */
+.checkout-main-layout {
+    display: grid;
+    /* 7:3 비율의 2단 그리드 */
+    grid-template-columns: 7fr 3fr;
+    gap: 30px;
+    margin-top: 2rem;
+}
+
+/* 모바일에선 1단으로 */
+@media (max-width: 992px) {
+    .checkout-main-layout {
+        grid-template-columns: 1fr;
+    }
+    .checkout-right-column {
+        /* 모바일에선 오른쪽 컬럼이 위로 올라오는 게 좋음 */
+        order: -1;
+        margin-bottom: 2rem;
+    }
+}
+
+/* === 왼쪽 컬럼 === */
+.checkout-left-column {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem; /* 폼과 주문내역 사이 간격 */
+}
+
+/* === 오른쪽 컬럼 === */
+.checkout-right-column {
+    /* (선택) 스크롤 시 따라오도록 sticky 적용 */
+    position: sticky;
+    top: 20px;
+    align-self: flex-start; /* sticky 기준점 */
+}
+
+
+/* === 3. CheckoutOrderSummary.jsx (주문 제품 내역) === */
+.order-summary-container {
+    width: 100%;
+}
+.order-summary-container h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #333;
+}
+
+.order-summary-table {
+    width: 100%;
+    border-collapse: collapse;
+    border-top: 1px solid #eee;
+}
+.order-summary-table th,
+.order-summary-table td {
+    border-bottom: 1px solid #eee;
+    padding: 1rem;
+    text-align: center;
+    vertical-align: middle;
+}
+.order-summary-table th {
+    background-color: #f9f9f9;
+    font-weight: 600;
+}
+.order-summary-table .product-info {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+.order-summary-table .product-info img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-right: 15px;
+    border: 1px solid #f0f0f0;
+}
+.order-summary-table .product-info .name {
+    font-weight: 600;
+}
+
+/* 주문 내역 하단 요약 (총 판매금액...) */
+.order-total-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: #f9f9f9;
+    padding: 2rem;
+    margin-top: 2rem;
+    border-radius: 5px;
+}
+.order-total-bottom .total-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.order-total-bottom .total-item .label {
+    font-size: 0.9rem;
+    color: #555;
+}
+.order-total-bottom .total-item .value {
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+.order-total-bottom .operator {
+    font-size: 1.5rem;
+    color: #999;
+}
+
+
+/* === 4. CheckoutPaymentSummary.jsx (오른쪽 결제 요약) === */
+.payment-summary-box {
+    border: 1px solid #eee;
+    border-radius: 5px;
+}
+.payment-summary-box h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 1.5rem;
+    margin: 0;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    border-radius: 5px 5px 0 0;
+}
+
+.payment-summary-details {
+    padding: 1.5rem;
+}
+.payment-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+.payment-row .label {
+    color: #555;
+}
+.payment-row .value {
+    font-weight: 600;
+}
+
+.final-price-row {
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px dashed #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.final-price-row .label {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+.final-price-row .value {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #d9534f; /* 붉은색 */
+}
+
+/* 동의 체크박스 */
+.agreement-section {
+    padding: 1.5rem;
+    border-top: 1px solid #eee;
+    background-color: #fdfdfd;
+}
+.agreement-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 1rem;
+}
+.agreement-item input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    margin-top: 3px;
+}
+.agreement-item label {
+    font-size: 0.9rem;
+    color: #666;
+    line-height: 1.5;
+}
+.payment-button-section{
+    display: flex;
+}
+/* 결제 버튼 */
+.payment-button {
+    width: 100%;
+    padding: 1.2rem;
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    border-radius: 0 0 5px 5px;
+    font-size: 1.3rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+.payment-button:hover {
+    background-color: #c9302c;
+}

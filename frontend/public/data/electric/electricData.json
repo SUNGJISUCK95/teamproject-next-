@@ -1,0 +1,225 @@
+[
+
+    {
+        "pid" : "1",
+        "category" : "electric",
+        "image" : "/bicycleimages/electric/CELLOBIKE/2025-29-BULLET-FX-90_GALAXY-BLUE-1.png",
+        "name" : "29 불렛 FX 90",
+        "price" : 7990000,
+        "color" : "갤럭시 블루 그린",
+        "subInfo" : "첼로의 강력한 퍼포먼스로 최고의 주행력을 선사하는 올마운틴 전기자전거 모델",
+        "description" : [
+            "29 알로이 보쉬 eBike 시스템 올마운틴 프레임",
+            "29 락샥 [ZEB 셀렉트+] 에어스프링",
+            "시마노 [XT] 12단 변속시스템 (1x12)",
+          "보쉬 PERFORMANCE LINE CX (The smart system) 최대 토크 85Nm, 연속 정격 출력 250W",
+          "보쉬 [POWER TUBE 750] 750Wh"
+        ]
+    },
+    {
+        "pid" : "2",
+        "category" : "electric",
+        "image" : "/bicycleimages/electric/CELLOBIKE/main-1_2023-27.5-BULLET-FX-80-1.png",
+        "name" : "27.5 불렛 FX 80",
+        "price" : 5900000,
+        "color" : "클라우드 실버(무광) / 블랙(무광)",
+        "subInfo" : "더욱 업그레이드된 첼로의 강력한 올마운틴 전기 자전거",
+        "description" : [
+          "27.5 알로이 시마노 STEPS 올마운틴 프레임",
+          "시마노 [EP801] 최대 토크 85Nm, 최대 파워 출력 600W 드라이브 유닛",
+          "시마노 [EN806] 630Wh 대용량 배터리",
+          "시마노 [XT] 12단 변속시스템 (1x12)",
+          "27.5 락샥 [야리 RC] 알로이 테이퍼드 스티어러, 에어스프링, 15X110 (트래블:150mm)"
+        ]
+    },
+    {
+        "pid" : "3",
+        "category" : "electric",
+        "image" : "/bicycleimages/electric/CELLOBIKE/MAIN-2025-29-BULLET-XC-50_CHAMELEON-BLACK.png",
+        "name" : "29 불렛 XC 50",
+        "price" : 3700000,
+        "color" : "카멜레온 블랙 (무광)",
+        "subInfo" : "다양한 지형에서 최적의 성능을 발휘할 수 있는 보쉬 퍼포먼스 라인을 탑재한 29인치 크로스 컨트리 전기 바이크",
+        "description" : [
+            "29 알로이 보쉬 eBike 시스템 트레일 프레임, 12X148 (사이즈:S/M/L)",
+            "보쉬 [PERFORMACE LINE] 최대 토크 75Nm, 연속 정격 출력 250W",
+            "시마노 [CUES] 10단 변속시스템 (1x10)"
+        ]
+    },
+    {
+        "pid" : "4",
+        "category" : "electric",
+        "image" : "/bicycleimages/electric/CELLOBIKE/27.5-BULLET-XC-40_METAL-BLUE-BLACK.jpg",
+        "name" : "27.5 불렛 XC 40",
+        "price" : 3200000,
+        "color" : "메탈 블루 / 블랙",
+        "subInfo" : "어떤 지형이든 빠르고 쉽게 돌파할 수 있는 크로스 컨트리 전기바이크",
+        "description" : [
+            "27.5 알로이 시마노 STEPS 전용 트레일 프레임",
+            "시마노 STEPS E6100 시리즈 탑재",
+            "시마노 [DEORE] 10단 변속시스템 (1x10)"                    
+        ]
+    },
+    {
+        "pid" : "5",
+        "category" : "electric",
+        "image" : "/bicycleimages/electric/CELLOBIKE/27.5-BULLET-XC-40_METAL-BLUE-BLACK.jpg ",
+        "name" : "27.5 불렛 XC 30",
+        "price" : 2400000,
+        "color" : "갤럭시 블루 그린",
+        "subInfo" : "어떤 지형이든 빠르고 쉽게 돌파할 수 있는 크로스 컨트리 전기바이크",
+        "description" : [
+            "27.5 알로이 시마노 STEPS 전용 트레일 프레임",
+            "시마노 STEPS E5000 시리즈",
+            "시마노 [CUES] 9단 변속시스템 (1x9)"                    
+        ]
+    },
+  {
+    "pid" : "6",
+    "category" : "electric",
+    "image" : "/bicycleimages/electric/CELLOBIKE/2025-29-BULLET-FX-90_GALAXY-BLUE-1.png",
+    "name" : "29 불렛 FX 90",
+    "price" : 7990000,
+    "color" : "갤럭시 블루 그린",
+    "subInfo" : "첼로의 강력한 퍼포먼스로 최고의 주행력을 선사하는 올마운틴 전기자전거 모델",
+    "description" : [
+      "29 알로이 보쉬 eBike 시스템 올마운틴 프레임",
+      "29 락샥 [ZEB 셀렉트+] 에어스프링",
+      "시마노 [XT] 12단 변속시스템 (1x12)",
+      "보쉬 PERFORMANCE LINE CX (The smart system) 최대 토크 85Nm, 연속 정격 출력 250W",
+      "보쉬 [POWER TUBE 750] 750Wh"
+    ]
+  },
+  {
+    "pid" : "7",
+    "category" : "electric",
+    "image" : "/bicycleimages/electric/CELLOBIKE/main-1_2023-27.5-BULLET-FX-80-1.png",
+    "name" : "27.5 불렛 FX 80",
+    "price" : 5900000,
+    "color" : "클라우드 실버(무광) / 블랙(무광)",
+    "subInfo" : "더욱 업그레이드된 첼로의 강력한 올마운틴 전기 자전거",
+    "description" : [
+      "27.5 알로이 시마노 STEPS 올마운틴 프레임",
+      "시마노 [EP801] 최대 토크 85Nm, 최대 파워 출력 600W 드라이브 유닛",
+      "시마노 [EN806] 630Wh 대용량 배터리",
+      "시마노 [XT] 12단 변속시스템 (1x12)",
+      "27.5 락샥 [야리 RC] 알로이 테이퍼드 스티어러, 에어스프링, 15X110 (트래블:150mm)"
+    ]
+  },
+  {
+    "pid" : "8",
+    "category" : "electric",
+    "image" : "/bicycleimages/electric/CELLOBIKE/MAIN-2025-29-BULLET-XC-50_CHAMELEON-BLACK.png",
+    "name" : "29 불렛 XC 50",
+    "price" : 3700000,
+    "color" : "카멜레온 블랙 (무광)",
+    "subInfo" : "다양한 지형에서 최적의 성능을 발휘할 수 있는 보쉬 퍼포먼스 라인을 탑재한 29인치 크로스 컨트리 전기 바이크",
+    "description" : [
+      "29 알로이 보쉬 eBike 시스템 트레일 프레임, 12X148 (사이즈:S/M/L)",
+      "보쉬 [PERFORMACE LINE] 최대 토크 75Nm, 연속 정격 출력 250W",
+      "시마노 [CUES] 10단 변속시스템 (1x10)"
+    ]
+  },
+  {
+    "pid" : "9",
+    "category" : "electric",
+    "image" : "/bicycleimages/electric/CELLOBIKE/27.5-BULLET-XC-40_METAL-BLUE-BLACK.jpg",
+    "name" : "27.5 불렛 XC 40",
+    "price" : 3200000,
+    "color" : "메탈 블루 / 블랙",
+    "subInfo" : "어떤 지형이든 빠르고 쉽게 돌파할 수 있는 크로스 컨트리 전기바이크",
+    "description" : [
+      "27.5 알로이 시마노 STEPS 전용 트레일 프레임",
+      "시마노 STEPS E6100 시리즈 탑재",
+      "시마노 [DEORE] 10단 변속시스템 (1x10)"
+    ]
+  },
+  {
+    "pid" : "10",
+    "category" : "electric",
+    "image" : "/bicycleimages/electric/CELLOBIKE/27.5-BULLET-XC-40_METAL-BLUE-BLACK.jpg",
+    "name" : "27.5 불렛 XC 30",
+    "price" : 2400000,
+    "color" : "갤럭시 블루 그린",
+    "subInfo" : "어떤 지형이든 빠르고 쉽게 돌파할 수 있는 크로스 컨트리 전기바이크",
+    "description" : [
+      "27.5 알로이 시마노 STEPS 전용 트레일 프레임",
+      "시마노 STEPS E5000 시리즈",
+      "시마노 [CUES] 9단 변속시스템 (1x9)"
+    ]
+  },
+  {
+    "pid" : "11",
+    "category" : "electric",
+    "image" : "/bicycleimages/electric/CELLOBIKE/2025-29-BULLET-FX-90_GALAXY-BLUE-1.png",
+    "name" : "29 불렛 FX 90",
+    "price" : 7990000,
+    "color" : "갤럭시 블루 그린",
+    "subInfo" : "첼로의 강력한 퍼포먼스로 최고의 주행력을 선사하는 올마운틴 전기자전거 모델",
+    "description" : [
+      "29 알로이 보쉬 eBike 시스템 올마운틴 프레임",
+      "29 락샥 [ZEB 셀렉트+] 에어스프링",
+      "시마노 [XT] 12단 변속시스템 (1x12)",
+      "보쉬 PERFORMANCE LINE CX (The smart system) 최대 토크 85Nm, 연속 정격 출력 250W",
+      "보쉬 [POWER TUBE 750] 750Wh"
+    ]
+  },
+  {
+    "pid" : "12",
+    "category" : "electric",
+    "image" : "/bicycleimages/electric/CELLOBIKE/main-1_2023-27.5-BULLET-FX-80-1.png",
+    "name" : "27.5 불렛 FX 80",
+    "price" : 5900000,
+    "color" : "클라우드 실버(무광) / 블랙(무광)",
+    "subInfo" : "더욱 업그레이드된 첼로의 강력한 올마운틴 전기 자전거",
+    "description" : [
+      "27.5 알로이 시마노 STEPS 올마운틴 프레임",
+      "시마노 [EP801] 최대 토크 85Nm, 최대 파워 출력 600W 드라이브 유닛",
+      "시마노 [EN806] 630Wh 대용량 배터리",
+      "시마노 [XT] 12단 변속시스템 (1x12)",
+      "27.5 락샥 [야리 RC] 알로이 테이퍼드 스티어러, 에어스프링, 15X110 (트래블:150mm)"
+    ]
+  },
+  {
+    "pid" : "13",
+    "category" : "electric",
+    "image" : "/bicycleimages/electric/CELLOBIKE/MAIN-2025-29-BULLET-XC-50_CHAMELEON-BLACK.png",
+    "name" : "29 불렛 XC 50",
+    "price" : 3700000,
+    "color" : "카멜레온 블랙 (무광)",
+    "subInfo" : "다양한 지형에서 최적의 성능을 발휘할 수 있는 보쉬 퍼포먼스 라인을 탑재한 29인치 크로스 컨트리 전기 바이크",
+    "description" : [
+      "29 알로이 보쉬 eBike 시스템 트레일 프레임, 12X148 (사이즈:S/M/L)",
+      "보쉬 [PERFORMACE LINE] 최대 토크 75Nm, 연속 정격 출력 250W",
+      "시마노 [CUES] 10단 변속시스템 (1x10)"
+    ]
+  },
+  {
+    "pid" : "14",
+    "category" : "electric",
+    "image" : "/bicycleimages/electric/CELLOBIKE/27.5-BULLET-XC-40_METAL-BLUE-BLACK.jpg",
+    "name" : "27.5 불렛 XC 40",
+    "price" : 3200000,
+    "color" : "메탈 블루 / 블랙",
+    "subInfo" : "어떤 지형이든 빠르고 쉽게 돌파할 수 있는 크로스 컨트리 전기바이크",
+    "description" : [
+      "27.5 알로이 시마노 STEPS 전용 트레일 프레임",
+      "시마노 STEPS E6100 시리즈 탑재",
+      "시마노 [DEORE] 10단 변속시스템 (1x10)"
+    ]
+  },
+  {
+    "pid" : "15",
+    "category" : "electric",
+    "image" : "/bicycleimages/electric/CELLOBIKE/27.5-BULLET-XC-40_METAL-BLUE-BLACK.jpg",
+    "name" : "27.5 불렛 XC 30",
+    "price" : 2400000,
+    "color" : "갤럭시 블루 그린",
+    "subInfo" : "어떤 지형이든 빠르고 쉽게 돌파할 수 있는 크로스 컨트리 전기바이크",
+    "description" : [
+      "27.5 알로이 시마노 STEPS 전용 트레일 프레임",
+      "시마노 STEPS E5000 시리즈",
+      "시마노 [CUES] 9단 변속시스템 (1x9)"
+    ]
+  }
+]

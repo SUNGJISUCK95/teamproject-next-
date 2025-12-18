@@ -1,0 +1,799 @@
+/**
+    Commons
+  */
+* {
+    box-sizing: border-box;
+    font-family: "Open Sans";
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+  --color-black: #333;
+  --color-blue: #0077cc;
+  --color-white: #fff;
+}
+
+.header {
+    width: 100%;
+    margin: auto;
+}
+
+/**
+  travel
+*/
+.content {
+  width: 100%;
+}
+
+.center-layout {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+.travel-left {
+  width: 30%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.travel-left-close {
+    position: absolute;
+    top: 0.5rem;
+    left: 0.3rem;
+    background-color: var(--color-white);
+    cursor: pointer;
+    padding: 0.4rem 0.8rem;
+    border-radius: 0.7rem;
+    border: none;
+    user-select: none;
+}
+
+.travel-left-close:hover {
+    color: var(--color-blue);
+}
+
+.travel-left-menus {
+  width: 100%;
+  height: 40px;
+  position: absolute;
+  top: -3rem;
+  left: 0;
+  transition: top 0.5s ease;
+}
+
+.travel-left-detail {
+  width: 100%;
+  height: calc(100vh - 95px);
+  top: 40px;
+  left: -40rem;
+  transition: left 0.5s ease;
+  overflow: hidden;
+  overflow: auto;
+  position: absolute;  
+  background-color: var(--color-white);  
+  border-radius: 1rem;
+  box-shadow: 1px 0px 4px gray;
+}
+
+.travel-map {
+  width: 100%;
+  height: calc(100vh - 55px);
+}
+
+#map {
+  width: 100%;
+    height: 100vh;
+}
+
+.travel-menu {
+  padding: 0.4rem 0.8rem;
+  margin: 0.3rem;
+  border-radius: 0.7rem;
+  background-color: white;
+  border: none;
+  user-select: none;
+  cursor: pointer;  
+  font-weight: 500;
+  box-shadow: 0px 1px 4px gray;
+}
+
+.travel-menu:hover {
+  color: var(--color-white);
+  background-color: var(--color-blue);
+}
+
+.fa-utensils { /*음식 이모지*/
+  color: orangered;
+}
+
+.fa-hotel {
+  color: purple;
+}
+
+.fa-screwdriver-wrench {
+  color: gray;
+}
+
+.fa-store {
+  color: green;
+}
+
+/**
+  map
+*/
+.goback-button {
+    position: absolute;
+    top: -3rem;
+    right: 0.3rem;
+    z-index: 10;
+    background-color: var(--color-white);
+    cursor: pointer;
+    padding: 0.4rem 0.8rem;
+    border-radius: 0.7rem;
+    border: none;
+    user-select: none;
+    box-shadow: 0px 1px 4px gray;
+}
+
+.goback-button:hover {
+    background-color: var(--color-blue);
+    color: var(--color-white);
+}
+
+/**
+  food
+*/
+.search-box {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  padding: 1rem 0.4rem 0 0;
+}
+
+.search-input-back{
+  border: 2px solid var(--color-blue);
+  border-radius: 15px;
+  padding: 0 1rem;
+}
+
+.search-input {
+  background: transparent;
+  border:none;
+  outline:none;
+}
+
+.search-button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding-bottom: 0.3rem;
+}
+
+.no-results {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.food-list-item {
+  list-style-type: none;
+  margin-top: 1rem;
+  padding: 0 1rem;
+}
+
+.food-list-item:hover {
+  background-color: lightgray;
+  cursor: pointer;
+}
+
+.food-title-box{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.3rem;
+}
+.food-title {
+  font-size: 18px;
+  font-weight: bold; 
+}
+
+.food-title-fid {
+  color: gray;
+}
+
+.food-title-score {
+  color: var(--color-blue);
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.food-title-flike, .food-title-evaluation {
+  margin-left: 0.3rem;
+  font-size: 15px;
+}
+
+.fa-star {
+  color: var(--color-blue);
+  font-size: 13px;
+}
+
+.fa-nostar {
+  color: gray;
+  font-size: 13px;
+}
+
+.food-title-evaluation {
+  color: gray;
+}
+
+.food-tag-box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.3rem;
+}
+
+.food-tag {
+  margin-left: 0.3rem;
+  background-color: #c2e2f8;
+  border-radius: 1rem;
+  font-size: 0.7rem;
+  font-weight: 500;
+  border: none;
+  padding: 0.3rem 0.6rem;
+  cursor: pointer;
+  color: var(--color-black);
+}
+
+.food-tag-sub {
+  background-color: rgb(231, 231, 231);
+}
+
+.food-image {
+  user-select: none;
+  width:150px;
+  height:150px;
+  margin: 0.3rem;
+  border-radius: 1rem;
+  /* cursor: pointer; */
+}
+
+.food-description {
+  font-size: 14px;
+  color: rgb(66, 66, 66)
+}
+
+/**
+  hotel
+*/
+.hotel-list-item {
+  list-style-type: none;
+  margin-top: 1rem;
+  padding-left: 1rem;
+}
+
+.hotel-list-item:hover {
+  background-color: lightgray;
+  cursor: pointer;
+}
+
+.hotel-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 0.3rem;
+  cursor: pointer;
+}
+
+.hotel-title span {
+  color: gray;
+}
+
+.hotel-tag {
+  margin-bottom: 0.3rem;
+}
+
+.hotel-image {
+  user-select: none;
+  width:150px;
+  height:150px;
+  margin: 0.3rem;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.hotel-description {
+
+}
+
+.map-marker-overlay-box {
+  display: inline-block; /* 글자 크기만큼만 박스 넓이를 맞춤 */
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px gray;
+  padding-left: 1.5rem;
+  height: 40px;
+  white-space: nowrap; /* 글자가 한 줄로 나오도록 방지 */
+}
+
+.map-marker-overlay {
+  width: 100%;
+  height: 100%;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.map-marker-title {
+  width: 70%;
+  padding-right: 1.5rem;
+}
+
+.map-marker-link {
+  width: 3rem;
+  height: 100%;
+  background-color: var(--color-blue);
+  border-radius: 0 10px 10px 0;;
+  color: white;
+  text-decoration: none;
+  padding-top: 7px;
+  transition: background-color 0.2s;
+}
+
+.map-marker-link a{
+  padding: 15px;
+  color:white;
+}
+
+.map-marker-link:hover {
+  background-color: #015b9b;
+}
+
+
+/**
+  detail
+*/
+.travel-detail-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: gray;
+  opacity: 0.7;
+  display: none;
+  z-index: 11;
+}
+
+.travel-detail {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--color-white);
+  width: 80%;
+  height: 90%;
+  padding: 20px;
+  overflow: hidden;
+  overflow: auto;
+  display: none;
+  border-radius: 1rem;
+  z-index: 12;
+}
+
+.detail-close-box {
+  position: sticky;
+  top:0;
+}
+
+.detail-close-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 2rem;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+.detail-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.detail-title{
+  width: 50%;
+  /* border: 1px solid red; */
+}
+
+.detail-title-image {
+  width: 220px;
+  height: 220px;
+}
+
+.detail-title-name-box{
+  position: relative;
+}
+
+.detail-title-name {
+  font-size: 35px;
+}
+
+.detail-title-save, .detail-title-share {
+  position: absolute;
+  padding: 0.3rem;
+  border-radius: 0.7rem;
+  background-color: var(--color-white);
+  border: 1px solid lightgrey;
+  user-select: none;
+  cursor: pointer;
+}
+
+.detail-title-save:hover, .detail-title-share:hover {
+  color: var(--color-white);
+  background-color: var(--color-blue);
+  border: 1px solid var(--color-blue);
+}
+
+.detail-title-save {
+  top: 10px;
+  right: 80px;
+}
+
+.fa-pushBookmark {
+    color: red;
+}
+
+.detail-title-share {
+  top: 10px;
+  right: 20px;
+}
+
+.detail-title-like-box,
+.detail-title-like {
+  margin-top: 0.4rem;
+}
+
+.detail-title-likeNum,
+.detail-title-reviewNum,
+.detail-title-likeScore {
+  margin-left: 10px;
+}
+.detail-title-location{
+  color: gray;
+}
+
+.detail-title-like .fa-star {
+    font-size: 25px;
+}
+
+.detail-title-likeNum {
+  font-size: 22px;
+
+
+}
+
+.detail-title-reviewNum {
+  font-size: 15px;
+  border-right: 1px solid gray;
+  padding-right: 10px;
+  color: gray;
+}
+
+.detail-title-likeScore {
+  font-size: 20px;
+}
+
+.detail-title-address-box,
+.detail-title-time-box,
+.detail-title-phone-box,
+.detail-title-tag-box,
+.detail-title-other-box,
+.detail-title-support-box{
+  margin-top: 10px;
+  font-size: 15px;
+}
+
+.detail-title-last {
+    margin-left: 1.1rem;
+}
+
+.detail-title-address-button,
+.detail-title-time-button{
+  margin-left: 0.7rem;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+.detail-title-allTime-box{
+  margin-left: 1rem;
+  font-size: 15px;
+}
+
+.detail-title-allLast{
+  margin-left: 1.7rem;
+}
+
+.detail-title-localAddress-box {
+    display: flex;
+}
+
+.detail-title-localAddress-title {
+    width: 2rem;
+    padding: 0.1rem 0.2rem;
+    font-size: 12px;
+    border: 1px solid lightgray;
+    margin-left:12px;
+}
+
+.detail-title-localAddress {
+    font-size: 15px;
+}
+
+.detail-title-support {
+  color: gray;
+}
+
+.detail-menu {
+  width: 45%;
+  /* border: 1px solid blue; */
+}
+
+.detail-menu-title,
+.detail-image-title,
+.detail-review-title {
+  font-size: 24px;
+}
+
+.detail-menu-item {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.detail-menu-item-name {
+  white-space: nowrap;
+}
+
+.detail-menu-item-price {
+  white-space: nowrap;
+}
+
+.detail-menu-item-dash {
+  flex-grow: 1;
+  border-bottom: 1px dashed #999;  /* ← 여기서 줄 느낌으로 표시 */
+  margin: 0 8px;
+  height: 1px;
+}
+
+.detail-menu-more-box {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.detail-menu-more {
+  font-size: 13px;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+.detail-menu-more i,
+.detail-image-more i{
+  color: gray;
+}
+
+.detail-image {
+  margin-top: 20px;
+  /* border: 1px solid green; */
+}
+
+.detail-image-title span {
+  color: var(--color-blue);
+}
+
+.detail-image-button-box {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.4rem;
+}
+
+.detail-image-button {
+  font-size: 15px;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.7rem;
+  background-color: var(--color-white);
+  border: 1px solid lightgrey;
+  user-select: none;
+  cursor: pointer;
+}
+
+.detail-image-button-active{
+   font-size: 15px;
+   padding: 0.5rem 1.5rem;
+   border-radius: 0.7rem;
+   background-color: var(--color-blue);
+   border: 1px solid var(--color-blue);
+   user-select: none;
+   cursor: pointer;
+   color: white;
+
+}
+
+.detail-image-box {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+}
+
+.detail-view-image {
+  width: 214px;
+  height: 214px;
+  border-radius: 15px;
+}
+
+.detail-image-more-box {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.detail-image-more{
+  font-size: 15px;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+.detail-review {
+  margin-top: 30px;
+}
+
+.detail-review-button-box {
+  display: flex;
+  gap: 0.7rem;
+  margin-top: 0.4rem;
+}
+
+.detail-review-button,
+.detail-review-button-active {
+  padding: 0.3rem;
+  border-radius: 0.7rem;
+  background-color: var(--color-white);
+  border: 1px solid lightgrey;
+  user-select: none;
+  cursor: pointer;
+}
+
+.detail-review-button-active {
+  color: var(--color-blue);
+  border: 1px solid var(--color-blue);
+}
+
+.detail-review-box {
+  margin-top: 10px;
+  padding: 15px;
+  border: 1px solid lightgray;
+}
+
+.detail-review-profile {
+position:relative;
+  display: flex;
+}
+
+.detail-review-user-image {
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+}
+
+.detail-review-info{
+  margin-left: 10px;
+}
+
+.detail-review-user-id {
+  font-size: 18px;
+}
+
+.detail-review-user-like,
+.detail-review-user-stats {
+  font-size: 14px;
+  color: gray;
+}
+
+.detail-review-image-box {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  gap: 10px;
+}
+
+.detail-review-image {
+  width: 148px;
+  height: 148px;
+  border-radius: 10px;
+}
+
+.detail-review-date {
+  margin-top: 10px;
+}
+
+.detail-review-description {
+    white-space: pre-line;
+}
+
+.detail-review-write {
+  padding: 20px;
+  border-top: 1px solid #eee;
+}
+
+.detail-review-write-title {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.detail-review-edit-button{
+    position: absolute;
+    top:0;
+    right:0;
+    padding: 10px 20px;
+    background: var(--color-blue);;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.detail-review-star-image-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.review-star {
+  font-size: 30px;
+  color: #ccc;
+  cursor: pointer;
+}
+
+.review-star-active {
+  font-size: 30px;
+  color: gold;
+  cursor: pointer;
+}
+
+.detail-review-textarea {
+  width: 100%;
+  height: 120px;
+  padding: 10px;
+  resize: none;
+  margin-top: 10px;
+}
+
+.detail-review-preview img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  margin-right: 5px;
+  border-radius: 5px;
+}
+
+.detail-review-submit {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background: var(--color-blue);;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}

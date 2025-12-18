@@ -1,0 +1,151 @@
+/* IdPwSearch.css */
+
+/* ------------------------------------------- */
+/* 1. 전체 레이아웃 컨테이너 (.IdPwSearchContainer) */
+/* ------------------------------------------- */
+.IdPwSearchContainer {
+    /* 중앙 정렬 및 최대 너비 제한 */
+    width: 60%; 
+    max-width: 800px;
+    margin: 60px auto; 
+    padding: 30px;
+    
+    /* 배경 및 그림자 설정 */
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 4px 4px 12px var(--color-blue);;
+
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* ------------------------------------------- */
+/* 2. 탭 선택 영역 (.IdPwSearchTabNav) - 탭 형태로 스타일링 (가로 정렬 유지) */
+/* ------------------------------------------- */
+.IdPwSearchTabNav {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 30px 0;
+    display: flex; /* 탭을 가로로 배치 (유지) */
+    
+    /* ✨ 수정된 부분: 항목들을 메인 축(가로)의 중앙에 배치 */
+    justify-content: center; 
+    
+    border-bottom: 2px solid #e9ecef; /* 탭 영역 하단 구분선 */
+}
+
+.IdPwSearchTabNav li {
+    /* ... (하위 li 스타일 유지) ... */
+    padding: 12px 20px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    color: #6c757d;
+    transition: all 0.3s ease;
+    border-bottom: 3px solid transparent; 
+    margin-right: 15px;
+}
+
+/* 활성화된 탭 스타일 */
+.IdPwSearchTabNav li.active {
+    color: var(--color-blue); 
+    font-weight: bold;
+    border-bottom: 3px solid var(--color-blue);; 
+}
+
+.IdPwSearchTabNav li:hover {
+    color: #0056b3;
+}
+
+
+/* ------------------------------------------- */
+/* 3. 인증/폼 영역 (.IdPwSearchContent) */
+/* ------------------------------------------- */
+.underline_inputBox{border: none;
+    border-bottom: 2px solid #333; /* 예시 */
+    outline: none;
+    background-color: transparent;
+    padding: 2px 0;
+}
+
+.IdPwSearchContent h1 {
+    font-size: 1.6rem;
+    color: #007bff;
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+    border-bottom: 1px dashed #dee2e6;
+    text-align: center; /* 제목도 가운데 정렬 */
+}
+
+.IdPwSearchFormList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.IdPwSearchFormList li {
+    display: flex; 
+    align-items: center; 
+    /* ✨ 수정된 부분: 항목 내용을 중앙 정렬 */
+    justify-content: center; 
+    padding: 10px 0;
+    font-size: 1.1rem;
+    border-bottom: 1px solid #f8f9fa;
+}
+
+.IdPwSearchFormList li:last-child {
+    border-bottom: none;
+}
+
+/* ------------------------------------------- */
+/* 4. 공통 버튼 스타일 (.IdPwSearchAuthButton) - 우측 정렬 유지 */
+/* ------------------------------------------- */
+.IdPwSearchAuthButton {
+    /* 버튼을 오른쪽 정렬하고 위쪽에 구분선 추가 (유지) */
+    text-align: right; 
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #e9ecef;
+}
+
+.IdPwSearchAuthButton button {
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    color: white;
+    background-color: #28a745; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-left: 10px;
+}
+
+.IdPwSearchAuthButton button:hover {
+    background-color: #1e7e34;
+}
+
+.IdPwChangeButton {
+    /* 기존 .IdPwSearchAuthButton과 동일 */
+    text-align: right; 
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #e9ecef; 
+}
+
+/* 비밀번호 변경 버튼 자체의 스타일 */
+.IdPwChangeButton button {
+    /* 기존 .IdPwSearchAuthButton button과 동일한 패딩, 폰트, 디자인 */
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    color: white;
+    /* 비밀번호 변경 완료는 '성공'의 느낌으로 초록색 계열 사용 */
+    background-color: #28a745; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-left: 10px;
+}
+
+.IdPwChangeButton button:hover {
+    background-color: #1e7e34;
+}

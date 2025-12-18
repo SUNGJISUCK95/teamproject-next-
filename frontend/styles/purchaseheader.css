@@ -1,0 +1,168 @@
+.submenu-container {
+    position: absolute;
+    /* (수정) 틈(gap) 문제 해결: 60px -> 100% */
+    top: 100%; /* <header> 높이에 자동으로 맞춰짐 */
+    left: 0;
+    width: 100%;
+    background-color: var(--color-white, #fff);
+    border-top: 1px solid #f0f0f0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    z-index: 999; /* 헤더(1000)보다 낮게 */
+    animation: slideDown 0.3s ease-out;
+}
+.submenu-content {
+    display: flex;
+    justify-content: center; /* 왼쪽 정렬 */
+    gap: 40px; /* 링크 사이 간격 */
+    /* .header-content-wrapper와 동일한 좌우 여백을 주어 정렬을 맞춤 */
+    max-width: 1440px; /* (예시) 사이트 최대 너비 */
+    margin: 0 auto;
+    padding: 10px 40px; /* 상하 15px, 좌우 40px */
+}
+.submenu-content a {
+    color: var(--color-black, #333);
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 5px 0;
+}
+.submenu-content a:hover { color: var(--color-blue, #0077cc); }
+
+/* (수정) 틈(gap) 문제 해결: 애니메이션이 0에서 시작하도록 */
+@keyframes slideDown {
+    from { opacity: 0; transform: translateY(0); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+
+/* === 2. 반응형 규칙 (버그 수정 핵심) === */
+
+/* 2-1. 평소 (데스크톱 - 1024px 이상) */
+.mobile-only {
+    display: none; /* 모바일용 li 숨김 */
+}
+.desktop-only {
+    display: flex; /* commons.css의 ul(flex) 내부에서 보이도록 */
+    align-items: center;
+    height: 100%;
+}
+
+/* 2-2. 모바일 화면 (commons.css와 동일한 1023px 이하) */
+@media (max-width: 1023px) {
+
+    /* 데스크톱용 li 및 호버 메뉴(submenu) "완전" 숨기기 */
+    .desktop-only {
+        display: none !important;
+    }
+    .submenu-container {
+        display: none !important;
+    }
+
+    /* commons.css가 .header-center.open을 띄우면,
+       그 안의 .mobile-only li를 보이게 함 */
+    .header-center.open .mobile-only {
+        display: block;
+        width: 100%;
+    }
+
+    /* 3. 모바일 아코디언 스타일 */
+    .accordion-toggle {
+        font-size: 1rem;
+        padding: 0; /* commons.css의 li > a 패딩을 따름 */
+        width: 100%;
+        border: none;
+        background: none;
+        text-align: left;
+        font-weight: 500; /* commons.css 폰트와 맞춤 */
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: var(--color-black, #333);
+    }
+    .accordion-toggle.active { color: var(--color-blue, #0077cc); }
+    .accordion-arrow { font-size: 0.8rem; }
+
+    /* 4. 모바일 서브메뉴 */
+    .mobile-submenu {
+        display: flex;
+        flex-direction: column;
+        /* background-color: #; */
+        padding-left: 1.5rem; /* 들여쓰기 */
+        margin-top: 15px;
+    }
+    .mobile-submenu a {
+        font-size: 0.9rem;
+        padding: 0.8rem 1rem;
+        color: #555;
+        text-decoration: none;
+        /* border-bottom: 1px solid #eee; */
+    }
+}
+
+@media (max-width: 1023px) {
+    /* ACTIVE 메뉴 */
+    .menu-item.active {
+    color: var(--color-blue);
+    }
+
+    /* ▼ / ▲ */
+    .toggle-arrow {
+    position: relative;
+    top: -3px;
+    margin-left: 6px;
+    font-size: 0.5rem;
+    }
+
+    /* 모바일 메뉴 slide-in */
+    .header-center.open {
+    right: 0;
+    animation: slideInRight 0.3s ease-out;
+    }
+
+    /* 닫힐 때 */
+    .header-center.closing {
+    animation: slideOutRight 0.3s ease-in;
+    }
+
+    /* 애니메이션 */
+    @keyframes slideInRight {
+    from {
+        right: -100%;
+    }
+    to {
+        right: 0;
+    }
+    }
+
+    @keyframes slideOutRight {
+    from {
+        right: 0;
+    }
+    to {
+        right: -100%;
+    }
+    }
+
+    /* 모바일 submenu (부드러운 drop) */
+    .mobile-submenu {
+        font-size: 0.8rem;
+        margin-top: 10px !important;
+        margin-left: 15px !important;
+        display: flex;
+        flex-direction: column;
+        gap: 10px !important;
+        animation: dropdown 0.25s ease-out;
+        }
+
+    @keyframes dropdown {
+        from {
+            opacity: 0;
+            transform: translateY(-8px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+}

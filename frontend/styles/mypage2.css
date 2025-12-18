@@ -1,0 +1,216 @@
+/* myPage.css */
+
+/*
+* ------------------------------------
+* 1. 전체 컨테이너 및 사이드 바 (기존 유지)
+* ------------------------------------
+*/
+.myPageContainer {
+    display: flex;
+    max-width: 1200px;
+    margin: 15px auto;
+    padding: 20px;
+}.myPageContainer .sideBar {
+    width: 250px; /* 사이드 바 너비 고정 */
+    margin-right: 10px;
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.myPageContainer .sideBarTitle {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.myPageContainer .sideBarList {
+    list-style: none;
+    padding: 0;
+}
+
+.myPageContainer .sideBarList li {
+    padding: 12px 0;
+    font-size: 1.1em;
+    color: #555;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.myPageContainer .sideBarList li:hover {
+    color: #007bff; /* 호버 시 색상 변경 */
+}
+
+.myPageContainer .sideBarList a {
+    text-decoration: none; /* Link 태그 밑줄 제거 */
+    color: inherit;
+}
+
+/*
+* ------------------------------------
+* 3. 개인정보 섹션 (InfoSection)
+* ------------------------------------
+*/
+.myPageContainer .infoSection {
+    flex-grow: 1; /* 남은 공간 모두 차지 */
+    background-color: #ffffff; /* 흰색 배경 */
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* 깊은 그림자 */
+}
+
+.myPageContainer .infoSectionTitle {
+    font-size: 2em;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #3498db; /* 강조 라인 */
+}
+
+/*
+* ------------------------------------
+* 4. 개인정보 리스트 (InfoList)
+* ------------------------------------
+*/
+.myPageContainer .infoList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* 개별 정보 항목 스타일 (<li>) */
+.myPageContainer .infoList li {
+    display: flex;
+    justify-content: space-between; /* 내용과 버튼을 양 끝으로 분리 */
+    align-items: center; /* 수직 중앙 정렬 */
+    padding: 18px 0;
+    border-bottom: 1px solid #ecf0f1; /* 항목별 구분선 */
+    font-size: 1.1em;
+    color: #34495e;
+}
+
+#root > main > div > div.infoSection > ul > li:nth-child(6) > button.MainAddress
+{
+    padding:0;
+    width:70px;
+}
+#root > main > div > div.infoSection > ul > li:nth-child(6) > span
+{
+    margin: 0;
+    padding:0;
+    width:70px;
+}
+.myPageContainer .infoList li:last-child {
+    border-bottom: none; /* 마지막 항목은 구분선 제거 */
+}
+
+/* 일반 정보 표시 부분 (예: 'user1234') */
+.myPageContainer .infoList li > :first-child:not(button):not(input) {
+    font-weight: 600;
+    margin-right: 20px;
+}
+
+/* 소셜 로그인 텍스트 스타일 */
+.myPageContainer .infoList li:has(> .social-info-text) {
+    justify-content: flex-start; /* 텍스트가 왼쪽에만 있도록 */
+    color: #95a5a6; /* 연하게 */
+    font-style: italic;
+}
+
+/* 수정 버튼 스타일 */
+.myPageContainer .infoList button:not(.withdrawButton) {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+    font-size: 0.95em;
+    white-space: nowrap; /* 버튼 내용 줄바꿈 방지 */
+    margin-left: 10px;
+}
+
+.myPageContainer .infoList button:not(.withdrawButton):hover {
+    background-color: #2980b9;
+    transform: translateY(-1px);
+}
+
+/*
+* ------------------------------------
+* 5. 수정 모드 입력 필드 스타일
+* ------------------------------------
+*/
+/* 수정 모드일 때 전체 레이아웃 (InfoBox 내부) */
+.myPageContainer .infoList li > div:first-child:has(> input) { 
+    display: flex;
+    align-items: center;
+    flex-grow: 1; /* 입력 부분이 공간을 차지하도록 */
+}
+
+/* 입력 필드 */
+.myPageContainer .infoList input {
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+    flex-grow: 1;
+    min-width: 0; /* flex 환경에서 오버플로우 방지 */
+}
+
+.myPageContainer .infoList input[readonly] {
+    background-color: #f5f5f5;
+    cursor: default;
+}
+
+/* '주소 찾기' 버튼 */
+.myPageContainer .infoList button[name$="_main"] {
+    background-color: #27ae60;
+    margin-right: 10px;
+    
+}
+.myPageContainer .infoList button[name$="_main"]:hover {
+    background-color: #2ecc71;
+}
+
+/*
+* ------------------------------------
+* 6. 하단 버튼 (수정 저장, 회원 탈퇴)
+* ------------------------------------
+*/
+.myPageContainer .infoSection > button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 8px;
+    font-size: 1.1em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s, opacity 0.2s;
+    text-transform: uppercase;
+}
+
+.myPageContainer .infoSection .withdrawButton:nth-of-type(1) { /* 수정 내용 저장 버튼 */
+    background-color: #f39c12; /* 오렌지색 계열 */
+    color: white;
+    border: none;
+}
+
+.myPageContainer .infoSection .withdrawButton:nth-of-type(1):hover {
+    background-color: #e67e22;
+}
+
+.myPageContainer .infoSection .withdrawButton:nth-of-type(2) { /* 회원 탈퇴 버튼 */
+    background-color: #e74c3c; /* 빨간색 계열 */
+    color: white;
+    border: none;
+}
+
+.myPageContainer .infoSection .withdrawButton:nth-of-type(2):hover {
+    background-color: #c0392b;
+}

@@ -1,0 +1,8 @@
+주요 변경사항
+app>(Auth)추가
+component>Auth 추가
+store 추가
+utils > auth > authAPI 수정 및 해당 파일을 제외한 파일 삭제
+utils > dataFetch 수정
+	: api 인터셉트 추가
+	: get post의 백엔드 접근 포트번호 등 수정 - 확인요망

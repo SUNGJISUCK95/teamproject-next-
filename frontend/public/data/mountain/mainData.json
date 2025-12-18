@@ -1,0 +1,67 @@
+[
+    {
+        "pid" : "1",
+        "image" : "/images/mountain_main1.jpg",
+        "name" : "실버라도"
+    },
+    {
+        "pid" : "2",
+        "image" : "/images/mountain_main2.jpg",
+        "name" : "크로노"
+    },
+    {
+        "pid" : "3",
+        "image" : "/images/mountain_main3.jpg",
+        "name" : "XC PRO"
+    },
+    {
+        "pid" : "4",
+        "image" : "/images/mountain_main4.jpg",
+        "name" : "XC"
+    },
+    {
+        "pid" : "5",
+        "image" : "/images/mountain_main5.jpg",
+        "name" : "불렛"
+    },
+    {
+        "pid" : "6",
+        "image" : "/images/mountain_main6.jpg",
+        "name" : "부스터"
+    },
+    {
+        "pid" : "7",
+        "image" : "/images/road_main1.jpg",
+        "name" : "엘리엇"
+    },
+    {
+        "pid" : "8",
+        "image" : "/images/road_main2.jpg",
+        "name" : "케인"
+    },
+    {
+        "pid" : "9",
+        "image" : "/images/road_main3.jpg",
+        "name" : "스칼리티"
+    },
+    {
+        "pid" : "10",
+        "image" : "/images/road_main4.jpg",
+        "name" : "리로드"
+    },
+    {
+        "pid" : "11",
+        "image" : "/images/life_main1.jpg",
+        "name" : "디오"
+    },
+    {
+        "pid" : "12",
+        "image" : "/images/life_main2.jpg",
+        "name" : "토모"
+    },
+    {
+        "pid" : "13",
+        "image" : "/images/electric_main1.jpg",
+        "name" : "불렛"
+    }
+]

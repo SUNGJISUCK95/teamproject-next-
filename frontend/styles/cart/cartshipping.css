@@ -1,0 +1,238 @@
+/* --- 주문/배송 정보 폼 --- */
+.checkout-info-container {
+    width: 100%;
+    margin: 40px 0; /* 위아래 여백 */
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.form-section {
+    margin-bottom: 30px;
+}
+
+.form-section-title {
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #333;
+    margin-bottom: 0; /* form-grid의 border-top과 붙이기 위해 */
+}
+
+/* 수령인 정보 헤더 (타이틀 + 버튼) */
+.form-section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #333;
+}
+
+.form-section-header .form-section-title {
+    border-bottom: none; /* 헤더의 border를 사용 */
+}
+
+.recipient-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.radio-group {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.radio-group label {
+    margin-right: 10px;
+    cursor: pointer;
+    font-size: 14px;
+}
+/* 라디오 버튼 기본 스타일 숨기기 (선택 시 빨간색 원) */
+.radio-group input[type="radio"] {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+}
+.radio-group input[type="radio"]:checked {
+    border-color: #d00;
+}
+.radio-group input[type="radio"]:checked::before {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color: #d00;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.btn-address-book {
+    padding: 8px 12px;
+    background-color: #555;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+/* --- 폼 그리드 및 그룹 --- */
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2단 그리드 */
+    gap-x: 25px; /* 열(column) 간격 */
+    border-top: 1px solid #eee;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+    padding: 10px 0;
+    min-height: 60px; /* 최소 높이 확보 */
+}
+
+.form-group label {
+    width: 120px; /* 라벨 너비 고정 */
+    font-size: 14px;
+    font-weight: bold;
+    flex-shrink: 0; /* 너비 줄어들지 않게 */
+    padding-left: 10px;
+}
+
+.form-group label .required {
+    color: #d00;
+    margin-left: 3px;
+}
+
+/* 인풋 + X버튼 래퍼 */
+.input-wrapper {
+    display: flex;
+    align-items: center;
+    flex-grow: 1; /* 남은 공간 모두 차지 */
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+
+.input-wrapper input {
+    flex-grow: 1;
+    border: none;
+    padding: 12px 10px;
+    font-size: 14px;
+    outline: none;
+    background-color: transparent;
+}
+.input-wrapper input::placeholder {
+    color: #aaa;
+}
+
+.input-clear-btn {
+    background: #eee;
+    color: #888;
+    border: none;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    cursor: pointer;
+    margin-right: 10px;
+    font-size: 12px;
+    flex-shrink: 0;
+}
+
+/* --- 주소 섹션 특별 처리 --- */
+.form-group-address {
+    grid-column: 1 / -1; /* 2개 열을 모두 차지 */
+    align-items: flex-start; /* 라벨을 상단에 정렬 */
+}
+
+.form-group-address label {
+    padding-top: 12px; /* input padding과 맞춤 */
+}
+
+.address-group {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: 8px;
+}
+
+.zipcode-group {
+    display: flex;
+    gap: 8px;
+}
+
+.input-zipcode {
+    width: 100px;
+    padding: 12px 10px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.btn-zipcode-search {
+    padding: 12px 15px;
+    border: 1px solid #555;
+    background: #fff;
+    color: #333;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.input-address {
+    width: 100%;
+    padding: 12px 10px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    box-sizing: border-box; /* padding이 width에 포함되도록 */
+}
+
+.input-address-postcode {
+    width: 100%;
+    padding: 12px 10px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    box-sizing: border-box; /* padding이 width에 포함되도록 */
+}
+
+/* 상세주소 + X버튼 그룹 */
+.address-detail-group {
+    display: flex;
+    width: 50%; /* 이미지와 유사하게 너비 절반 */
+    border: 1px solid #ccc;
+    align-items: center;
+}
+.input-address-detail {
+    flex-grow: 1;
+    padding: 12px 10px;
+    border: none;
+    font-size: 14px;
+    outline: none;
+}
+/* X버튼을 감싸는 가짜 래퍼 (input-wrapper와 구조 맞추기용) */
+.input-wrapper-fake {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 5px;
+}
+.checkbox-group label {
+    width: auto;
+    font-weight: normal;
+    padding-left: 0;
+    cursor: pointer;
+}

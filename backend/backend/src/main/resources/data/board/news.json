@@ -1,0 +1,112 @@
+[
+  {
+    "bid": 1,
+    "uid": "test111",
+    "writer": "ADMIN",
+    "title": "금산인삼첼로 그란폰도 참가 현장 스케치",
+    "content": "충남 금산군에서 열린 금산인삼첼로 그란폰도의 생생한 리뷰를 만나보세요.",
+    "imageUrl": "/images/board/news/news_c01.jpg",
+    "thumbnailUrl": "/images/board/news/news_t01.jpg",
+    "categoryTag": "news",
+    "status": "PUBLIC"
+  },
+  {
+    "bid": 1,
+    "uid": "test111",
+    "writer": "ADMIN",
+    "title": "다목적 입문 MTB, 임팩트 30",
+    "content": "모든 라이딩에 최적화된 만능 MTB 임팩트 30을 만나보세요.",
+    "imageUrl": "/images/board/news/news_c02.jpg",
+    "thumbnailUrl": "/images/board/news/news_t02.jpg",
+    "categoryTag": "news",
+    "status": "PUBLIC"
+  },
+  {
+    "bid": 1,
+    "uid": "test111",
+    "writer": "ADMIN",
+    "title": "2025 첼로자전거 프로모션 안내",
+    "content": "2025 할인 프로모션! 최대 35% 할인, 최대 12개월 무이자 할부를 만나보세요.",
+    "imageUrl": "/images/board/news/news_c03.jpg",
+    "thumbnailUrl": "/images/board/news/news_t03.jpg",
+    "categoryTag": "news",
+    "status": "PUBLIC"
+  },
+  {
+    "bid": 1,
+    "uid": "test111",
+    "writer": "ADMIN",
+    "title": "첼로 전 제품 삼성카드 / KB국민카드 12개월 무이자 할부",
+    "content": "가격 부담 제로! 12개월 무이자 할부로 부담 없이 만나보세요.",
+    "imageUrl": "/images/board/news/news_c04.jpg",
+    "thumbnailUrl": "/images/board/news/news_t04.jpg",
+    "categoryTag": "news",
+    "status": "PUBLIC"
+  },
+  {
+    "bid": 1,
+    "uid": "test111",
+    "writer": "ADMIN",
+    "title": "2025 첼린지도 오픈",
+    "content": "새롭게 제작된 첼린지도 포켓북과 함께 다시 라이딩을 시작하세요!",
+    "imageUrl": "/images/board/news/news_c05.jpg",
+    "thumbnailUrl": "/images/board/news/news_t05.jpg",
+    "categoryTag": "news",
+    "status": "PUBLIC"
+  },
+  {
+    "bid": 1,
+    "uid": "test111",
+    "writer": "ADMIN",
+    "title": "금산인삼첼로 그란폰도 개최!",
+    "content": "올해 마지막으로 열리는 그란폰도 대회인 금산인삼첼로 그란폰도에 많은 참여 부탁드립니다!",
+    "imageUrl": "/images/board/news/news_c06.jpg",
+    "thumbnailUrl": "/images/board/news/news_t06.jpg",
+    "categoryTag": "news",
+    "status": "PUBLIC"
+  },
+  {
+    "bid": 1,
+    "uid": "test111",
+    "writer": "ADMIN",
+    "title": "첼로 올마운틴 MTB 전기자전거의 새로운 기준 29 불렛 FX 90",
+    "content": "29 불렛 FX 90과 함께 새로운 산악 라이딩을 경험해 보세요.",
+    "imageUrl": "/images/board/news/news_c07.jpg",
+    "thumbnailUrl": "/images/board/news/news_t07.jpg",
+    "categoryTag": "news",
+    "status": "PUBLIC"
+  },
+  {
+    "bid": 1,
+    "uid": "test111",
+    "writer": "ADMIN",
+    "title": "시마노 Di2 전동구동계 탑재 카본 로드, 케인 E7, E8",
+    "content": "카본 로드자전거 입문 또는 기변을 고민하시는 분들에게 추천드리는 케인 E 시리즈",
+    "imageUrl": "/images/board/news/news_c08.jpg",
+    "thumbnailUrl": "/images/board/news/news_t08.jpg",
+    "categoryTag": "news",
+    "status": "PUBLIC"
+  },
+  {
+    "bid": 1,
+    "uid": "test111",
+    "writer": "ADMIN",
+    "title": "양양전국사이클 선수권대회 금산인삼첼로팀 또 다시 종합우승",
+    "content": "상반기 모든 도로대회에서 가장 많은 우승을 달성한 첼로 엘리엇!",
+    "imageUrl": "/images/board/news/news_c09.jpg",
+    "thumbnailUrl": "/images/board/news/news_t09.jpg",
+    "categoryTag": "news",
+    "status": "PUBLIC"
+  },
+  {
+    "bid": 1,
+    "uid": "test111",
+    "writer": "ADMIN",
+    "title": "가성비 퍼포먼스 MTB, XC, XC PRO",
+    "content": "MTB 입문에 적합한 다재다능한 크로스 컨트리, XC, XC PRO 추천",
+    "imageUrl": "/images/board/news/news_c10.jpg",
+    "thumbnailUrl": "/images/board/news/news_t10.jpg",
+    "categoryTag": "news",
+    "status": "PUBLIC"
+  }
+]

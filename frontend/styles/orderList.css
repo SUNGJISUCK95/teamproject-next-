@@ -1,0 +1,89 @@
+/* OrderList.css */
+.order-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.page-title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: #333;
+    border-bottom: 2px solid #333;
+    padding-bottom: 15px;
+}
+
+/* 주문 내역이 없을 때 */
+.empty-list {
+    text-align: center;
+    padding: 60px 0;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    color: #888;
+}
+
+/* 주문 카드 스타일 */
+.order-card {
+    background: white;
+    border: 1px solid #e1e1e1;
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.order-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: #666;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.order-date {
+    font-weight: 600;
+    color: #333;
+}
+
+.order-id {
+    font-family: monospace;
+    color: #888;
+}
+
+.card-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-info h3 {
+    margin: 0 0 5px 0;
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+}
+
+.price-info {
+    text-align: right;
+}
+
+.total-price {
+    font-size: 20px;
+    font-weight: 700;
+    color: #e63946; /* 포인트 컬러 (붉은 계열) */
+}
+
+.price-label {
+    font-size: 12px;
+    color: #888;
+    margin-right: 4px;
+}

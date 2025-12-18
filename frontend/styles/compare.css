@@ -1,0 +1,133 @@
+/* src/styles/Compare.css */
+
+.compare-container {
+    width: 100%;
+    max-width: 1280px;
+    margin: 2rem auto;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.compare-container h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+/* === 1. 비교 테이블 === */
+.compare-table {
+    width: 100%;
+    border-collapse: collapse; /* 테두리 겹침 */
+    table-layout: fixed; /* 테이블 너비 고정 */
+}
+
+/* === 1-1. 테이블 헤더 (제품 이미지/이름) === */
+.compare-table thead th {
+    vertical-align: top;
+    padding: 1rem;
+    border-bottom: 2px solid #333;
+}
+
+.spec-header {
+    width: 15%; /* 첫 번째 '기능' 열 너비 */
+    text-align: left;
+    vertical-align: bottom !important;
+}
+.spec-header .total-count {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.product-header {
+    width: 28.3%; /* (100% - 15%) / 3개 = 28.3% */
+    text-align: center;
+    border-left: 1px solid #eee;
+}
+.product-header img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    background-color: #f9f9f9;
+}
+.product-header .product-name {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.product-header .remove-btn {
+    background: none;
+    border: 1px solid #ccc;
+    color: #555;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.product-header .remove-btn:hover {
+    background-color: #f0f0f0;
+}
+
+/* === 1-2. 테이블 바디 (스펙) === */
+.compare-table tbody .spec-row {
+    border-bottom: 1px solid #eee;
+}
+
+.compare-table tbody td {
+    padding: 1.5rem 1rem;
+    vertical-align: top;
+    text-align: center;
+}
+
+/* 스펙 이름 (가격, 요약, ...) */
+.spec-name {
+    text-align: left !important;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+/* 스펙 내용 (제품별) */
+.compare-table tbody td:not(.spec-name) {
+    border-left: 1px solid #eee;
+
+}
+
+/* 메인 스펙 (설명) */
+.spec-description td {
+    text-align: left !important;
+}
+.spec-description ul {
+    padding-left: 20px;
+    margin: 0;
+    text-align: center;
+}
+.spec-description li {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* === 2. 빈 비교함 메시지 === */
+.empty-compare {
+    padding: 5rem 1rem;
+    text-align: center;
+    border-top: 2px solid #333;
+    border-bottom: 1px solid #eee;
+    background-color: #fdfdfd;
+}
+.empty-compare p {
+    font-size: 1.1rem;
+    color: #777;
+    margin: 0.5rem 0;
+}
+/* '자전거 구매' 버튼 스타일 */
+.empty-compare button {
+    /* '주문하기' 버튼과 동일한 스타일 적용 */
+    background-color: #d9534f; /* 붉은색 */
+    color: white;
+    border: none;
+    padding: 1rem 2.5rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}

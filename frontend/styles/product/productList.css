@@ -1,0 +1,136 @@
+/* src/styles/productList.css */
+
+.product-grid-container {
+    display: grid; /* Grid 레이아웃 사용 */
+    /* 화면 너비에 따라 자동으로 3개씩 배치되도록 설정 */
+    /* minmax(250px, 1fr)은 각 항목의 최소 너비는 250px이고, 남는 공간은 균등하게 나눠 가짐 */
+    grid-template-columns: repeat(3, 1fr); /* ✅ 항상 3개의 열로 고정 */
+    /* 만약 반응형으로 만들고 싶다면 아래처럼: */
+    /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
+    gap: 30px; /* 상품 카드 사이의 간격 */
+    padding: 20px; /* 컨테이너 내부 여백 (선택 사항) */
+    max-width: 1200px; /* 최대 너비 (선택 사항) */
+    margin: 0 auto; /* 중앙 정렬 (선택 사항) */
+}
+
+/* Link 태그 스타일 (선택 사항) */
+.product-card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block; /* Grid 아이템으로 인식되도록 */
+}
+
+/* 상품 카드 스타일 (이전 답변 내용) */
+.product-card {
+    border: 1px solid #eee;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+    background-color: #fff;
+    height: 100%; /* Grid 셀 높이에 맞춤 */
+    display: flex; /* 내부 요소 정렬 위해 추가 */
+    flex-direction: column; /* 내부 요소 세로 정렬 */
+}
+
+.product-card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.product-card-image {
+    width: 100%;
+    height: 200px; /* 고정 높이 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f8f8;
+    flex-shrink: 0; /* 높이 줄어들지 않게 */
+}
+
+.product-card-image img {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+}
+
+.product-card-info {
+    padding: 15px;
+    text-align: center;
+    flex-grow: 1; /* 남은 공간 채우도록 */
+    display: flex; /* 내부 텍스트 중앙 정렬 위해 추가 */
+    flex-direction: column;
+    justify-content: center;
+}
+
+.product-name {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    /* 이름 길 때 ... 처리 */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.product-price {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #E40046; /* 첼로 레드 (예시) */
+}
+/* 리스트 아이템을 Flex 컨테이너로 만듭니다 */
+.store-list-item {
+    display: flex;             /* 옆으로 나란히 배치 */
+    justify-content: space-between; /* 양 끝 정렬 (왼쪽 텍스트, 오른쪽 버튼) */
+    align-items: center;       /* 수직 중앙 정렬 */
+    padding: 15px 20px;        /* 내부 여백 좀 더 넉넉하게 */
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+/* 텍스트 영역 스타일 */
+.store-info {
+    display: flex;
+    flex-direction: column;    /* 텍스트는 위아래로 쌓이게 */
+    gap: 4px;                  /* 줄 간격 살짝 띄우기 */
+    max-width: 75%;            /* 버튼 공간 확보를 위해 너비 제한 */
+}
+
+.store-info strong {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 2px;
+}
+
+.store-info p {
+    margin: 0;
+    font-size: 13px;
+    color: #666;
+    line-height: 1.4;
+}
+
+/* 길찾기 버튼 예쁘게 꾸미기 */
+.find-path-btn {
+    background-color: #03c75a; /* 네이버 지도 느낌의 초록색 (또는 원하시는 색상) */
+    color: white;
+    border: none;
+    border-radius: 20px;       /* 둥근 알약 모양 */
+    padding: 8px 16px;         /* 버튼 크기 조절 */
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    white-space: nowrap;       /* 글자가 줄바꿈되지 않도록 고정 */
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* 살짝 그림자 */
+}
+
+.find-path-btn:hover {
+    background-color: #02b150; /* 호버 시 색상 진하게 */
+    transform: translateY(-1px); /* 살짝 떠오르는 효과 */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.15);
+}
+
+/* 클릭(활성) 상태일 때 스타일 유지 */
+.store-list-item.active {
+    background-color: #f0f7ff; /* 활성화 배경색 */
+    border-left: 4px solid #03c75a; /* 왼쪽 강조 선 */
+}

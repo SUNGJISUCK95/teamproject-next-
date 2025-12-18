@@ -1,0 +1,3 @@
+rootProject.name = 'bicycle-app'
+include 'backend' //Springboot project
+include 'frontend' //react project

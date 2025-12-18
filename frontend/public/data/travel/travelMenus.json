@@ -1,0 +1,20 @@
+[
+  {
+    "mid" : "1",
+    "type": "food",
+    "name": "맛집",
+    "icon": "fa-solid fa-utensils"
+  },
+  {
+    "mid" : "2",
+    "type": "hotel",
+    "name": "숙소",
+    "icon": "fa-solid fa-hotel"
+  },
+  {
+    "mid" : "3",
+    "type": "repair",
+    "name": "수리",
+    "icon": "fa-solid fa-screwdriver-wrench"
+  }
+]

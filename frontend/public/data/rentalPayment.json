@@ -1,0 +1,37 @@
+[
+    {
+        "time_event": {
+            "title": "결제화면",
+            "decrease": "-",
+            "increase": "+",
+            "minute": "분"
+        }
+    },
+    {
+        "payment_allday" : {
+            "name" : "All Day",
+            "desc" : "( 30분당 500 ₩ / 300분 부터 종일권 반영 5,000 ₩ )"
+        }
+    },
+    {
+        "price_info" : {
+            "title" : "결제 금액",
+            "sign" : " ₩"
+        }
+    },
+    {
+        "choice" : {
+            "title" : "결제 수단",
+            "kakao" : "카카오 페이",
+            "naver" : "네이버 페이",
+            "kakaopay_img" : "/images/kakao_pay.png",
+            "naverpay_img" : "/images/naver_pay.png"
+        }
+    },
+    {
+        "price_button" : {
+            "payment_button" : "결제",
+            "price_back" : "돌아가기"
+        }
+    }
+]

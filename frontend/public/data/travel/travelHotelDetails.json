@@ -1,0 +1,516 @@
+[
+  {
+    "hname": "잠실 라운지 호텔 - LOUNGE",
+    "hlike": "4.9",
+    "score": "90",
+    "tag": [
+      "잠실숙소",
+      "잠실호텔",
+      "잠실모텔",
+      "잠실라운지",
+      "호텔",
+      "방이동호텔"
+    ],
+    "location": "오금로11길",
+    "hotel": "예약, 무선 인터넷, 대기공간, 주차, 발렛파킹",
+    "address": "서울 송파구 오금로11길 23-19",
+    "localAddress": "서울 송파구 방이동 37-3",
+    "business": [
+      {
+        "day": "월",
+        "houers": "24간 영업",
+        "last": ""
+      },
+      {
+        "day": "화",
+        "houers": "24간 영업",
+        "last": ""
+      },
+      {
+        "day": "수",
+        "houers": "24간 영업",
+        "last": ""
+      },
+      {
+        "day": "목",
+        "houers": "24간 영업",
+        "last": ""
+      },
+      {
+        "day": "금",
+        "houers": "24간 영업",
+        "last": ""
+      },
+      {
+        "day": "토",
+        "houers": "24간 영업",
+        "last": ""
+      },
+      {
+        "day": "일",
+        "houers": "24간 영업",
+        "last": ""
+      }
+    ],
+    "phone": "0507-1446-1726",
+    "other": [
+      "스파/월풀",
+      "트윈베드"
+    ],
+    "menu": [
+      {
+        "hname": "디럭스",
+        "image": "",
+        "mainRoom": "47500",
+        "lodgment": "95500"
+      },
+      {
+        "hname": "스위트",
+        "image": "",
+        "mainRoom": "57500",
+        "lodgment": "125500"
+      },
+      {
+        "hname": "패밀리 트윈",
+        "image": "",
+        "mainRoom": "67500",
+        "lodgment": "155500"
+      },
+      {
+        "hname": "로얄 스위트",
+        "image": "",
+        "mainRoom": "77500",
+        "lodgment": "195500"
+      }
+    ],
+    "mainImages": [
+      "/images/travel_hotels/lounge/lounge_1.webp",
+      "/images/travel_hotels/lounge/lounge_2.webp",
+      "/images/travel_hotels/lounge/lounge_3.webp"
+    ],
+    "imageList": [
+      {
+        "category": "디럭스",
+        "images": [
+          "/images/travel_hotels/lounge/deluxe/lounge_deluxe_1.webp",
+          "/images/travel_hotels/lounge/deluxe/lounge_deluxe_2.webp",
+          "/images/travel_hotels/lounge/deluxe/lounge_deluxe_3.webp",
+          "/images/travel_hotels/lounge/deluxe/lounge_deluxe_4.webp"
+        ]
+      },
+      {
+        "category": "스위트",
+        "images": [
+          "/images/travel_hotels/lounge/suite/lounge_suite_1.webp",
+          "/images/travel_hotels/lounge/suite/lounge_suite_2.webp",
+          "/images/travel_hotels/lounge/suite/lounge_suite_3.webp",
+          "/images/travel_hotels/lounge/suite/lounge_suite_4.webp"
+        ]
+      },
+      {
+        "category": "패밀리 트윈",
+        "images": [
+          "/images/travel_hotels/lounge/family/lounge_family_1.webp",
+          "/images/travel_hotels/lounge/family/lounge_family_2.webp",
+          "/images/travel_hotels/lounge/family/lounge_family_3.webp",
+          "/images/travel_hotels/lounge/family/lounge_family_4.webp"
+        ]
+      },
+      {
+        "category": "로얄 스위트",
+        "images": [
+          "/images/travel_hotels/lounge/royal/lounge_royal_1.webp",
+          "/images/travel_hotels/lounge/royal/lounge_royal_2.webp",
+          "/images/travel_hotels/lounge/royal/lounge_royal_3.webp",
+          "/images/travel_hotels/lounge/royal/lounge_royal_4.webp"
+        ]
+      }
+    ]
+  },
+  {
+    "hname": "잠실 자자호텔",
+    "hlike": "3.9",
+    "score": "80",
+    "tag": [
+      "잠실숙소",
+      "잠실호텔",
+      "잠실모텔",
+      "잠실자자",
+      "방이동호텔"
+    ],
+    "location": "오금로11길",
+    "hotel": "와이파이, 무료영화",
+    "address": "서울 송파구 오금로11길 47",
+    "localAddress": "서울 송파구 방이동 46-3",
+    "business": [
+      {
+        "day": "월",
+        "houers": "24간 영업",
+        "last": ""
+      },
+      {
+        "day": "화",
+        "houers": "24간 영업",
+        "last": ""
+      },
+      {
+        "day": "수",
+        "houers": "24간 영업",
+        "last": ""
+      },
+      {
+        "day": "목",
+        "houers": "24간 영업",
+        "last": ""
+      },
+      {
+        "day": "금",
+        "houers": "24간 영업",
+        "last": ""
+      },
+      {
+        "day": "토",
+        "houers": "24간 영업",
+        "last": ""
+      },
+      {
+        "day": "일",
+        "houers": "24간 영업",
+        "last": ""
+      }
+    ],
+    "phone": "0507-1327-4841",
+    "other": [
+      "무선인터넷",
+      "주차장",
+      "트윈베드"
+    ],
+    "menu": [
+      {
+        "hname": "디럭스",
+        "image": "",
+        "mainRoom": "18600",
+        "lodgment": "55000"
+      },
+      {
+        "hname": "스위트",
+        "image": "",
+        "mainRoom": "23600",
+        "lodgment": "65000"
+      },
+      {
+        "hname": "패밀리 트윈",
+        "image": "",
+        "mainRoom": "81100",
+        "lodgment": "205500"
+      },
+      {
+        "hname": "로얄 스위트",
+        "image": "",
+        "mainRoom": "26600",
+        "lodgment": "70000"
+      }
+    ],
+    "mainImages": [
+      "/images/travel_hotels/zaza/zaza_1.webp",
+      "/images/travel_hotels/zaza/zaza_2.webp",
+      "/images/travel_hotels/zaza/zaza_3.webp"
+    ],
+    "imageList": [
+      {
+        "category": "디럭스",
+        "images": [
+          "/images/travel_hotels/zaza/deluxe/zaza_deluxe_1.webp",
+          "/images/travel_hotels/zaza/deluxe/zaza_deluxe_2.webp",
+          "/images/travel_hotels/zaza/deluxe/zaza_deluxe_3.webp",
+          "/images/travel_hotels/zaza/deluxe/zaza_deluxe_4.webp"
+        ]
+      },
+      {
+        "category": "스위트",
+        "images": [
+          "/images/travel_hotels/zaza/suite/zaza_suite_1.webp",
+          "/images/travel_hotels/zaza/suite/zaza_suite_2.webp",
+          "/images/travel_hotels/zaza/suite/zaza_suite_3.webp",
+          "/images/travel_hotels/zaza/suite/zaza_suite_4.webp"
+        ]
+      },
+      {
+        "category": "패밀리 트윈",
+        "images": [
+          "/images/travel_hotels/zaza/family/zaza_family_1.webp",
+          "/images/travel_hotels/zaza/family/zaza_family_2.webp",
+          "/images/travel_hotels/zaza/family/zaza_family_3.webp",
+          "/images/travel_hotels/zaza/family/zaza_family_4.webp"
+        ]
+      },
+      {
+        "category": "로얄 스위트",
+        "images": [
+          "/images/travel_hotels/zaza/royal/zaza_royal_1.webp",
+          "/images/travel_hotels/zaza/royal/zaza_royal_2.webp",
+          "/images/travel_hotels/zaza/royal/zaza_royal_3.webp",
+          "/images/travel_hotels/zaza/royal/zaza_royal_4.webp"
+        ]
+      }
+    ]
+  },
+  {
+    "hname": "잠실 HL Hotel",
+    "hlike": "4.2",
+    "score": "85",
+    "tag": [
+      "잠실숙소",
+      "잠실호텔",
+      "잠실모텔",
+      "잠실HL",
+      "방이동호텔"
+    ],
+    "location": "오금로11길",
+    "hotel": "무료영화, 와이파이",
+    "address": "서울 송파구 오금로11길 23-12",
+    "localAddress": "서울 송파구 방이동 38-2",
+    "business": [
+      {
+        "day": "월",
+        "houers": "24간 영업",
+        "last": ""
+      },
+      {
+        "day": "화",
+        "houers": "24간 영업",
+        "last": ""
+      },
+      {
+        "day": "수",
+        "houers": "24간 영업",
+        "last": ""
+      },
+      {
+        "day": "목",
+        "houers": "24간 영업",
+        "last": ""
+      },
+      {
+        "day": "금",
+        "houers": "24간 영업",
+        "last": ""
+      },
+      {
+        "day": "토",
+        "houers": "24간 영업",
+        "last": ""
+      },
+      {
+        "day": "일",
+        "houers": "24간 영업",
+        "last": ""
+      }
+    ],
+    "phone": "02-415-7172",
+    "other": [
+      "무선인터넷",
+      "주차장",
+      "안마의자",
+      "공기청정기"
+    ],
+    "menu": [
+      {
+        "hname": "디럭스",
+        "image": "",
+        "mainRoom": "32500",
+        "lodgment": "55000"
+      },
+      {
+        "hname": "스위트",
+        "image": "",
+        "mainRoom": "24500",
+        "lodgment": "50000"
+      },
+      {
+        "hname": "패밀리 트윈",
+        "image": "",
+        "mainRoom": "42500",
+        "lodgment": "70000"
+      },
+      {
+        "hname": "로얄 스위트",
+        "image": "",
+        "mainRoom": "37500",
+        "lodgment": "65000"
+      }
+    ],
+    "mainImages": [
+      "/images/travel_hotels/hl/hl_1.webp",
+      "/images/travel_hotels/hl/hl_2.webp",
+      "/images/travel_hotels/hl/hl_3.webp"
+    ],
+    "imageList": [
+      {
+        "category": "디럭스",
+        "images": [
+          "/images/travel_hotels/hl/deluxe/hl_deluxe_1.webp",
+          "/images/travel_hotels/hl/deluxe/hl_deluxe_2.webp",
+          "/images/travel_hotels/hl/deluxe/hl_deluxe_3.webp",
+          "/images/travel_hotels/hl/deluxe/hl_deluxe_4.webp"
+        ]
+      },
+      {
+        "category": "스위트",
+        "images": [
+          "/images/travel_hotels/hl/suite/hl_suite_1.webp",
+          "/images/travel_hotels/hl/suite/hl_suite_2.webp",
+          "/images/travel_hotels/hl/suite/hl_suite_3.webp",
+          "/images/travel_hotels/hl/suite/hl_suite_4.webp"
+        ]
+      },
+      {
+        "category": "패밀리 트윈",
+        "images": [
+          "/images/travel_hotels/hl/family/hl_family_1.webp",
+          "/images/travel_hotels/hl/family/hl_family_2.webp",
+          "/images/travel_hotels/hl/family/hl_family_3.webp",
+          "/images/travel_hotels/hl/family/hl_family_4.webp"
+        ]
+      },
+      {
+        "category": "로얄 스위트",
+        "images": [
+          "/images/travel_hotels/hl/royal/hl_royal_1.webp",
+          "/images/travel_hotels/hl/royal/hl_royal_2.webp",
+          "/images/travel_hotels/hl/royal/hl_royal_3.webp",
+          "/images/travel_hotels/hl/royal/hl_royal_4.webp"
+        ]
+      }
+    ]
+  },
+  {
+    "hname": "잠실 셀레네",
+    "hlike": "4.2",
+    "score": "85",
+    "tag": [
+      "잠실숙소",
+      "잠실호텔",
+      "잠실모텔",
+      "잠실셀레네",
+      "방이동호텔"
+    ],
+    "location": "오금로11길",
+    "hotel": "이색테마, 와이파이, 무료영화",
+    "address": "서울 송파구 오금로11길 21-15",
+    "localAddress": "서울 송파구 방이동 36-14",
+    "business": [
+      {
+        "day": "월",
+        "houers": "24간 영업",
+        "last": ""
+      },
+      {
+        "day": "화",
+        "houers": "24간 영업",
+        "last": ""
+      },
+      {
+        "day": "수",
+        "houers": "24간 영업",
+        "last": ""
+      },
+      {
+        "day": "목",
+        "houers": "24간 영업",
+        "last": ""
+      },
+      {
+        "day": "금",
+        "houers": "24간 영업",
+        "last": ""
+      },
+      {
+        "day": "토",
+        "houers": "24간 영업",
+        "last": ""
+      },
+      {
+        "day": "일",
+        "houers": "24간 영업",
+        "last": ""
+      }
+    ],
+    "phone": "02-425-6334",
+    "other": [
+      "무선인터넷",
+      "주차장",
+      "트윈베드",
+      "안마의자"
+    ],
+    "menu": [
+      {
+        "hname": "디럭스",
+        "image": "",
+        "mainRoom": "22500",
+        "lodgment": "45500"
+      },
+      {
+        "hname": "스위트",
+        "image": "",
+        "mainRoom": "24500",
+        "lodgment": "50000"
+      },
+      {
+        "hname": "패밀리 트윈",
+        "image": "",
+        "mainRoom": "42500",
+        "lodgment": "70000"
+      },
+      {
+        "hname": "로얄 스위트",
+        "image": "",
+        "mainRoom": "37500",
+        "lodgment": "65000"
+      }
+    ],
+    "mainImages": [
+      "/images/travel_hotels/sellene/sellene_1.webp",
+      "/images/travel_hotels/sellene/sellene_2.webp",
+      "/images/travel_hotels/sellene/sellene_3.webp"
+    ],
+    "imageList": [
+      {
+        "category": "디럭스",
+        "images": [
+          "/images/travel_hotels/sellene/deluxe/sellene_deluxe_1.webp",
+          "/images/travel_hotels/sellene/deluxe/sellene_deluxe_2.webp",
+          "/images/travel_hotels/sellene/deluxe/sellene_deluxe_3.webp",
+          "/images/travel_hotels/sellene/deluxe/sellene_deluxe_4.webp"
+        ]
+      },
+      {
+        "category": "스위트",
+        "images": [
+          "/images/travel_hotels/sellene/suite/sellene_suite_1.webp",
+          "/images/travel_hotels/sellene/suite/sellene_suite_2.webp",
+          "/images/travel_hotels/sellene/suite/sellene_suite_3.webp",
+          "/images/travel_hotels/sellene/suite/sellene_suite_4.webp"
+        ]
+      },
+      {
+        "category": "패밀리 트윈",
+        "images": [
+          "/images/travel_hotels/sellene/family/sellene_family_1.webp",
+          "/images/travel_hotels/sellene/family/sellene_family_2.webp",
+          "/images/travel_hotels/sellene/family/sellene_family_3.webp",
+          "/images/travel_hotels/sellene/family/sellene_family_4.webp"
+        ]
+      },
+      {
+        "category": "로얄 스위트",
+        "images": [
+          "/images/travel_hotels/sellene/royal/sellene_royal_1.webp",
+          "/images/travel_hotels/sellene/royal/sellene_royal_2.webp",
+          "/images/travel_hotels/sellene/royal/sellene_royal_3.webp",
+          "/images/travel_hotels/sellene/royal/sellene_royal_4.webp"
+        ]
+      }
+    ]
+  }
+]

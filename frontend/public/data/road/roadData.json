@@ -1,0 +1,248 @@
+[
+    {
+        "pid" : "1",
+        "category" : "road",
+        "image" : "/bicycleimages/road/CELLOBIKE/700C-SCARLATTI-H1_BLACK.jpg",
+        "name" : "스칼라티 H1",
+        "price" : 720000,
+        "color" : "블랙",
+        "subInfo" : "카본 포크와 40mm림을 장착하여 탄탄한 기본기와 심미성을 갖춘 알루미늄 로드 바이크",
+        "description" : [
+            "카본 포크를 장착한 베이직한 알루미늄 프레임",
+            "시마노 CLARIS 16단 변속시스템 (2x8)"
+        ]
+    },
+    {
+        "pid" : "2",
+        "category" : "road",
+        "image" : "/bicycleimages/road/CELLOBIKE/700C-ELLIOT-E7_FLAME-RED.png",
+        "name" : "700C 엘리엇 E7",
+        "price" : 3900000,
+        "color" : "플레임 레드",
+        "subInfo" : "일체형 핸들바와 풀 인터널 설계로 에어로 성능을 더욱 업그레이드 한 시마노 전동구동계 105 Di2 엘리엇",
+        "description" : [
+            "풀 인터널 케이블 시스템이 적용된 카본 프레임",
+            "전동 구동계 시마노 105 Di2 24단 변속시스템 (2x12)",
+            "뷰엘타 [CARBON PRO VX2 COMP] 700C 카본 클린처 45mm 휠세트"
+        ]
+    },
+    {
+        "pid" : "3",
+        "category" : "road",
+        "image" : "/bicycleimages/road/CELLOBIKE/700C-ELLIOT-E7_TEAM-BLACK.png",
+        "name" : "700C 엘리엇 E7 팀 프로",
+        "price" : 4200000,
+        "color" : "팀 프로",
+        "subInfo" : "첼로가 후원하는 엘리트 사이클팀 ‘금산인삼첼로팀’에 제공되는 프레임으로 제작된 엘리엇 E7 팀 프로는 시마노 전동 구동계 105 Di2를 탑재한 퍼포먼스 레이싱 바이크입니다.",
+        "description" : [
+            "풀 인터널 케이블 시스템이 적용된 카본 프레임",
+            "전동 구동계 시마노 105 Di2 24단 변속시스템 (2x12)",
+            "뷰엘타 [CARBON PRO VX2 COMP] 700C 카본 클린처 45mm 휠세트"
+        ]
+    },
+    {
+        "pid" : "4",
+        "category" : "road",
+        "image" : "/bicycleimages/road/CELLOBIKE/CAYIN-E7_SPACE-BLACKGLOSSY-COSMO-BLACKMATT.png",
+        "name" : "700C 케인 E7",
+        "price" : 3120000,
+        "color" : "스페이스 블랙(유광) / 코스모 블랙 (무광)",
+        "subInfo" : "시마노 전동구동계 105 Di2가 장착된 카본 올라운드 로드 자전거",
+        "description" : [
+            "700C 카본 라이트 로드 레이싱 프레임",
+            "시마노 [105 Di2] 24단 변속시스템",
+            "뷰엘타 [R25 COMP DISC] 700C 알로이 클린처 휠세트 (튜브리스 레디림)"
+        ]
+    },
+    {
+        "pid" : "5",
+        "category" : "road",
+        "image" : "/bicycleimages/road/CELLOBIKE/700C-ELLIOT-E8_DIGITAL-OPALCARBON_RE.png",
+        "name" : "700C 엘리엇 E8",
+        "price" : 4800000,
+        "color" : "디지털 오팔 / 카본",
+        "subInfo" : "시마노 전동구동계 ULTEGRA Di2를 장착한 풀 카본 퍼포먼스 에어로 로드바이크 엘리엇 E8",
+        "description" : [
+            "풀 인터널 케이블 시스템이 적용된 카본 프레임",
+            "전동 구동계 시마노 ULTEGRA Di2 24단 변속시스템 (2x12)",
+            "뷰엘타 [CARBON PRO VX2 COMP] 700C 카본 클린처 45mm 휠세트"
+        ]
+    },
+    {
+        "pid" : "6",
+        "category" : "road",
+        "image" : "/bicycleimages/road/CELLOBIKE/2023-700C-ELLIOT-D8_1.-RAINBOW-IRON-GLOSSY-l-BLACK-MATT.png",
+        "name" : "700C 엘리엇 D8",
+        "price" : 3400000,
+        "color" : "레인보우 아이언 (유광) / 블랙 (무광)",
+        "subInfo" : "프로가 선택하는 최상의 카본 에어로 머신, 풀 인터널 케이블 시스템 적용",
+        "description" : [
+            "풀 인터널 케이블 시스템이 적용된 카본 프레임",
+            "시마노 ULTEGRA 22단 변속시스템 (2x11)"
+        ]
+    },
+  {
+    "pid" : "7",
+    "category" : "road",
+    "image" : "/bicycleimages/road/CELLOBIKE/700C-SCARLATTI-H1_BLACK.jpg",
+    "name" : "스칼라티 H1",
+    "price" : 720000,
+    "color" : "블랙",
+    "subInfo" : "카본 포크와 40mm림을 장착하여 탄탄한 기본기와 심미성을 갖춘 알루미늄 로드 바이크",
+    "description" : [
+      "카본 포크를 장착한 베이직한 알루미늄 프레임",
+      "시마노 CLARIS 16단 변속시스템 (2x8)"
+    ]
+  },
+  {
+    "pid" : "8",
+    "category" : "road",
+    "image" : "/bicycleimages/road/CELLOBIKE/700C-ELLIOT-E7_FLAME-RED.png",
+    "name" : "700C 엘리엇 E7",
+    "price" : 3900000,
+    "color" : "플레임 레드",
+    "subInfo" : "일체형 핸들바와 풀 인터널 설계로 에어로 성능을 더욱 업그레이드 한 시마노 전동구동계 105 Di2 엘리엇",
+    "description" : [
+      "풀 인터널 케이블 시스템이 적용된 카본 프레임",
+      "전동 구동계 시마노 105 Di2 24단 변속시스템 (2x12)",
+      "뷰엘타 [CARBON PRO VX2 COMP] 700C 카본 클린처 45mm 휠세트"
+    ]
+  },
+  {
+    "pid" : "9",
+    "category" : "road",
+    "image" : "/bicycleimages/road/CELLOBIKE/700C-ELLIOT-E7_TEAM-BLACK.png",
+    "name" : "700C 엘리엇 E7 팀 프로",
+    "price" : 4200000,
+    "color" : "팀 프로",
+    "subInfo" : "첼로가 후원하는 엘리트 사이클팀 ‘금산인삼첼로팀’에 제공되는 프레임으로 제작된 엘리엇 E7 팀 프로는 시마노 전동 구동계 105 Di2를 탑재한 퍼포먼스 레이싱 바이크입니다.",
+    "description" : [
+      "풀 인터널 케이블 시스템이 적용된 카본 프레임",
+      "전동 구동계 시마노 105 Di2 24단 변속시스템 (2x12)",
+      "뷰엘타 [CARBON PRO VX2 COMP] 700C 카본 클린처 45mm 휠세트"
+    ]
+  },
+  {
+    "pid" : "10",
+    "category" : "road",
+    "image" : "/bicycleimages/road/CELLOBIKE/CAYIN-E7_SPACE-BLACKGLOSSY-COSMO-BLACKMATT.png",
+    "name" : "700C 케인 E7",
+    "price" : 3120000,
+    "color" : "스페이스 블랙(유광) / 코스모 블랙 (무광)",
+    "subInfo" : "시마노 전동구동계 105 Di2가 장착된 카본 올라운드 로드 자전거",
+    "description" : [
+      "700C 카본 라이트 로드 레이싱 프레임",
+      "시마노 [105 Di2] 24단 변속시스템",
+      "뷰엘타 [R25 COMP DISC] 700C 알로이 클린처 휠세트 (튜브리스 레디림)"
+    ]
+  },
+  {
+    "pid" : "11",
+    "category" : "road",
+    "image" : "/bicycleimages/road/CELLOBIKE/700C-ELLIOT-E8_DIGITAL-OPALCARBON_RE.png",
+    "name" : "700C 엘리엇 E8",
+    "price" : 4800000,
+    "color" : "디지털 오팔 / 카본",
+    "subInfo" : "시마노 전동구동계 ULTEGRA Di2를 장착한 풀 카본 퍼포먼스 에어로 로드바이크 엘리엇 E8",
+    "description" : [
+      "풀 인터널 케이블 시스템이 적용된 카본 프레임",
+      "전동 구동계 시마노 ULTEGRA Di2 24단 변속시스템 (2x12)",
+      "뷰엘타 [CARBON PRO VX2 COMP] 700C 카본 클린처 45mm 휠세트"
+    ]
+  },
+  {
+    "pid" : "12",
+    "category" : "road",
+    "image" : "/bicycleimages/road/CELLOBIKE/2023-700C-ELLIOT-D8_1.-RAINBOW-IRON-GLOSSY-l-BLACK-MATT.png",
+    "name" : "700C 엘리엇 D8",
+    "price" : 3400000,
+    "color" : "레인보우 아이언 (유광) / 블랙 (무광)",
+    "subInfo" : "프로가 선택하는 최상의 카본 에어로 머신, 풀 인터널 케이블 시스템 적용",
+    "description" : [
+      "풀 인터널 케이블 시스템이 적용된 카본 프레임",
+      "시마노 ULTEGRA 22단 변속시스템 (2x11)"
+    ]
+  },
+  {
+    "pid" : "13",
+    "category" : "road",
+    "image" : "/bicycleimages/road/CELLOBIKE/700C-SCARLATTI-H1_BLACK.jpg",
+    "name" : "스칼라티 H1",
+    "price" : 720000,
+    "color" : "블랙",
+    "subInfo" : "카본 포크와 40mm림을 장착하여 탄탄한 기본기와 심미성을 갖춘 알루미늄 로드 바이크",
+    "description" : [
+      "카본 포크를 장착한 베이직한 알루미늄 프레임",
+      "시마노 CLARIS 16단 변속시스템 (2x8)"
+    ]
+  },
+  {
+    "pid" : "14",
+    "category" : "road",
+    "image" : "/bicycleimages/road/CELLOBIKE/700C-ELLIOT-E7_FLAME-RED.png",
+    "name" : "700C 엘리엇 E7",
+    "price" : 3900000,
+    "color" : "플레임 레드",
+    "subInfo" : "일체형 핸들바와 풀 인터널 설계로 에어로 성능을 더욱 업그레이드 한 시마노 전동구동계 105 Di2 엘리엇",
+    "description" : [
+      "풀 인터널 케이블 시스템이 적용된 카본 프레임",
+      "전동 구동계 시마노 105 Di2 24단 변속시스템 (2x12)",
+      "뷰엘타 [CARBON PRO VX2 COMP] 700C 카본 클린처 45mm 휠세트"
+    ]
+  },
+  {
+    "pid" : "15",
+    "category" : "road",
+    "image" : "/bicycleimages/road/CELLOBIKE/700C-ELLIOT-E7_TEAM-BLACK.png",
+    "name" : "700C 엘리엇 E7 팀 프로",
+    "price" : 4200000,
+    "color" : "팀 프로",
+    "subInfo" : "첼로가 후원하는 엘리트 사이클팀 ‘금산인삼첼로팀’에 제공되는 프레임으로 제작된 엘리엇 E7 팀 프로는 시마노 전동 구동계 105 Di2를 탑재한 퍼포먼스 레이싱 바이크입니다.",
+    "description" : [
+      "풀 인터널 케이블 시스템이 적용된 카본 프레임",
+      "전동 구동계 시마노 105 Di2 24단 변속시스템 (2x12)",
+      "뷰엘타 [CARBON PRO VX2 COMP] 700C 카본 클린처 45mm 휠세트"
+    ]
+  },
+  {
+    "pid" : "16",
+    "category" : "road",
+    "image" : "/bicycleimages/road/CELLOBIKE/CAYIN-E7_SPACE-BLACKGLOSSY-COSMO-BLACKMATT.png",
+    "name" : "700C 케인 E7",
+    "price" : 3120000,
+    "color" : "스페이스 블랙(유광) / 코스모 블랙 (무광)",
+    "subInfo" : "시마노 전동구동계 105 Di2가 장착된 카본 올라운드 로드 자전거",
+    "description" : [
+      "700C 카본 라이트 로드 레이싱 프레임",
+      "시마노 [105 Di2] 24단 변속시스템",
+      "뷰엘타 [R25 COMP DISC] 700C 알로이 클린처 휠세트 (튜브리스 레디림)"
+    ]
+  },
+  {
+    "pid" : "17",
+    "category" : "road",
+    "image" : "/bicycleimages/road/CELLOBIKE/700C-ELLIOT-E8_DIGITAL-OPALCARBON_RE.png",
+    "name" : "700C 엘리엇 E8",
+    "price" : 4800000,
+    "color" : "디지털 오팔 / 카본",
+    "subInfo" : "시마노 전동구동계 ULTEGRA Di2를 장착한 풀 카본 퍼포먼스 에어로 로드바이크 엘리엇 E8",
+    "description" : [
+      "풀 인터널 케이블 시스템이 적용된 카본 프레임",
+      "전동 구동계 시마노 ULTEGRA Di2 24단 변속시스템 (2x12)",
+      "뷰엘타 [CARBON PRO VX2 COMP] 700C 카본 클린처 45mm 휠세트"
+    ]
+  },
+  {
+    "pid" : "18",
+    "category" : "road",
+    "image" : "/bicycleimages/road/CELLOBIKE/2023-700C-ELLIOT-D8_1.-RAINBOW-IRON-GLOSSY-l-BLACK-MATT.png",
+    "name" : "700C 엘리엇 D8",
+    "price" : 3400000,
+    "color" : "레인보우 아이언 (유광) / 블랙 (무광)",
+    "subInfo" : "프로가 선택하는 최상의 카본 에어로 머신, 풀 인터널 케이블 시스템 적용",
+    "description" : [
+      "풀 인터널 케이블 시스템이 적용된 카본 프레임",
+      "시마노 ULTEGRA 22단 변속시스템 (2x11)"
+    ]
+  }
+]

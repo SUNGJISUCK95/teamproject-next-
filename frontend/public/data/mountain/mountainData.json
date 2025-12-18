@@ -1,0 +1,213 @@
+[
+
+    {
+        "pid" : "1",
+        "category" : "mountain",
+        "image" : "/bicycleimages/mountain/27.5inch/27.5-IMPACT-30.jpg",
+        "name" : "27.5 임팩트 30",
+        "price" : 2000,
+        "color" : "블랙",
+        "subInfo" : "모든 라이딩에 최적화된 만능 MTB",
+        "description" : [
+            "27.5 알로이 XC 하드테일 프레임, QR (사이즈: S/M/L)",
+            "27.5 SR선투어 [XCM]스틸 스티어러, 코일 스프링, QR (트래블:100 mm, 리모트 레버)",
+            "시마노 [DEORE] 12단 변속시스템 (1x12)"                    
+        ]
+    },
+    {
+        "pid" : "2",
+        "category" : "mountain",
+        "image" : "/bicycleimages/mountain/29inch/29-IMPACT-30.png",
+        "name" : "29 임팩트 30",
+        "price" : 890000,
+        "color" : "다크 카멜레온",
+        "subInfo" : "모든 라이딩에 최적화된 만능 MTB",
+        "description" : [
+            "29 알로이 XC 하드테일 프레임, QR (사이즈: S/M/L)",
+            "29 SR선투어 [XCM]스틸 스티어러, 코일 스프링, QR (트래블:100 mm, 리모트 레버)",
+            "시마노 [DEORE] 12단 변속시스템 (1x12)"                    
+        ]
+    },
+    {
+        "pid" : "3",
+        "category" : "mountain",
+        "image" : "/bicycleimages/mountain/29inch/29-BULLET-FX-90_GALAXY-BLUE-1.png",
+        "name" : "29 불렛 FX 90",
+        "price" : 7990000,
+        "color" : "갤럭시 블루 그린",
+        "subInfo" : "모든 라이딩에 최적화된 만능 MTB",
+        "description" : [
+            "29 알로이 XC 하드테일 프레임, QR (사이즈: S/M/L)",
+            "29 SR선투어 [XCM]스틸 스티어러, 코일 스프링, QR (트래블:100 mm, 리모트 레버)",
+            "시마노 [DEORE] 12단 변속시스템 (1x12)"                    
+        ]
+    },
+    {
+        "pid" : "4",
+        "category" : "mountain",
+        "image" : "/bicycleimages/mountain/27.5inch/27.5-BULLET-XC-40_METAL-BLUE-BLACK.jpg",
+        "name" : "27.5 불렛 XC 40",
+        "price" : 3200000,
+        "color" : "메탈 블루 / 블랙",
+        "subInfo" : "어떤 지형이든 빠르고 쉽게 돌파할 수 있는 크로스 컨트리 전기바이크",
+        "description" : [
+            "27.5 알로이 시마노 STEPS 전용 트레일 프레임",
+            "시마노 STEPS E6100 시리즈 탑재",
+            "시마노 [DEORE] 10단 변속시스템 (1x10)"                    
+        ]
+    },
+    {
+        "pid" : "5",
+        "category" : "mountain",
+        "image" : "/bicycleimages/mountain/27.5inch/27.5-BULLET-XC-30_DARK-CHAMELEON.png",
+        "name" : "27.5 불렛 XC 30",
+        "price" : 2400000,
+        "color" : "갤럭시 블루 그린",
+        "subInfo" : "어떤 지형이든 빠르고 쉽게 돌파할 수 있는 크로스 컨트리 전기바이크",
+        "description" : [
+            "27.5 알로이 시마노 STEPS 전용 트레일 프레임",
+            "시마노 STEPS E6100 시리즈 탑재",
+            "시마노 [CUES] 9단 변속시스템 (1x9)"                    
+        ]
+    },
+    {
+        "pid" : "6",
+        "category" : "mountain",
+        "image" : "/bicycleimages/mountain/27.5inch/27.5-SILVERLADO-90_SANDING-TITAN.png",
+        "name" : "27.5 실버라도 90",
+        "price" : 8250000,
+        "color" : "샌딩 타탄",
+        "subInfo" : "유연하고 탄탄한 티타늄 프레임의 진면목을 느낄 수 있는 프레스티지 MTB",
+        "description" : [
+            "티타늄 고유의 컬러를 그대로 살린 샌딩 티탄 프레임",
+            "SHIMANO XTR 24단 변속시스템 (2x12)",
+            "SHIMANO XTR M9100 I-SPEC EV 변속 레버"                    
+        ]
+    },
+    {
+        "pid" : "7",
+        "category" : "mountain",
+        "image" : "/bicycleimages/mountain/27.5inch/27.5-SILVERLADO-50_SANDING-TITAN.png",
+        "name" : "27.5 실버라도 50",
+        "price" : 4100000,
+        "color" : "샌딩 타탄",
+        "subInfo" : "유연하고 탄탄한 티타늄 프레임의 진면목을 느낄 수 있는 프레스티지 MTB",
+        "description" : [
+            "티타늄 고유의 컬러를 그대로 살린 샌딩 티탄 프레임",
+            "시마노 SLX+XT 24단 변속시스템 (2x12)",
+            "SHIMANO XTR M9100 I-SPEC EV 변속 레버"                    
+        ]
+    },
+    {
+        "pid" : "8",
+        "category" : "mountain",
+        "image" : "/bicycleimages/mountain/27.5inch/27.5-IMPACT-30.jpg",
+        "name" : "27.5 임팩트 30",
+        "price" : 890000,
+        "color" : "블랙",
+        "subInfo" : "모든 라이딩에 최적화된 만능 MTB",
+        "description" : [
+            "27.5 알로이 XC 하드테일 프레임, QR (사이즈: S/M/L)",
+            "27.5 SR선투어 [XCM]스틸 스티어러, 코일 스프링, QR (트래블:100 mm, 리모트 레버)",
+            "시마노 [DEORE] 12단 변속시스템 (1x12)"                    
+        ]
+    },
+    {
+        "pid" : "9",
+        "category" : "mountain",
+        "image" : "/bicycleimages/mountain/29inch/29-IMPACT-30.png",
+        "name" : "29 임팩트 30",
+        "price" : 890000,
+        "color" : "다크 카멜레온",
+        "subInfo" : "모든 라이딩에 최적화된 만능 MTB",
+        "description" : [
+            "29 알로이 XC 하드테일 프레임, QR (사이즈: S/M/L)",
+            "29 SR선투어 [XCM]스틸 스티어러, 코일 스프링, QR (트래블:100 mm, 리모트 레버)",
+            "시마노 [DEORE] 12단 변속시스템 (1x12)"                    
+        ]
+    },
+    {
+        "pid" : "10",
+        "category" : "mountain",
+        "image" : "/bicycleimages/mountain/29inch/29-BULLET-FX-90_GALAXY-BLUE-1.png",
+        "name" : "29 불렛 FX 90",
+        "price" : 7990000,
+        "color" : "갤럭시 블루 그린",
+        "subInfo" : "첼로의 강력한 퍼포먼스로 최고의 주행력을 선사하는 올마운틴 전기자전거 모델",
+        "description" : [
+            "29 알로이 보쉬 eBike 시스템 올마운틴 프레임",
+            "29 락샥 [ZEB 셀렉트+] 에어스프링",
+            "보쉬 [POWER TUBE 750] 750Wh"                    
+        ]
+    },
+    {
+        "pid" : "11",
+        "category" : "mountain",
+        "image" : "/bicycleimages/mountain/29inch/29-BULLET-FX-90_GALAXY-BLUE-1.png",
+        "name" : "29 불렛 FX 90",
+        "price" : 7990000,
+        "color" : "갤럭시 블루 그린",
+        "subInfo" : "첼로의 강력한 퍼포먼스로 최고의 주행력을 선사하는 올마운틴 전기자전거 모델",
+        "description" : [
+            "29 알로이 보쉬 eBike 시스템 올마운틴 프레임",
+            "29 락샥 [ZEB 셀렉트+] 에어스프링",
+            "보쉬 [POWER TUBE 750] 750Wh"                    
+        ]
+    },
+    {
+        "pid" : "12",
+        "category" : "mountain",
+        "image" : "/bicycleimages/mountain/29inch/29-BULLET-FX-90_GALAXY-BLUE-1.png",
+        "name" : "29 불렛 FX 90",
+        "price" : 7990000,
+        "color" : "갤럭시 블루 그린",
+        "subInfo" : "첼로의 강력한 퍼포먼스로 최고의 주행력을 선사하는 올마운틴 전기자전거 모델",
+        "description" : [
+            "29 알로이 보쉬 eBike 시스템 올마운틴 프레임",
+            "29 락샥 [ZEB 셀렉트+] 에어스프링",
+            "보쉬 [POWER TUBE 750] 750Wh"                    
+        ]
+    },
+    {
+        "pid" : "13",
+        "category" : "mountain",
+        "image" : "/bicycleimages/mountain/29inch/29-BULLET-FX-90_GALAXY-BLUE-1.png",
+        "name" : "29 불렛 FX 90",
+        "price" : 7990000,
+        "color" : "갤럭시 블루 그린",
+        "subInfo" : "첼로의 강력한 퍼포먼스로 최고의 주행력을 선사하는 올마운틴 전기자전거 모델",
+        "description" : [
+            "29 알로이 보쉬 eBike 시스템 올마운틴 프레임",
+            "29 락샥 [ZEB 셀렉트+] 에어스프링",
+            "보쉬 [POWER TUBE 750] 750Wh"
+        ]
+    },
+    {
+        "pid" : "14",
+        "category" : "mountain",
+        "image" : "/bicycleimages/mountain/29inch/29-BULLET-FX-90_GALAXY-BLUE-1.png",
+        "name" : "29 불렛 FX 90",
+        "price" : 7990000,
+        "color" : "갤럭시 블루 그린",
+        "subInfo" : "첼로의 강력한 퍼포먼스로 최고의 주행력을 선사하는 올마운틴 전기자전거 모델",
+        "description" : [
+            "29 알로이 보쉬 eBike 시스템 올마운틴 프레임",
+            "29 락샥 [ZEB 셀렉트+] 에어스프링",
+            "보쉬 [POWER TUBE 750] 750Wh"
+        ]
+    },
+    {
+        "pid" : "15",
+        "category" : "mountain",
+        "image" : "/bicycleimages/mountain/29inch/29-BULLET-FX-90_GALAXY-BLUE-1.png",
+        "name" : "29 불렛 FX 90",
+        "price" : 7990000,
+        "color" : "갤럭시 블루 그린",
+        "subInfo" : "첼로의 강력한 퍼포먼스로 최고의 주행력을 선사하는 올마운틴 전기자전거 모델",
+        "description" : [
+            "29 알로이 보쉬 eBike 시스템 올마운틴 프레임",
+            "29 락샥 [ZEB 셀렉트+] 에어스프링",
+            "보쉬 [POWER TUBE 750] 750Wh"
+        ]
+    }
+]

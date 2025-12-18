@@ -1,0 +1,110 @@
+/* ============================
+   📄 게시글 상세 보기
+============================ */
+.board-detail {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 140px 20px 60px 20px;
+  color: #333;
+}
+
+.board-detail .detail-title {
+  width: 100% !important;
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.board-detail .detail-meta {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  color: #888;
+  font-size: 0.95rem;
+  margin-bottom: 25px;
+}
+
+.board-detail .detail-divider {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 20px 0 40px;
+}
+
+/* ==============================
+   📌 콘텐츠 영역
+============================== */
+.board-detail .detail-content {
+  text-align: left;
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.7;
+}
+
+/* ==============================
+   📌 본문 이미지
+============================== */
+.board-detail .detail-image-box {
+  text-align: center;
+  margin: 30px 0;
+  display: block !important;
+}
+
+.board-detail .detail-image {
+  width: 100%;
+  max-width: 850px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ==============================
+   📌 본문 텍스트
+============================== */
+.board-detail .detail-text {
+  white-space: pre-line;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  word-break: break-word;
+}
+
+/* ==============================
+   📌 버튼 영역
+============================== */
+.board-detail .detail-footer {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 40px;
+}
+
+/* ==============================
+   📱 반응형
+============================== */
+@media (max-width: 768px) {
+  .board-detail .detail-title {
+    font-size: 1.4rem;
+  }
+
+  .board-detail .detail-meta {
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .board-detail .detail-footer {
+    flex-direction: column;
+  }
+
+  .board-detail .btn-back {
+    width: 100%;
+  }
+
+  .board-detail .detail-thumb {
+    width: 160px;
+  }
+
+  .board-detail .detail-image {
+    max-width: 100%;
+  }
+}
