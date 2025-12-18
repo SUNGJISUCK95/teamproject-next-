@@ -1,6 +1,10 @@
 import CsrfTokenInitializer from "@/components/Auth/CsrfTokenInitializer";
 import Image from "next/image";
 import Link from "next/link";
+import '@/styles/commons.css';
+import '@/styles/travel.css';
+import '@/styles/rental.css';
+import "@fortawesome/fontawesome-free/css/all.min.css";
 export default async function Home() {
 
 

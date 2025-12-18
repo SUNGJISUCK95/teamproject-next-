@@ -1,0 +1,121 @@
+.policy-page {
+    text-align: left;
+    padding: 60px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.7;
+    font-family: "Pretendard", sans-serif;
+    color: #333;
+}
+
+.policy-container h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.policy-container h2 {
+    font-size: 1.3rem;
+    color: #005fa3;
+    margin-top: 40px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+}
+
+.policy-container h3 {
+    margin-top: 25px;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.policy-container p {
+    margin: 10px 0;
+}
+
+.policy-container ul,
+.policy-container ol {
+    margin-left: 7px;
+    padding-left: 10px;
+    text-align: left;
+}
+
+.policy-container li {
+    list-style-type: decimal;
+    margin: 4px 0;
+    line-height: 1.6;
+}
+
+.policy-list-none > li {
+    list-style-type: none;
+}
+
+.policy-list-decimal > li {
+    list-style-type: decimal;
+}
+
+.policy-footer {
+    margin-top: 50px;
+    font-weight: 600;
+    text-align: right;
+    color: #555;
+}
+.success-icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #28a745; /* 성공 (초록색) */
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 2rem auto;
+}
+
+/* (추가) 성공 메시지 */
+.success-message {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 2.5rem;
+}
+
+/* (추가) 결제 내역 박스 */
+.payment-details-box {
+    background-color: #f9f9f9;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 2rem;
+}
+
+.payment-details-box p {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px dashed #ddd;
+}
+.payment-details-box p:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.payment-details-box p span:first-child {
+    font-weight: 600;
+    color: #333;
+}
+.payment-details-box p span:last-child {
+    color: #555;
+    font-family: monospace; /* 고정폭 글꼴 */
+}
+
+/* (추가) 최종 결제 금액 강조 */
+.payment-details-box p span.final-amount {
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: var(--color-blue, #0077cc); /* commons.css 변수 사용 */
+}

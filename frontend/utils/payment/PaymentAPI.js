@@ -1,6 +1,5 @@
-import {axiosPost} from "../../utils/dataFetch.js";
+import {axiosPost} from "@/utils/dataFetch.js";
 import Swal from "sweetalert2";
-import {showOrderItem} from "./PaymentSlice.js";
 
 export const requestTossPay = async (widgets, cartList, totalPrice,receiverInfo) => {
     if (!widgets) {
@@ -72,13 +71,13 @@ export const confirmPayment = async (paymentKey,orderId,amount,cartList) => {
     return response;
 }
 
-export const findOrderList = () =>async (dispatch) => {
-    const loginInfo = JSON.parse(localStorage.getItem("loginInfo"));
-    if (!loginInfo || !loginInfo.userId) {
-        return;
-    }
-    const url = "/payment/order";
-    const data = {"userId":loginInfo.userId};
-    const response = await axiosPost(url,data);
-    dispatch(showOrderItem({"items":response}));
-}
+// export const findOrderList = () =>async (dispatch) => {
+//     const loginInfo = JSON.parse(localStorage.getItem("loginInfo"));
+//     if (!loginInfo || !loginInfo.userId) {
+//         return;
+//     }
+//     const url = "http://localhost:9000/payment/order";
+//     const data = {"userId":loginInfo.userId};
+//     const response = await axiosPost(url,data);
+//     showOrderItem(response);
+// }

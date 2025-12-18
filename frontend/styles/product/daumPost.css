@@ -1,0 +1,31 @@
+.find_address_button {
+    font-size: 1.2vh;
+    color: white;
+    background-color: #d9534f;;
+    /* 버튼의 배경 색상 */
+    border: none;
+    border-radius: 0.5vh;
+    cursor: pointer;
+    margin-left: 0.5vw;
+    /* 입력 필드와 버튼 사이의 간격 */
+    transition: background-color 0.3s;
+    width: 10vh;
+    height: 4.2vh;
+    font-size: 1.5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.find_address_button:hover {
+    background-color: #c9302c;
+    /* 버튼에 마우스를 올렸을 때의 배경 색상 변경 */
+}
+
+@media all and (min-width:1024px) and (max-width:1279px) {}
+
+@media all and (min-width:768px) and (max-width:1023px) {}
+
+@media all and (min-width:480px) and (max-width:767px) {}
+
+@media all and (min-width:200px) and (max-width:479px) {}

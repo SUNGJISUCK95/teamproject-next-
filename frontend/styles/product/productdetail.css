@@ -210,21 +210,77 @@
     transition: background-color 0.3s ease;
 }
 
-.product-action-buttons .add-to-cart {
+.product-action-buttons .btn-secondary {
     background-color: #f0f0f0; /* 밝은 회색 */
     color: #333;
     border: 1px solid #ccc;
 }
 
-.product-action-buttons .add-to-cart:hover {
+.product-action-buttons .btn-secondary:hover {
     background-color: #e0e0e0;
 }
 
-.product-action-buttons .buy-now {
-    background-color: #007bff; /* 파란색 */
+/* 2. 메인 버튼 스타일 (구매하기) - btn-primary */
+.product-action-buttons .btn-primary {
+    background-color: #007bff; /* 파란색 포인트 */
     color: white;
 }
 
-.product-action-buttons .buy-now:hover {
+.product-action-buttons .btn-primary:hover {
     background-color: #0056b3;
+}
+.tab-content {
+    padding: 4rem 0; /* 상단 탭과의 간격을 넉넉하게 */
+    min-height: 500px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+.tab-pane-detail {
+    width: 100%;
+    max-width: 1000px; /* 상세 내용은 너무 퍼지지 않게 중앙 집중 */
+    text-align: center; /* 텍스트 및 이미지 중앙 정렬 */
+}
+
+/* "DETAIL" 헤더 스타일 */
+.tab-pane-detail h3 {
+    font-size: 1.5rem;
+    font-weight: 800; /* 두껍게 */
+    color: #222;
+    margin-bottom: 3rem; /* 내용과 간격 벌리기 */
+    letter-spacing: 0.1em; /* 자간을 넓혀서 세련된 느낌 */
+    text-transform: uppercase; /* 대문자 고정 */
+    position: relative;
+}
+
+/* "DETAIL" 글자 아래에 작은 포인트 밑줄 추가 */
+.tab-pane-detail h3::after {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 3px;
+    background-color: #007bff; /* '구매' 버튼과 깔맞춤 포인트 컬러 */
+    margin: 15px auto 0; /* 중앙 정렬 */
+    border-radius: 2px;
+}
+
+/* 상세 이미지 스타일 */
+.tab-pane-detail .main-image {
+    width: 100%;
+    max-width: 100%; /* 부모 너비에 맞춤 */
+    height: auto;
+    display: block;
+    margin: 0 auto 30px; /* 이미지 사이 간격 추가 */
+    /* border: 1px solid #eee;  <-- 상세 이미지는 보통 테두리 없이 시원하게 보여주는 게 트렌드라 제거 추천 (원하시면 주석 해제) */
+    border-radius: 8px; /* 이미지를 살짝 부드럽게 */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05); /* 살짝 떠있는 듯한 그림자 효과 */
+}
+
+/* 하단 썸네일 리스트 (만약 하단에도 썸네일을 유지한다면) */
+.tab-pane-detail .product-detail-thumbnails {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #eee; /* 구분선 */
+    justify-content: center;
 }

@@ -38,7 +38,7 @@ export function LogoutButton(){
             {isLogin?
                 <>
                     <h1>로그인 상태</h1>
-                    <Link href="/public">홈</Link>
+                    <Link href="/">홈</Link>
                     <button onClick={handleLogOut}>로그아웃</button>
                 </>:
                 <h1>비 로그인 상태</h1>}

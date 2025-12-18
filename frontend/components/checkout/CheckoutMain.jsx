@@ -7,13 +7,15 @@ import '@/styles/checkout.css';
 import {axiosPost} from "@/utils/dataFetch";
 
 const getCheckoutList = async () => {
-    const url = '/cart/list';
-    const { userId } = JSON.parse(localStorage.getItem("loginInfo"));
+    const url = 'http://localhost:9000/cart/list';
+    const  userId  = "test111";
     const data = await axiosPost(url,{"uid":userId});
     return data;
 }
 
-export default async function CheckoutPage(){
+export async function CheckoutMain(){
+    // const cartList = useSelector((state)=>state.cart.cartList);
+    // const totalPrice = useSelector((state)=>state.cart.totalPrice);
     const cartList = await getCheckoutList();
     const totalPrice = cartList.reduce((acc, item) => {
         return acc + (item.price * item.qty);

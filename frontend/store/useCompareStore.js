@@ -1,31 +1,33 @@
-import {createSlice} from "@reduxjs/toolkit";
+import {create} from "zustand";
+import {immer} from "zustand/middleware/immer";
 import Swal from "sweetalert2";
 
 const initialState = {
     compareList: []
 }
 
-export const compareSlice = createSlice({
-    name: 'compare',
-    initialState,
-    reducers: {
-        addCompareItem(state, action) {
-            const productToAdd = action.payload;
+const useCompareStore = create(
+    immer((set,get) => ({
+        ...initialState,
+        addCompareItem: (productToAdd) => set((state) => {
             const isProduct = state.compareList.find(item =>
                 item.pid.toString() === productToAdd.pid.toString() &&
                 item.category === productToAdd.category
             );
-            if (!isProduct) {
-                state.compareList.push({...productToAdd, checked: false});
+            if(!isProduct){
+                state.compareList.push({...productToAdd, checked:false});
             }
-        },
-        toggleCompareItem(state, action) {
-            const {pid, category} = action.payload;
+        }),
+        removeCompareItem: (pid,category) => set((state) => {
+            state.compareList = state.compareList.filter(item =>
+            !(item.pid.toString() === pid.toString() && item.category === category))
+        }),
+        toggleCompareItem: (pid, category) => set((state) => {
             const checkedCount = state.compareList.filter(item => item.checked === true).length;
             const toggleItem = state.compareList.find(item =>
                 item.pid.toString() === pid.toString() && item.category === category
             );
-            if (checkedCount < 2 || toggleItem.checked) {
+            if (checkedCount < 3 || toggleItem.checked) {
                 state.compareList = state.compareList.map(item =>
                     (item.pid.toString() === pid.toString() && item.category === category)
                         ? {...item, checked: !item.checked}
@@ -38,17 +40,8 @@ export const compareSlice = createSlice({
                     text: "최대 3개까지 선택 가능합니다.",
                 });
             }
-        },
-        removeCompareItem(state, action) {
-            const {pid, category} = action.payload;
-            state.compareList = state.compareList.filter(item =>
-                !(item.pid.toString() === pid.toString() && item.category === category)
-            );
-        }
-    }
-})
+        })
+    }))
+)
 
-
-export const {addCompareItem,toggleCompareItem,removeCompareItem} = compareSlice.actions
-
-export default compareSlice.reducer
+export default useCompareStore;
