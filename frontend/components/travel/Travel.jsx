@@ -122,18 +122,18 @@ export default function Travel() {
                 <div className="travel-left">
                     <nav className="travel-left-menus">
                         {/* showMenus가 true일 때만 버튼 보이기 */}
-                        {/*{showMenus && (*/}
+                        {showMenus && (
                             <TravelMenuList handleMenuClick={handleMenuClick}/>
-                        {/*)}*/}
+                        )}
                     </nav>
                     <div className="travel-left-detail">
                         {/* showFoods, showHotels, showRepairs가 true일 때만 리스트 보이기 */}
-                        {/*{showFoods && (*/}
+                        {showFoods && (
                             <ul className='food-list'>
-                                <TravelFoodList handleListDetail={handleListDetail} selectedRegion="서울 한강 잠실지구" />
+                                <TravelFoodList handleListDetail={handleListDetail} selectedRegion={selectedRegion} />
                                 <button className="travel-left-close" onClick={handleLeftClose}><i className="fa-solid fa-backward-step"></i></button>
                             </ul>
-                        {/*)}*/}
+                        )}
                         {showHotels && (
                             <ul className='hotel-list'>
                                 <TravelHotelList handleListDetail={handleListDetail} selectedRegion={selectedRegion}/>

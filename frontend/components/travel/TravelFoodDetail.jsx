@@ -1,7 +1,9 @@
 "use client";
 
+import React from 'react';
 import { useEffect, useState } from 'react';
 import Swal from 'sweetalert2';
+
 
 export function TravelFoodDetail({did,
                                   uid,
@@ -181,9 +183,9 @@ export function TravelFoodDetail({did,
               <ul className="detail-title">
                   <li className="detail-title-image-box">
                       { parsedMainImages && parsedMainImages.map((MainImage, idx) => (
-                          <>
-                              <img className="detail-title-image" src={MainImage}/>
-                          </>
+                          <React.Fragment key={idx}>
+                              <img key={idx} className="detail-title-image" src={MainImage}/>
+                          </React.Fragment>
                       ))}
                   </li>
                   <li className="detail-title-name-box" >
@@ -314,7 +316,7 @@ export function TravelFoodDetail({did,
                           .filter((_, idx) => idx === 0)
                           .map((businessDetail, idx) => (
 
-                          <>
+                          <React.Fragment key={idx}>
                               <span className="detail-title-time"> 영업시간: {businessDetail.houers}</span>
                               <button className="detail-title-time-button" onClick={handleTime}> 전체 영업시간 정보
                                   {showAllTime ? (
@@ -324,7 +326,7 @@ export function TravelFoodDetail({did,
                                   )}
                               </button><br/>
                               <span className="detail-title-last"> 라스트 오더: {businessDetail.last}</span>
-                          </>
+                          </React.Fragment>
                       ))}
                   </li>
                   {showAllTime && (
@@ -332,11 +334,11 @@ export function TravelFoodDetail({did,
                           {parsedBusiness && parsedBusiness
                               .filter((_, idx) => idx > 0)
                               .map((businessDetail, idx) => (
-                            <>
+                            <React.Fragment key={idx}>
                                 <span className="detail-title-allDay">({businessDetail.day})</span>
                                 <span className="detail-title-allTime"> 영업시간: {businessDetail.houers}</span><br/>
                                 <span className="detail-title-allLast"> 라스트 오더: {businessDetail.last}</span><br/>
-                            </>
+                            </React.Fragment>
                           ))}
                       </li>
                   )}
@@ -347,13 +349,13 @@ export function TravelFoodDetail({did,
                   <li className="detail-title-tag-box">
                       <i className="fa-solid fa-tag"></i>
                       {parsedTag && parsedTag.map((tagDetail, idx) => ( 
-                        <span className="detail-title-tag" > {tagDetail}{idx !== parsedTag.length - 1 ? ", " : ""}</span>
+                        <span key={idx} className="detail-title-tag" > {tagDetail}{idx !== parsedTag.length - 1 ? ", " : ""}</span>
                       ))}
                   </li>
                   <li className="detail-title-other-box">
                       <i className="fa-solid fa-plus"></i>
                       {parsedOther && parsedOther.map((otherDetail, idx) => (
-                        <span className="detail-title-other" > {otherDetail}{idx !== parsedOther.length - 1 ? ", " : ""}</span>
+                        <span key={idx} className="detail-title-other" > {otherDetail}{idx !== parsedOther.length - 1 ? ", " : ""}</span>
                       ))}
                   </li>
                   <li className="detail-title-support-box">
@@ -368,7 +370,7 @@ export function TravelFoodDetail({did,
                   {parsedMenu && parsedMenu
                       .filter((_, idx) => idx <= 2)
                       .map((menuDetail, idx) => (
-                    <li className="detail-menu-item">
+                    <li key={idx} className="detail-menu-item">
                       <span className="detail-menu-item-mname">{menuDetail.mname}</span>
                       <span className="detail-menu-item-dash"></span>
                       <span className="detail-menu-item-price">{Number(menuDetail.price).toLocaleString()}원</span>
@@ -379,7 +381,7 @@ export function TravelFoodDetail({did,
                        {parsedMenu && parsedMenu
                            .filter((_, idx) => idx >= 3)
                            .map((menuDetail, idx) => (
-                         <li className="detail-menu-item">
+                         <li key={idx} className="detail-menu-item">
                            <span className="detail-menu-item-mname">{menuDetail.mname}</span>
                            <span className="detail-menu-item-dash"></span>
                            <span className="detail-menu-item-price">{Number(menuDetail.price).toLocaleString()}원</span>
@@ -404,7 +406,7 @@ export function TravelFoodDetail({did,
           <ul className="detail-image">
               <li className="detail-image-title"><span>{fname}</span> 사진(손님이 찍은사진)</li>
               <li className="detail-image-button-box">
-                  <li className="detail-image-button-box">
+                  <div className="detail-image-button-box">
                     {imageButtons.map((imageBtnName, idx) => (
                       <button
                         key={idx}
@@ -418,7 +420,7 @@ export function TravelFoodDetail({did,
                       {imageBtnName}
                       </button>
                     ))}
-                  </li>
+                  </div>
               </li>
               <li className="detail-image-box">
                   {parsedImageList && parsedImageList
@@ -428,7 +430,7 @@ export function TravelFoodDetail({did,
                           parsedImage.category === imageButtons[activeImageMenu]
                       )
                       .map((parsedImage, idx) => (
-                      <>
+                      <React.Fragment key={idx}>
                           {parsedImage && parsedImage.images
                               .filter((_, idx) => idx <= 5)
                               .map((imageSrc, imgIdx) => (
@@ -439,7 +441,7 @@ export function TravelFoodDetail({did,
                                   alt={`${parsedImage.category}-${imgIdx}`}
                                 />
                           ))}
-                      </>
+                      </React.Fragment>
                   ))}
                   {showAllImage &&
                       <>
@@ -450,7 +452,7 @@ export function TravelFoodDetail({did,
                                   parsedImage.category === imageButtons[activeImageMenu]
                               )
                               .map((parsedImage, idx) => (
-                              <>
+                              <React.Fragment key={idx}>
                                   {parsedImage && parsedImage.images
                                       .filter((_, idx) => idx >= 6)
                                       .map((imageSrc, imgIdx) => (
@@ -461,7 +463,7 @@ export function TravelFoodDetail({did,
                                           alt={`${parsedImage.category}-${imgIdx}`}
                                         />
                                   ))}
-                              </>
+                              </React.Fragment>
                           ))}
                       </>
                   }
@@ -497,78 +499,79 @@ export function TravelFoodDetail({did,
                   ))}
               </li>
               {sortedReview && sortedReview.map((reviewDetail, idx) => (
-                  <ul className="detail-review-box">
-                      <li className="detail-review-profile">
+                  <li key={idx} className="detail-review-box">
+                      <div className="detail-review-profile">
                           <img className="detail-review-user-image" src={reviewDetail.userImage} alt="프로필" />
-                          <li className="detail-review-info">
+                          <div className="detail-review-info">
                               <span className="detail-review-user-id">{reviewDetail.uid}</span><br/>
                               <span className="detail-review-user-like">평균 별점 {reviewDetail.star} </span>
                               <span className="detail-review-user-stats">
                                   평가 {reviewDetail.userTotalReview} 팔로워 {reviewDetail.userFllowers}
                               </span>
-                          </li>
-                      </li>
-                      <li className="detail-review-image-box">
+                          </div>
+                      </div>
+                      <div className="detail-review-image-box">
                         { reviewDetail.imageList &&
                           JSON.parse(reviewDetail.imageList).map((reviewImage, idx) => (
                             <img key={idx} className="detail-review-image" src={reviewImage} />
                           ))
                         }
-                      </li>
-                      <li className="detail-review-date">{reviewDetail.date}</li>
-                      <li className="detail-review-description">
+                      </div>
+                      <div className="detail-review-date">{reviewDetail.date}</div>
+                      <div className="detail-review-description">
                           {reviewDetail.content}
-                      </li>
-                  </ul>
+                      </div>
+                  </li>
               ))}
           </ul>
 
           {/* 리뷰 작성 영역 */}
           <ul className="detail-review-write">
               <li className="detail-review-write-title">리뷰 작성</li>
-              <div className="detail-review-star-image-box">
-                  {/* ⭐ 별점 선택(이미지/아이콘 클릭) */}
-                  <li className="detail-review-write-stars">
-                    {[1,2,3,4,5].map((starValue) => (
-                      <i
-                        key={starValue}
-                        className={
-                          reviewStar >= starValue
-                            ? "fa-solid fa-star star-selected"  // 선택된 별
-                            : "fa-regular fa-star star-unselected" // 선택 안된 별
-                        }
-                        onClick={() => setReviewStar(starValue)}
-                        style={{ cursor: "pointer", color: "#FFD700", fontSize: "24px", marginRight: "4px" }}
-                      />
-                    ))}
-                    <span> {reviewStar}.0 / 5.0</span>
-                  </li>
+              <li>
+                  <div className="detail-review-star-image-box">
+                      {/* ⭐ 별점 선택(이미지/아이콘 클릭) */}
+                      <div className="detail-review-write-stars">
+                        {[1,2,3,4,5].map((starValue) => (
+                          <i
+                            key={starValue}
+                            className={
+                              reviewStar >= starValue
+                                ? "fa-solid fa-star star-selected"  // 선택된 별
+                                : "fa-regular fa-star star-unselected" // 선택 안된 별
+                            }
+                            onClick={() => setReviewStar(starValue)}
+                            style={{ cursor: "pointer", color: "#FFD700", fontSize: "24px", marginRight: "4px" }}
+                          />
+                        ))}
+                        <span> {reviewStar}.0 / 5.0</span>
+                      </div>
 
-                  {/* 이미지 업로드 */}
-                  <li>
-                    {/* 숨겨진 파일 input */}
-                    <input
-                      type="file"
-                      id="reviewImageUpload"
-                      multiple
-                      onChange={handleImageUpload}
-                      style={{ display: "none" }} // 숨기기
-                    />
+                      {/* 이미지 업로드 */}
+                      <div>
+                        {/* 숨겨진 파일 input */}
+                        <input
+                          type="file"
+                          id="reviewImageUpload"
+                          multiple
+                          onChange={handleImageUpload}
+                          style={{ display: "none" }} // 숨기기
+                        />
 
-                    {/* 아이콘 버튼 */}
-                    <label htmlFor="reviewImageUpload" style={{ cursor: "pointer" }}>
-                      <i className="fa-solid fa-camera" style={{ fontSize: "24px", color: "#333" }}></i> 사진 업로드
-                    </label>
+                        {/* 아이콘 버튼 */}
+                        <label htmlFor="reviewImageUpload" style={{ cursor: "pointer" }}>
+                          <i className="fa-solid fa-camera" style={{ fontSize: "24px", color: "#333" }}></i> 사진 업로드
+                        </label>
 
-                    {/* 업로드한 이미지 미리보기 */}
-                    <div className="detail-review-preview">
-                      {reviewImages.map((img, idx) => (
-                        <img key={idx} src={img} className="review-preview-img" />
-                      ))}
-                    </div>
-                  </li>
-              </div>
-
+                        {/* 업로드한 이미지 미리보기 */}
+                        <div className="detail-review-preview">
+                          {reviewImages.map((img, idx) => (
+                            <img key={idx} src={img} className="review-preview-img" />
+                          ))}
+                        </div>
+                      </div>
+                  </div>
+              </li>
               {/* 리뷰 텍스트 입력 */}
               <li>
                   <textarea

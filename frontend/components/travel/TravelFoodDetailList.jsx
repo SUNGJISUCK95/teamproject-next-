@@ -28,6 +28,7 @@ export function TravelFoodDetailList({ selectedDid }) {
     useEffect(() => {
       async function fetchDetailData() {
         const dataDetail = await getTravelFoodDetailList(selectedDid);
+        console.log(dataDetail);
         setTravelFoodDetailList(dataDetail);
       }
       fetchDetailData();

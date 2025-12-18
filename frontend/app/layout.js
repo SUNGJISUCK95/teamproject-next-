@@ -1,9 +1,12 @@
 import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
+import Script from "next/script";
+// import "./globals.css";
 import '@/styles/commons.css';
 import '@/styles/travel.css';
 import '@/styles/rental.css';
 import "@fortawesome/fontawesome-free/css/all.min.css";
+
+import "@/styles/travel.css";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,6 +30,11 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
+
+        <Script
+            src="//dapi.kakao.com/v2/maps/sdk.js?appkey=13052c0aa951d8be4109ba36bf555930&autoload=false"
+            strategy="beforeInteractive" // 페이지 렌더 전에 로드
+        />
       </body>
     </html>
   );

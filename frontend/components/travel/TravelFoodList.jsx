@@ -16,22 +16,20 @@ export function TravelFoodList({ handleListDetail, selectedRegion }) {
     useEffect(() => {
         const fetchLists = async () => {
             const food = await getTravelFoodList(number);
-            console.log(food);
             setTravelFoodList(food || []);
         };
 
         fetchLists();
     }, [number]);
 
-    console.log(travelFoodList);
-    // useEffect(() => {
-    //     if (!selectedRegion) {
-    //       return; // 선택된 지역이 없으면 아무 것도 안함
-    //     }
-    //
-    //     const filtered = travelFoodList.filter(food => food.region === selectedRegion);
-    //     setFilteredList(filtered); // 선택한 지역과 일치하는 항목만 리스트에 반영
-    // }, [travelFoodList, selectedRegion]);
+    useEffect(() => {
+        if (!selectedRegion) {
+          return; // 선택된 지역이 없으면 아무 것도 안함
+        }
+
+        const filtered = travelFoodList.filter(food => food.region === selectedRegion);
+        setFilteredList(filtered); // 선택한 지역과 일치하는 항목만 리스트에 반영
+    }, [travelFoodList, selectedRegion]);
 
 
     const handleDetail = (type, fid = null) => {
@@ -87,8 +85,8 @@ export function TravelFoodList({ handleListDetail, selectedRegion }) {
               </div>
 
               <ul className="travel-food-list">
-                {travelFoodList && travelFoodList.length > 0 ? (
-                    travelFoodList.map((travelFood, idx) => (
+                {filteredList && filteredList.length > 0 ? (
+                    filteredList.map((travelFood, idx) => (
                     <TravelFood
                       key={travelFood.fid}
                       idx={idx+1}

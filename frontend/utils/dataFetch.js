@@ -89,13 +89,8 @@ export const groupByRows = (array, number) => {
  * axios 함수를 이용하여 데이터 가져오기
  */
 
-// export const axiosData = async(url) => { 
-//     const response = await axios.get(url);
-//     return response.data;
-// }
-
-export const axiosData = async (url) => {
-    const response = await api.get(`http://localhost:3030${url}`);
+export const axiosData = async(url) => {
+    const response = await axios.get(url);
     return response.data;
 }
 

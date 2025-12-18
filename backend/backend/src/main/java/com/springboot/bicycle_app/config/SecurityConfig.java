@@ -67,7 +67,7 @@ public class SecurityConfig {
             // CSRF 설정 (기존 유지)
             .csrf(csrf -> csrf
                 .csrfTokenRepository(CookieCsrfTokenRepository.withHttpOnlyFalse())
-                .ignoringRequestMatchers("/auth/logout", "/cart/**", "/api/chatbot", "/auth/me", "/kakaopay/success", "/kakaopay/cancel", "/kakaopay/fail")  // 그대로 유지
+                .ignoringRequestMatchers("/auth/logout", "/cart/**", "/api/chatbot", "/auth/me", "/kakaopay/success", "/kakaopay/cancel", "/kakaopay/fail", "/travel/**")  // 그대로 유지
                 .csrfTokenRequestHandler(new SpaCsrfTokenRequestHandler())
             )
             .authenticationProvider(authenticationProvider())//중간자 겸 공급자?
