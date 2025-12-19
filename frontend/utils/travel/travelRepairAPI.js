@@ -1,12 +1,5 @@
 import React from "react";
-import { axiosGet, axiosPost } from "@/utils/dataFetch.js";
-
-export const getTravelRepairList = async(number) =>{
-    const url = "/travel/repair";
-    const jsonData = await axiosGet(url);
-
-    return jsonData;
-}
+import { axiosPost } from "@/utils/dataFetch.js";
 
 export const getTravelRepairDetailList = async (did) => {
     const url = "/travel/repairDetail";

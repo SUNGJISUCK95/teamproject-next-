@@ -30,9 +30,7 @@ public class TravelController {
     }
 
     @GetMapping("/food")
-    public List<TravelFoodDto> food(){
-        return travelService.findFood();
-    }
+    public List<TravelFoodDto> food(){ return travelService.findFood(); }
 
     @GetMapping("/hotel")
     public List<TravelHotelDto> hotel(){
@@ -85,9 +83,7 @@ public class TravelController {
     }
 
     @PostMapping("/repairReviewInsert")
-    public int repairReviewInsert(@RequestBody TravelRepairReviewDto dto){
-        return travelService.insertRepairReview(dto);
-    }
+    public int repairReviewInsert(@RequestBody TravelRepairReviewDto dto){ return travelService.insertRepairReview(dto); }
 
     @PostMapping("/save")
     public TravelSaveDto save(@RequestBody TravelSaveDto travelSave){

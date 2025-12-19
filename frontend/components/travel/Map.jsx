@@ -2,15 +2,15 @@
 
 import { useEffect, useState, useRef } from "react";
 import { getMarkerList } from '@/utils/travel/mapAPI.js';
-import { getTravelFoodList } from '@/utils/travel/travelFoodAPI.js';
-import { getTravelHotelList } from '@/utils/travel/travelHotelAPI.js';
-import { getTravelRepairList } from '@/utils/travel/travelRepairAPI.js';
 
-export default function Map({ handleMenuClick, handleMapGoBack, handleListDetail, type, selectedDid }) {
-    const [travelFoodList, setTravelFoodList] = useState([]);
-    const [travelHotelList, setTravelHotelList] = useState([]);
-    const [travelRepairList, setTravelRepairList] = useState([]);
-
+export default function Map({ travelFoodList,
+                              travelHotelList,
+                              travelRepairList,
+                              handleMenuClick,
+                              handleMapGoBack,
+                              handleListDetail,
+                              type,
+                              selectedDid }) {
 
     const [number, setNumber] = useState(3);
     const mapRef = useRef(null); // 지도 객체 저장용
@@ -182,18 +182,6 @@ export default function Map({ handleMenuClick, handleMapGoBack, handleListDetail
         // routeLineRef에 저장
         routeLineRef.current = routeLine;
     }
-
-    // ================================================================
-    // API로 목록 불러오기
-    // ================================================================
-    useEffect(() => {
-        const fetchLists = async () => {
-            setTravelFoodList(await getTravelFoodList() || []);
-            setTravelHotelList(await getTravelHotelList() || []);
-            setTravelRepairList(await getTravelRepairList() || []);
-        };
-        fetchLists();
-    }, []);
 
     // -----------------------------
     // 초기 지도 및 대표 여행지 마커 렌더링

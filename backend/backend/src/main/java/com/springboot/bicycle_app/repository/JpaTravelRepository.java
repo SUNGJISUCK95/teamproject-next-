@@ -55,20 +55,7 @@ public interface JpaTravelRepository extends JpaRepository<TravelFood, Integer> 
     @Query(value = "INSERT INTO travel_food_review (uid, fid, user_image, user_fllowers, star, content, date, image_list) " +
             "VALUES (:uid, :fid, :userImage, :userFllowers, :star, :content, :date, :imageList)", nativeQuery = true)
     int insertFoodReview(@Param("uid") String uid,
-                                            @Param("fid") int fid,
-                                            @Param("userImage") String userImage,
-                                            @Param("userFllowers") String userFllowers,
-                                            @Param("star") Double star,
-                                            @Param("content") String content,
-                                            @Param("date") LocalDate date,
-                                            @Param("imageList") String imageList);
-
-    @Modifying
-    @Transactional
-    @Query(value = "INSERT INTO travel_hotel_review (uid, hid, user_image, user_fllowers, star, content, date, image_list) " +
-            "VALUES (:uid, :hid, :userImage, :userFllowers, :star, :content, :date, :imageList)", nativeQuery = true)
-    int insertHotelReview(@Param("uid") String uid,
-                         @Param("hid") int hid,
+                         @Param("fid") int fid,
                          @Param("userImage") String userImage,
                          @Param("userFllowers") String userFllowers,
                          @Param("star") Double star,
@@ -78,16 +65,29 @@ public interface JpaTravelRepository extends JpaRepository<TravelFood, Integer> 
 
     @Modifying
     @Transactional
-    @Query(value = "INSERT INTO travel_repair_review (uid, rid, user_image, user_fllowers, star, content, date, image_list) " +
-            "VALUES (:uid, :rid, :userImage, :userFllowers, :star, :content, :date, :imageList)", nativeQuery = true)
-    int insertRepairReview(@Param("uid") String uid,
-                          @Param("rid") int rid,
+    @Query(value = "INSERT INTO travel_hotel_review (uid, hid, user_image, user_fllowers, star, content, date, image_list) " +
+            "VALUES (:uid, :hid, :userImage, :userFllowers, :star, :content, :date, :imageList)", nativeQuery = true)
+    int insertHotelReview(@Param("uid") String uid,
+                          @Param("hid") int hid,
                           @Param("userImage") String userImage,
                           @Param("userFllowers") String userFllowers,
                           @Param("star") Double star,
                           @Param("content") String content,
                           @Param("date") LocalDate date,
                           @Param("imageList") String imageList);
+
+    @Modifying
+    @Transactional
+    @Query(value = "INSERT INTO travel_repair_review (uid, rid, user_image, user_fllowers, star, content, date, image_list) " +
+            "VALUES (:uid, :rid, :userImage, :userFllowers, :star, :content, :date, :imageList)", nativeQuery = true)
+    int insertRepairReview(@Param("uid") String uid,
+                           @Param("rid") int rid,
+                           @Param("userImage") String userImage,
+                           @Param("userFllowers") String userFllowers,
+                           @Param("star") Double star,
+                           @Param("content") String content,
+                           @Param("date") LocalDate date,
+                           @Param("imageList") String imageList);
 
     @Modifying
     @Transactional

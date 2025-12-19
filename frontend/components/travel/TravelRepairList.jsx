@@ -4,23 +4,11 @@ import { useEffect, useState } from 'react';
 
 import { TravelRepair } from "@/components/travel/TravelRepair.jsx";
 
-import { getTravelRepairList } from '@/utils/travel/travelRepairAPI.js';
-
-export function TravelRepairList({ handleListDetail, selectedRegion }) {
-    const [travelRepairList, setTravelRepairList] = useState([]);
+export function TravelRepairList({ travelRepairList, handleListDetail, selectedRegion }) {
     const [filteredList, setFilteredList] = useState([]); //검색 데이터
     const [number, setNumber] = useState(3);
     const [searchKeyword, setSearchKeyword] = useState('');
     const [isSearching, setIsSearching] = useState(false);
-
-    useEffect(() => {
-        const fetchLists = async () => {
-            const repair = await getTravelRepairList(number);
-            setTravelRepairList(repair || []);
-        };
-
-        fetchLists();
-    }, [number]);
 
     useEffect(() => {
         if (!selectedRegion) {

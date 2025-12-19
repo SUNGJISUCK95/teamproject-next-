@@ -4,23 +4,11 @@ import { useEffect, useState } from 'react';
 
 import { TravelFood } from "@/components/travel/TravelFood.jsx";
 
-import { getTravelFoodList } from '@/utils/travel/travelFoodAPI.js';
-
-export function TravelFoodList({ handleListDetail, selectedRegion }) {
-    const [travelFoodList, setTravelFoodList] = useState([]);
+export function TravelFoodList({ travelFoodList, handleListDetail, selectedRegion }) {
     const [filteredList, setFilteredList] = useState([]); //검색 데이터
     const [number, setNumber] = useState(3);
     const [searchKeyword, setSearchKeyword] = useState('');
     const [isSearching, setIsSearching] = useState(false);
-
-    useEffect(() => {
-        const fetchLists = async () => {
-            const food = await getTravelFoodList(number);
-            setTravelFoodList(food || []);
-        };
-
-        fetchLists();
-    }, [number]);
 
     useEffect(() => {
         if (!selectedRegion) {

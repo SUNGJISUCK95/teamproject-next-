@@ -11,7 +11,7 @@ import { TravelHotelDetailList } from "@/components/travel/TravelHotelDetailList
 import { TravelRepairDetailList } from "@/components/travel/TravelRepairDetailList.jsx";
 import Map from '@/components/travel/Map.jsx';
 
-export default function Travel() {
+export default function Travel({ travelFoodList =[], travelHotelList =[], travelRepairList =[]}) {
 
     // 버튼 및 리스트들 보이기/숨기기 상태 관리
     const [showMenus, setShowMenus] = useState(false);
@@ -130,19 +130,19 @@ export default function Travel() {
                         {/* showFoods, showHotels, showRepairs가 true일 때만 리스트 보이기 */}
                         {showFoods && (
                             <ul className='food-list'>
-                                <TravelFoodList handleListDetail={handleListDetail} selectedRegion={selectedRegion} />
+                                <TravelFoodList travelFoodList={travelFoodList} handleListDetail={handleListDetail} selectedRegion={selectedRegion} />
                                 <button className="travel-left-close" onClick={handleLeftClose}><i className="fa-solid fa-backward-step"></i></button>
                             </ul>
                         )}
                         {showHotels && (
                             <ul className='hotel-list'>
-                                <TravelHotelList handleListDetail={handleListDetail} selectedRegion={selectedRegion}/>
+                                <TravelHotelList travelHotelList={travelHotelList} handleListDetail={handleListDetail} selectedRegion={selectedRegion}/>
                                 <button className="travel-left-close" onClick={handleLeftClose}><i className="fa-solid fa-backward-step"></i></button>
                             </ul>
                         )}
                         {showRepairs && (
                             <ul className='repair-list'>
-                                <TravelRepairList handleListDetail={handleListDetail} selectedRegion={selectedRegion}/>
+                                <TravelRepairList travelRepairList={travelRepairList} handleListDetail={handleListDetail} selectedRegion={selectedRegion}/>
                                 <button className="travel-left-close" onClick={handleLeftClose}><i className="fa-solid fa-backward-step"></i></button>
                             </ul>
                         )}
@@ -152,7 +152,14 @@ export default function Travel() {
 
                 {/* 지도 영역 */}
                 <div className="travel-map">
-                    <Map handleMenuClick={handleMenuClick} handleMapGoBack={handleMapGoBack} handleListDetail={handleListDetail} type={selectedType} selectedDid={selectedDid} />
+                    <Map travelFoodList={travelFoodList}
+                         travelHotelList={travelHotelList}
+                         travelRepairList={travelRepairList}
+                         handleMenuClick={handleMenuClick}
+                         handleMapGoBack={handleMapGoBack}
+                         handleListDetail={handleListDetail}
+                         type={selectedType}
+                         selectedDid={selectedDid} />
                 </div>
 
                 {/* 상세 정보창 영역 */}

@@ -162,6 +162,7 @@ export function TravelHotelDetail({did,
       const reviewData = {
           hid: did,
           uid: uid,           // 로그인한 유저 아이디
+          userImage: "/images/travel_review/gyeongtae/gyeongtae_review_1.png",
           star: reviewStar,
           content: reviewText,
           imageList: JSON.stringify(reviewImages)  // base64 또는 파일 그대로 서버 전송 가능
