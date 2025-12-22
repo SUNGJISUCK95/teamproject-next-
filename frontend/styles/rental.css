@@ -1,37 +1,21 @@
 @charset "UTF-8";
 
+a {
+    text-decoration: none;
+}
+
 /*
     Rental.jsx
     Style
 */
-.rental_map_box {
-    position: relative;
+#rental_container {
+    width: 80%;
+    margin: 0 auto;
     display: flex;
-    justify-content: flex-end;
-}
-
-.rental_map_box::before {
-    content: '';
-    width: 60px;
-    height: 2px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%);
-    background: var(--color-blue);
-    z-index: 2;
-}
-
-.rental_map_box::after {
-    content: '';
-    width: 2px;
-    height: 60px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateY(-50%);
-    background: var(--color-blue);
-    z-index: 1;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
 }
 
 .rental_map_target {
@@ -52,6 +36,13 @@
     box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
 }
 
+.rental_map_target > svg {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
 .rental_map_target:hover {
     color: var(--color-white);
     background-color: var(--color-blue);
@@ -63,14 +54,35 @@
 
 .map_marker_data_info {
     position: relative;
-    width: 25%;
-    height: calc(100vh - 55px);
+    width: 30%;
+    height: calc(100vh - 100px);
     background-color: #fff;
     color: #000;
     padding: 16px;
     z-index: 10;
     box-sizing: border-box;
     box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
+}
+.map_marker_data_info .map_marker_alarm {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    left: 0;top: 0;
+    background-color: var(--color-blue);
+}
+
+.map_marker_data_info .map_marker_alarm > img {
+    width: 30%;
+    display: block;
+}
+
+.map_marker_data_info .map_marker_alarm > p {
+    font-size: 1rem;
+    color: var(--color-white);
 }
 
 .map_marker_data_info h3 {
@@ -86,22 +98,24 @@
 .map_marker_data_info>button {
     cursor: pointer;
 }
-
 .map_marker_data_info .map_marker_data_info_img {
     width: 100%;
     height: 300px;
-    margin: 20px 0;
+    margin: 10px 0;
     font-size: 18px;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
     border: 2px solid var(--color-blue);
 }
 
-.map_marker_data_info .map_marker_data_info_list li {
+.map_marker_data_info .map_marker_data_info_list {
+    padding: 0;
+}
+.map_marker_data_info .map_marker_data_info_list > li {
     text-align: center;
 }
 
-.map_marker_data_info .map_marker_data_info_list li>span {
+.map_marker_data_info .map_marker_data_info_list li > span {
     display: block;
     padding: 10px 30px;
     margin-bottom: 20px;
@@ -110,7 +124,7 @@
     border: 2px solid var(--color-blue);
 }
 
-.map_marker_data_info .map_marker_data_info_list li>span>em {
+.map_marker_data_info .map_marker_data_info_list li > span > em {
     display: block;
     font-style: normal;
     line-height: 15px;
@@ -122,10 +136,11 @@
     color: var(--color-blue);
 }
 
-.map_marker_data_info form button {
+.map_marker_data_info .boarding, .payment_button {
+    display: block; 
     width: 100%;
-    padding: 15px 0;
     margin-bottom: 20px;
+    padding: 15px 0;
     background-color: var(--color-blue);
     border: 0;
     box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
@@ -137,7 +152,7 @@
     cursor: pointer;
 }
 
-.map_marker_data_info form button:hover {
+.map_marker_data_info .boarding:hover, button:hover {
     color: var(--color-blue);
     background-color: var(--color-white);
 }
@@ -153,13 +168,11 @@
     RentalPayment.jsx
     Style
 */
-.map_marker_data_info .bike_rental_payment_info {
+.bike_rental_payment_info {
+    position: relative;
     width: 100%;
-    height: calc(100vh - 55px);
+    height: calc(100vh - 100px);
     padding: 15px;
-    position: absolute;
-    top: 0;
-    left: 100%;
     box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
     background-color: var(--color-white);
     text-align: center;
@@ -169,7 +182,44 @@
 }
 
 .bike_rental_payment_info>h3 {
+    width: 73%;
+    margin: 0 auto 20px;
+    background-color: var(--color-blue);
+    text-align: center;
+    color: var(--color-white);
+    border-radius: 10px;
+    padding: 15px 0;
+    font-size: 18px;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
+}
+
+.rental_payment_container {
+    display: flex;
+    justify-content: center;
+}
+
+.rental_payment_container > div {
+    margin: 0 20px;
+}
+
+.payment_map_box {
+    width: 40%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
+}
+
+.payment_map_box .payment_map {
     margin-bottom: 20px;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
+    border-radius: 10px;
+}
+
+.payment_items {
+    width: 30%;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
+    padding: 20px;
+    border-radius: 10px;
 }
 
 .bike_rental_payment_info>button {
@@ -188,15 +238,10 @@
     display: none;
 }
 
-.bike_rental_payment_info>button:hover {
-    background-color: var(--color-white);
-    color: var(--color-blue);
-}
 
 .bike_rental_payment_info .payment_info_close {
     width: 100%;
     padding: 15px 0;
-    margin-bottom: 20px;
     background-color: var(--color-blue);
     border: 0;
     box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
@@ -208,6 +253,10 @@
     cursor: pointer;
 }
 
+.bike_rental_payment_info>button:hover {
+    background-color: var(--color-white);
+    color: var(--color-blue);
+}
 .payment_info_close:hover {
     color: var(--color-blue);
     background-color: var(--color-white);
@@ -216,8 +265,7 @@
 .bike_rental_payment_info .payment_time_event {
     display: flex;
     justify-content: space-between;
-    padding: 20px 0;
-    border-top: 1px solid #0000003b
+    padding: 0 0 20px;
 }
 
 .bike_rental_payment_info .payment_time_event>button {
@@ -226,10 +274,11 @@
     background-color: var(--color-blue);
     box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
     border: 0;
+    border-radius: 10px;
     font-size: 30px;
     color: var(--color-white);
+    line-height: 25px;
     transition: all 0.3s ease-in-out;
-    border-radius: 10px;
     cursor: pointer;
 }
 
@@ -251,12 +300,13 @@
 }
 
 .bike_rental_payment_info .payment_time_allday_box>button {
-    width: 70%;
+    width: 100%;
     height: 50px;
     background-color: var(--color-blue);
     box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
     border: 0;
     font-size: 30px;
+    line-height: 25px;
     color: var(--color-white);
     transition: all 0.3s ease-in-out;
     border-radius: 10px;
@@ -269,6 +319,10 @@
     color: var(--color-blue);
 }
 
+.payment_price_info ul{
+    margin: 0;
+    padding: 0;
+}
 .payment_price_info ul .price_info {
     display: flex;
     padding: 20px 0;
@@ -368,15 +422,16 @@
     RentalBikeList.jsx
     Style
 */
-.bike_station_name_list {
+.payment_map_box .bike_station_name_list {
     width: 100%;
-    height: 130px;
-    margin-bottom: 20px;
+    height: 260px;
     border-radius: 10px;
     box-shadow: rgba(50, 50, 50, 0.50) 5px 5px 20px -5px inset;
 }
 
 .bike_station_name_list>ul {
+    margin: 0;
+    padding: 0;
     height: inherit;
     scrollbar-width: none;
     overflow-y: scroll;
@@ -388,6 +443,7 @@
     text-align: center;
     transition: all 0.3s ease-in-out;
     cursor: pointer;
+    border: 1px dotted var(--color-blue);
 }
 
 .bike_station_name_list>ul>li.active {
@@ -506,89 +562,42 @@
 /*
     Tosspayment.jsx
 */
-
+.tossButtonBox{
+    display: flex;
+    justify-content: center;
+}
 .box_section {
-    width: 95%;
+    width: 50%;
     position: absolute;
     top: 150px;
     left: 50%;
     transform: translate(-50%);
     background: #fff;
     box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 50px;
+    z-index: 100;
 }
 
-.box_section .otherpay1 {
-    width: 200px;
-    margin-bottom:20px;
+.box_section .tossButtonBox > button {
+    width: 150px;
     padding:5px 45px;
     background-color:#0077cc;
+    font-size: 16px;
     color:#fff;
     border:none;
     border-radius:5px;
     cursor:pointer;
     box-shadow:rgba(0, 0, 0, 0.5) 0px 5px 15px;
 }
-.box_section .otherpay2 {
-    width: 200px; 
-    margin-bottom: 25px; 
-    padding: 5px 45px; 
-    background-color: #0077cc; 
-    color: #fff; 
-    border: none; 
-    border-radius: 5px; 
-    cursor: pointer;
-    box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px; 
+
+.box_section .tossButtonBox .otherpay1 {
+    margin-right: 15px;
 }
 
-
-
-/*************************************************************************/
-
-/*
-    Media Style
-*/
-
-@media(max-width: 1600px) {
-    .map_marker_data_info {
-        width: 400px;
-    }
+.box_section .tossButtonBox .otherpay2 {
+    margin-left: 15px;
 }
 
-@media(max-width: 810px) {
-    .rental_map_box {
-        display: flexbox;
-    }
-
-    .map_marker_data_info {
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%);
-    }
-
-    .map_marker_data_info .bike_rental_payment_info {
-        top: 0;
-        left: 0;
-        transform: translateY(0%);
-        box-shadow: none;
-    }
-
-    .map_marker_data_info .bike_rental_payment_info.active {
-        transform: translateY(100%);
-
-    }
-
-    .kakao_rental_map,
-    .rental_map_box::before,
-    .rental_map_box::after,
-    .rental_map_target {
-        display: none;
-    }
-
-    .map_marker_data_info_closs {
-        display: none;
-    }
-
-    .bike_rental_payment_info>button {
-        display: none;
-    }
+.box_section .tossButtonBox > button:hover {
+    background-color: var(--color-white);
+    color: var(--color-blue);
 }

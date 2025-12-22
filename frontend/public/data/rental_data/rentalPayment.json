@@ -1,7 +1,7 @@
 [
     {
         "time_event": {
-            "title": "결제화면",
+            "title": "결제",
             "decrease": "-",
             "increase": "+",
             "minute": "분"
