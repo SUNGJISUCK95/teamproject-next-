@@ -40,10 +40,21 @@ export const requestTossPay = async (widgets, cartList, totalPrice,receiverInfo)
             failUrl: `${window.location.origin}/checkout/fail`,
         });
     } catch (error) {
-        console.error("Payment error:", error);
         if (error.code === 'USER_CANCEL') {
-        } else {
-            alert(`결제 중 오류가 발생했습니다: ${error.message}`);
+            await Swal.fire({
+                icon: "info",
+                title: "결제 취소",
+                text: "결제창을 닫아 결제가 취소되었습니다.",
+                confirmButtonColor: "#3085d6",
+            });
+        }
+        else {
+            console.error("Payment error:", error);
+            await Swal.fire({
+                icon: "error",
+                title: "결제 오류",
+                text: `결제 중 오류가 발생했습니다: ${error.message}`,
+            });
         }
     }
 }

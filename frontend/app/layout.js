@@ -14,9 +14,7 @@ import "@/styles/board/board_write.css"
 import '@/styles/travel.css';
 import '@/styles/rental.css';
 import "@fortawesome/fontawesome-free/css/all.min.css";
-
 import "@/styles/travel.css";
-import AppShell from "@/app/AppShell";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",

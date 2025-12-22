@@ -9,9 +9,9 @@
     margin-left: 0.5vw;
     /* 입력 필드와 버튼 사이의 간격 */
     transition: background-color 0.3s;
-    width: 10vh;
-    height: 4.2vh;
-    font-size: 1.5vh;
+    width: 8rem;
+    height: 1.5rem;
+    font-size: 1rem;
     display: flex;
     align-items: center;
     justify-content: center;

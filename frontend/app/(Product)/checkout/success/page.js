@@ -75,13 +75,6 @@ export default function SuccessPage() {
                             {Number(searchParams.get("amount")).toLocaleString()}원
                         </span>
                     </p>
-                    {/*<p>*/}
-                    {/*    <span>paymentKey:</span>*/}
-                    {/*    <span className="payment-key">{searchParams.get("paymentKey")}</span>*/}
-                    {/*</p>*/}
-                    <div className="cart-empty-message">
-                        <button onClick={goToProduct}>홈으로 가기</button>
-                    </div>
                 </div>
             </div>
         </div>
