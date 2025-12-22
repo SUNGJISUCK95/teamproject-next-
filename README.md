@@ -63,6 +63,6 @@
 ![Slide62](./readmeImage/Slide62.jpg)
 ![Slide63](./readmeImage/Slide63.jpg)
 ![Slide64](./readmeImage/Slide64.jpg)
-//![Slide65](./readmeImage/Slide65.jpg)
-//![Slide66](./readmeImage/Slide66.jpg)
+![Slide65](./readmeImage/Slide65.jpg)
+![Slide66](./readmeImage/Slide66.jpg)
 ![Slide67](./readmeImage/Slide67.jpg)
