@@ -8,6 +8,8 @@ import { useAuthStore } from "@/store/authStore.js";   // ← Zustand store impo
 import Swal from "sweetalert2";
 
 import { Chatbot } from "@/components/support/Chatbot";
+import {getLogout} from "@/utils/auth/authAPI";
+import {refreshCsrfToken} from "@/utils/csrf/manageCsrfToken";
 // import { getLogout } from "@/feature/auth/authAPI";
 
 export default function Header() {
@@ -84,6 +86,12 @@ export default function Header() {
             });
             router.push("/login");
         }
+    };
+
+    const logout2 = async () => {
+        await getLogout();
+        await refreshCsrfToken();
+        return null;
     };
 
     return (
@@ -189,6 +197,8 @@ export default function Header() {
                             className="icon-link logout"
                             onClick={() => {
                                 logout();          // Zustand 로그아웃
+                                logout2();
+                                localStorage.removeItem("loginInfo");
                                 router.refresh();  // 화면 갱신
                             }}
                         >
