@@ -17,19 +17,20 @@ export default function BoardLayout({ children }) {
      * - /board/detail/[pid]
      * - /board/edit/[pid]
      */
-    const isDetailPage =
+    const isHiddenPage =
         pathname.startsWith("/board/detail") ||
-        pathname.startsWith("/board/edit");
+        pathname.startsWith("/board/edit") ||
+        pathname.endsWith("/write");
 
     return (
         <div className="board-page">
             {/* ✅ 목록 페이지에서만 게시판 제목 표시 */}
-            {!isDetailPage && (
+            {!isHiddenPage  && (
                 <h1 className="board-title">게시판</h1>
             )}
 
             {/* ✅ 목록 페이지에서만 탭 표시 */}
-            {!isDetailPage && (
+            {!isHiddenPage  && (
                 <div className="board-tabs">
                     {tabs.map(tab => (
                         <Link key={tab.key} href={`/board/${tab.key}`}>

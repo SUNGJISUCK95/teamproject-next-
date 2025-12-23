@@ -1,4 +1,4 @@
-// app/policies/internal/page.jsx
+// app/policies/internalpolicy/page.jsx
 
 export const metadata = {
     title: "내부정보 관리규정 | Bicycle-App",
