@@ -4,7 +4,7 @@
 .board-detail {
   max-width: 900px;
   margin: 0 auto;
-  padding: 140px 20px 60px 20px;
+  padding: 0 20px 60px 20px;
   color: #333;
 }
 
@@ -76,6 +76,12 @@
   justify-content: center;
   gap: 15px;
   margin-top: 40px;
+}
+
+.detail-footer-case {
+    text-align: center;
+    margin-top: 40px;
+    color: #777;
 }
 
 /* ==============================

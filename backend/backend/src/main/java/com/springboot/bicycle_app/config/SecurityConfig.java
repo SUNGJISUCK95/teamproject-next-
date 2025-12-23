@@ -95,7 +95,8 @@ public class SecurityConfig {
                     "/support/**", "/map/**", "/travel/**", "/csrf/**",
                     "/uploads/**",
                     "/api/chatbot", "/api/upload",
-                    "/rental/**", "/kakaopay/success", "/kakaopay/cancel", "/kakaopay/fail"
+                    "/rental/**", "/kakaopay/success", "/kakaopay/cancel", "/kakaopay/fail",
+                    "/api/board/me"
                 ).permitAll()
 
                 // 게시판 조회(READ)만 허용 (GET)

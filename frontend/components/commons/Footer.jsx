@@ -80,7 +80,7 @@ export default function Footer() {
                     <div className="footer-policy">
                         <Link href="/policies/terms">이용약관</Link>
                         <Link href="/policies/privacy">개인정보 처리방침</Link>
-                        <Link href="/policies/internal">내부정보 관리규정</Link>
+                        <Link href="/policies/internalpolicy">내부정보 관리규정</Link>
                     </div>
                 </div>
             </div>

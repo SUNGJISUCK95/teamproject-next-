@@ -1,4 +1,4 @@
-import BoardWriteForm from "@/components/board/BoardWriteForm";
+import BoardWriteForm from "../../BoardWriteForm.jsx";
 
 export default function WritePage() {
     return <BoardWriteForm mode="write" />;

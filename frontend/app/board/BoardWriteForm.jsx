@@ -4,46 +4,84 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import Swal from "sweetalert2";
 import { useRouter } from "next/navigation";
-
-import { getCurrentUser, getLoginUser } from "@/src/utils/session";
 import { getApiBase } from "@/src/utils/getApiBase";
+import { getCurrentUser, isAdmin, isOwner } from "@/src/utils/session";
 
 export default function BoardWriteForm({ mode = "write", pid }) {
     const router = useRouter();
     const API_BASE = getApiBase();
     const isEdit = mode === "edit";
-
     const [user, setUser] = useState(null);
+    const isAdminUser = isAdmin(user);
 
     /* ===============================
-       로그인 / 세션 검증
+       공통 로그인 체크 (write + edit)
     =============================== */
     useEffect(() => {
-        const local = getLoginUser();
+        let mounted = true;
 
-        if (!local) {
-            Swal.fire({
-                icon: "info",
-                title: "로그인 필요",
-                text: "로그인이 필요한 서비스입니다.",
-            });
-            router.push("/login");
-            return;
-        }
+        (async () => {
+            const sessionUser = await getCurrentUser();
 
-        getCurrentUser().then((sessionUser) => {
-            if (!sessionUser?.isLogin) {
+            if (!sessionUser.isLogin) {
                 Swal.fire({
                     icon: "warning",
-                    title: "세션 만료",
-                    text: "다시 로그인해주세요.",
-                });
-                router.push("/login");
+                    title: "로그인 필요",
+                    text: "로그인이 필요한 서비스입니다.",
+                }).then(() => router.replace("/login"));
                 return;
             }
-            setUser(sessionUser);
-        });
-    }, []);
+
+            if (mounted) {
+                setUser(sessionUser);
+            }
+        })();
+
+        return () => {
+            mounted = false;
+        };
+    }, [router]);
+
+
+    /* ===============================
+       수정 모드: 권한 체크 + 게시글 로딩
+    =============================== */
+    useEffect(() => {
+        if (!isEdit || !pid || !user) return;
+
+        (async () => {
+            const res = await axios.get(
+                `${API_BASE}/api/board/detail/${pid}`,
+                { withCredentials: true }
+            );
+
+            const post = res.data;
+
+            const canEdit = isAdmin(user) || isOwner(user, post);
+
+            if (!canEdit) {
+                Swal.fire({
+                    icon: "error",
+                    title: "접근 불가",
+                    text: "게시글 수정 권한이 없습니다.",
+                }).then(() => {
+                    router.replace(`/board/detail/${pid}`);
+                });
+                return;
+            }
+
+            setForm({
+                title: post.title,
+                content: post.content,
+                uid: post.uid,
+                writer: post.writer || post.uid,
+                imageUrl: post.imageUrl,
+                thumbnailUrl: post.thumbnailUrl,
+                categoryTag: post.categoryTag,
+                status: post.status,
+            });
+        })();
+    }, [isEdit, pid, user, router]);
 
     /* ===============================
        CSRF Token
@@ -70,13 +108,14 @@ export default function BoardWriteForm({ mode = "write", pid }) {
 
     /* 로그인 사용자 반영 */
     useEffect(() => {
-        if (user) {
-            setForm((s) => ({
-                ...s,
-                uid: user.uid,
-                writer: user.uid,
-            }));
-        }
+        if (!user) return;
+
+        setForm((s) => ({
+            ...s,
+            uid: user.uid,
+            writer: user.uid,
+            categoryTag: isAdmin(user) ? s.categoryTag : "review",
+        }));
     }, [user]);
 
     /* ===============================
@@ -155,6 +194,25 @@ export default function BoardWriteForm({ mode = "write", pid }) {
     const handleSubmit = async (e) => {
         e.preventDefault();
 
+        // 일반 유저는 리뷰만 작성 가능
+        if (!isAdmin(user) && form.categoryTag !== "review") {
+            Swal.fire({
+                icon: "error",
+                title: "권한 없음",
+                text: "리뷰 게시판만 작성할 수 있습니다.",
+            });
+            return;
+        }
+
+        if (!user) {
+            Swal.fire({
+                icon: "warning",
+                title: "로그인 정보 확인 중",
+                text: "잠시 후 다시 시도해주세요.",
+            });
+            return;
+        }
+
         try {
             if (isEdit) {
                 await axios.put(
@@ -196,7 +254,7 @@ export default function BoardWriteForm({ mode = "write", pid }) {
        render
     =============================== */
     return (
-        <div className="board-page">
+        <div>
             <h1 className="board-title">
                 {isEdit ? "게시글 수정" : "게시글 작성"}
             </h1>
@@ -296,8 +354,12 @@ export default function BoardWriteForm({ mode = "write", pid }) {
                     value={form.categoryTag}
                     onChange={handleChange}
                 >
-                    <option value="news">뉴스</option>
-                    <option value="event">이벤트</option>
+                    {isAdminUser && (
+                        <>
+                            <option value="news">뉴스</option>
+                            <option value="event">이벤트</option>
+                        </>
+                    )}
                     <option value="review">리뷰</option>
                 </select>
 

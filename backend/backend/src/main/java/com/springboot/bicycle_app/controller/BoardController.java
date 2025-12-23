@@ -6,6 +6,8 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.Authentication;
+import org.springframework.security.authentication.AnonymousAuthenticationToken;
+
 
 import java.util.List;
 import java.util.Optional;
@@ -143,5 +145,32 @@ public class BoardController {
         boardService.deletePost(pid);
         return ResponseEntity.ok("삭제 완료");
     }
+
+    /**
+     * 게시판 전용 로그인 상태 확인
+     * - 프론트에서 글 작성 버튼 노출 여부 판단용
+     * - OauthController 수정 없이 사용 가능
+     */
+    @GetMapping("/me")
+    public ResponseEntity<?> boardMe(Authentication authentication) {
+
+        // ✅ 비로그인(anonymous) 판별
+        if (authentication == null ||
+            authentication instanceof AnonymousAuthenticationToken) {
+
+            return ResponseEntity.ok(
+                    java.util.Map.of("isLogin", false)
+            );
+        }
+
+        return ResponseEntity.ok(
+                java.util.Map.of(
+                    "isLogin", true,
+                    "uid", authentication.getName(),
+                    "role", authentication.getAuthorities()
+                )
+        );
+    }
+
 
 }
