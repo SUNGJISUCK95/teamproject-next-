@@ -10,7 +10,7 @@ a {
 */
 #rental_container {
     width: 80%;
-    margin: 0 auto;
+    margin: 20px auto 0;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -579,6 +579,7 @@ a {
 
 .box_section .tossButtonBox > button {
     width: 150px;
+    margin-bottom: 20px;
     padding:5px 45px;
     background-color:#0077cc;
     font-size: 16px;
@@ -600,4 +601,36 @@ a {
 .box_section .tossButtonBox > button:hover {
     background-color: var(--color-white);
     color: var(--color-blue);
+}
+
+.toss_success {
+    text-align: center;
+    padding: 3rem;
+    border: 1px solid var(--color-blue);
+    max-width: 600px;
+    margin: 50px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.toss_success > h2 {
+    padding: 15px 0;
+    background-color: var(--color-blue);
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
+    border-radius: 10px;
+    font-size: 18px;
+    text-align: center;
+    color: var(--color-white);
+}
+.toss_success > p {
+    margin-top: 10px;
+    padding: 15px 15px;
+    background-color: var(--color-white);
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
+    border-radius: 10px;
+    font-size: 18px;
+    text-align: center;
+    color: var(--color-blue);
+}
+.toss_success > p > span {
+    color: #333;
 }

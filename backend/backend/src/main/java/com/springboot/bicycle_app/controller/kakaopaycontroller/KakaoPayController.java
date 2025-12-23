@@ -56,7 +56,7 @@ public class KakaoPayController {
 
             // 절대 경로 사용 (React 앱 포트 3000으로 리다이렉트)
             // 브라우저가 Spring Boot 포트(8080) 대신 React 포트(3000)로 이동하도록 지시
-            String frontendUrl = "http://localhost:3000/payment/complete?orderId=" + partnerOrderId;
+            String frontendUrl = "http://localhost:3000/rental/payment/complete?orderId=" + partnerOrderId;
 
             return new RedirectView(frontendUrl); // 성공 시, React 라우트로 리다이렉트
 

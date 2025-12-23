@@ -103,8 +103,8 @@ export function CheckoutPage({ onClose }) {
                 await widgets.requestPayment({
                   orderId: orderId,
                   orderName: `위치: ${rentalSelectData.name} / 대여 시간: ${rentalTime}분`,
-                  successUrl: window.location.origin + "/success",
-                  failUrl: window.location.origin + "/fail",
+                  successUrl: window.location.origin + "/rental/success",
+                  failUrl: window.location.origin + "/rental/fail",
                 });
               } catch (error) {
                 // 에러 처리하기
