@@ -36,7 +36,6 @@ export default function Login() {
                           className='loginLinkBtn'
                           >비밀번호 찾기</Link>
                 </div>
-                <Link href="/mypage" >내정보</Link>
             </div>
         </>
     );

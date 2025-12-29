@@ -43,7 +43,7 @@ export function Loginform(){
                 const success = await getLogin(autoFormData,param);
                 if (success) {
                     console.log("lego");
-                    // router.push("/"); 다 완료하고 넣기.
+                    router.push("/"); //다 완료하고 넣기.
                 }
                 else {
                     console.log("attemptfail");

@@ -46,16 +46,19 @@ public class OauthServiceImpl implements OauthService{
         String access_Token = "";
         String refresh_Token = "";
         String reqURL="";
+        System.out.println("tokentokentokentokentoken");
         if( token.getSocial().equals("kakao")){
             reqURL = "https://kauth.kakao.com/oauth/token";}
         else if(token.getSocial().equals("naver")){
             reqURL = "https://nid.naver.com/oauth2.0/token";}
+        System.out.println("token3");
         try {
             URL url = new URL(reqURL);
             HttpURLConnection conn = (HttpURLConnection) url.openConnection();
             // conn.setRequestProperty("Content-type", "application/x-www-form-urlencoded;charset=utf-8");
             // 위 세팅 없어도 작동하지만, 확실하게 하기 위해 적어둠
 
+            System.out.println("token4");
             //POST 요청을 위해 기본값이 false인 setDoOutput을 true로
             conn.setRequestMethod("POST");
             conn.setDoOutput(true);
@@ -65,6 +68,7 @@ public class OauthServiceImpl implements OauthService{
             StringBuilder sb = new StringBuilder();
             sb.append("grant_type=authorization_code");
 
+            System.out.println("token5");
             if( token.getSocial().equals("kakao")){
                 sb.append("&client_id=ef9794cb2ff6a12a26f6432f5ec9a04b"); // TODO REST_API_KEY 입력
                 if(token.getHostName().equals("localhost")) {
@@ -83,6 +87,7 @@ public class OauthServiceImpl implements OauthService{
             bw.write(sb.toString());
             bw.flush();
 
+            System.out.println("token6");
             //결과 코드가 200이라면 성공
             int responseCode = conn.getResponseCode();
             System.out.println("responseCode : " + responseCode);

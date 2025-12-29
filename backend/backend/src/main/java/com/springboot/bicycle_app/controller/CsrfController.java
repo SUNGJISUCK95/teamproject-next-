@@ -21,7 +21,7 @@ public class CsrfController {
     public ResponseEntity<?> refresh(HttpServletRequest request){
 //        request.changeSessionId();
         CsrfToken token = (CsrfToken) request.getAttribute(CsrfToken.class.getName());
-        System.out.println("aaaaaaaaaaaaaaaaaaaaaaaaaaaabbbbbbbbbbbb");
+        System.out.println("csrftoken refresh");
         return ResponseEntity.ok(token);
     }
 }
