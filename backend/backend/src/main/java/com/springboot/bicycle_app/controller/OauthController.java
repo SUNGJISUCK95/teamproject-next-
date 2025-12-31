@@ -58,6 +58,7 @@ public class OauthController {
     public ResponseEntity<?> gettoken(@RequestBody Token token){
         String authcode;
         String socialId;
+        System.out.println("token1");
         if(token.getSocial().equals("google"))//구글은 중간 토큰 요청없이 access토큰을 바로 넘겨준다.
         //https://ldd6cr-adness.tistory.com/323 참고
         {
@@ -65,65 +66,70 @@ public class OauthController {
         }
         else
         {
+            System.out.println("token2");
             authcode = oauthService.getSocialAccessToken(token);
             socialId = oauthService.socialIdCatcher(authcode,token.getSocial());
         }
         UserInfoDto socialIdChecker = new UserInfoDto();
         socialIdChecker.setUid(socialId);
-        String jwToken = oauthJWTService.createToken(socialId,"ROLE_USER");
-        String jwRefreshToken = oauthJWTService.createRefreshToken(socialId,"ROLE_USER");
-        socialIdChecker.setJwToken(jwToken);
 
         boolean Social_reuslt_b = idDuplCheck(socialIdChecker);
         String Social_reuslt_s;
         if(Social_reuslt_b){//true면 아이디 등록됨. false면 아이디 없음
             Social_reuslt_s = "duplicate on " + token.getSocial();
             socialIdChecker.setSocialDupl(true);
+
+            String jwToken = oauthJWTService.createToken(socialId,"ROLE_USER");
+            String jwRefreshToken = oauthJWTService.createRefreshToken(socialId,"ROLE_USER");
+            socialIdChecker.setJwToken(jwToken);
+
+            //4. HttpOnly 쿠키 전송 객체 생성
+            ResponseCookie refreshCookie = ResponseCookie.from("refreshToken", jwRefreshToken)
+                    .httpOnly(true)
+                    .path("/")
+                    .maxAge(60 * 60 * 24 * 14)
+                    .sameSite("None") //📌 SameSite=Strict 는 cross-site 요청에서 쿠키 전송 ❌, None or Lax 변경
+                    //.secure(false)  //📌로컬 개발이라 http, https 아님, 배포 시 true
+                    .build();
+
+
+            //5. ResponseBody로 결과 전송 : access 토큰 포함 객체 생성
+            Map<String, Object> body = Map.of(
+                    "accessToken", jwToken,
+                    "tokenType", "Bearer",
+                    "login", socialIdChecker.isSocialDupl(),
+                    "userId", socialIdChecker.getUid(),
+                    "role", "ROLE_USER"
+            );
+
+            //6. 결과 전송
+            return ResponseEntity
+                    .ok()
+                    .header(HttpHeaders.SET_COOKIE, refreshCookie.toString())
+                    .body(body);
         }
         else{
             Social_reuslt_s = "duplicate off" + token.getSocial();
             socialIdChecker.setUid("");
             socialIdChecker.setSocialDupl(false);
+
+            //4. HttpOnly 쿠키 전송 객체 생성
+            ResponseCookie clearCookies = ResponseCookie.from("refreshToken", "")
+                    .path("/")
+                    .maxAge(0)
+                    .build();
+
+            Map<String, Object> body = Map.of(
+                    "login", socialIdChecker.isSocialDupl(),
+                    "userId", socialIdChecker.getUid(),
+                    "role", "ROLE_USER"
+            );
+                    //6. 결과 전송
+            return ResponseEntity
+                    .ok()
+                    .header(HttpHeaders.SET_COOKIE, clearCookies.toString())
+                    .body(body);
         }
-
-        //4. HttpOnly 쿠키 전송 객체 생성
-        ResponseCookie refreshCookie = ResponseCookie.from("refreshToken", jwRefreshToken)
-                .httpOnly(true)
-                .path("/")
-                .maxAge(60 * 60 * 24 * 14)
-                .sameSite("None") //📌 SameSite=Strict 는 cross-site 요청에서 쿠키 전송 ❌, None or Lax 변경
-                //.secure(false)  //📌로컬 개발이라 http, https 아님, 배포 시 true
-                .build();
-
-
-        //5. ResponseBody로 결과 전송 : access 토큰 포함 객체 생성
-        Map<String, Object> body = Map.of(
-                "accessToken", jwToken,
-                "tokenType", "Bearer",
-                "login", socialIdChecker.isSocialDupl(),
-                "userId", socialIdChecker.getUid(),
-                "role", "ROLE_USER"
-        );
-
-        //6. 결과 전송
-        return ResponseEntity
-                .ok()
-                .header(HttpHeaders.SET_COOKIE, refreshCookie.toString())
-                .body(body);
-//        socialIdChecker.setJwToken(jwToken);
-//
-//        boolean Social_reuslt_b = idDuplCheck(socialIdChecker);//false면 겹치는거 없음. true면 겹치는거 있음
-//        String Social_reuslt_s;
-//        if(Social_reuslt_b){
-//            Social_reuslt_s = "duplicate on " + token.getSocial();
-//            socialIdChecker.setSocialDupl(true);
-//        }
-//        else{
-//            Social_reuslt_s = "duplicate off" + token.getSocial();
-//            socialIdChecker.setUid("");
-//            socialIdChecker.setSocialDupl(false);
-//        }
-//        return socialIdChecker;
     }
 
     @PostMapping("/idDuplCheck")
@@ -310,7 +316,7 @@ public class OauthController {
                 .httpOnly(true)
                 .path("/")
                 .maxAge(0)
-                //.sameSite("None")
+                .sameSite("None")
                 //.secure(false)
                 .build();
 

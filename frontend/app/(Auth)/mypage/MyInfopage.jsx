@@ -35,6 +35,7 @@ export function MyInfopage(){
 
     const router = useRouter();
     const logout = useAuthStore((s)=>s.logout);
+    const userId = useAuthStore((s)=>s.userId);
 
     const [info, setInfo] = useState(null);//DB에서 가져온 데이터 저장
     const [handleData,setHandleData] = useState(handleDatainit)//변경 데이터 저장용 변수
@@ -206,6 +207,13 @@ export function MyInfopage(){
         }
     }
 
+    useEffect(() => {
+        if(userId===null)
+        {
+            setInfo(null);//정보 비우기
+            router.push("/");//로그아웃되면 홈으로 보내버리기
+        }
+    }, [userId]);
 
     useEffect(()=>{
         let result;
