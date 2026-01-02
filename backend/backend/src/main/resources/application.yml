@@ -15,6 +15,10 @@ kakaopay:
     ready-url: "https://kapi.kakao.com/v1/payment/ready"
     approve-url: "https://kapi.kakao.com/v1/payment/approve"
     # 리다이렉트 URL (Controller의 메서드와 매핑되어야 함)
-    success-redirect-url: "http://localhost:8080/kakaopay/success"
-    cancel-redirect-url: "http://localhost:8080/kakaopay/cancel"
-    fail-redirect-url: "http://localhost:8080/kakaopay/fail"
+    success-redirect-url: "http://localhost:9000/kakaopay/success"
+    cancel-redirect-url: "http://localhost:9000/kakaopay/cancel"
+    fail-redirect-url: "http://localhost:9000/kakaopay/fail"
+
+
+toss:
+    secret-key: "test_gsk_docs_OaPz8L5KdmQXkzRz3y47BMw6"

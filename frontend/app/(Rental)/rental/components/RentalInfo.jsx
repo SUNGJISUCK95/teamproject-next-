@@ -1,16 +1,27 @@
 "use client";
 
 import { imagePath } from '@/app/(Rental)/rental/contents/rentalContent';
-import Link from 'next/link';
+import { useAuthStore } from '@/store/authStore';
+import { useRouter } from 'next/navigation';
 
 export function RentalInfo({ data }) {
-    // 마커가 클릭 되지 않았을 시 데이터의 접근 시도를 차단해 빈 값의 반환을 차단하는 안전장치
-    // if (!data) return null;
+    const router = useRouter();
+    const userId = useAuthStore((s) => s.userId) || null; // hook은 최상위에서 호출
+
+    const handleRentalClick = () => {
+        if (!userId || userId.trim() === "") {
+            alert("로그인이 필요합니다!");
+            router.push("/login");
+            return;
+        }
+
+        router.push(`/rental/rental_payment/${data.id}`);
+    };
 
     return (
         <div className='map_marker_data_info'>
             {!data ? (
-                <div className='map_marker_alarm' >
+                <div className='map_marker_alarm'>
                     <img src="/images/home_bicycle1.png" />
                     <p>Marker Click</p>
                 </div>
@@ -33,9 +44,11 @@ export function RentalInfo({ data }) {
                             <span>어린이 자전거 : <strong>{data.extra?.kid_bikes}</strong></span>
                         </li>
                     </ul>
-                    <Link className='boarding' href={`/rental/rental_payment/${data.id}`}>
-                        대여하기
-                    </Link>
+                    <button
+                        className="boarding"
+                        onClick={handleRentalClick}
+                        // disabled={userId === null} // null이면 클릭 못함
+                    >대여하기</button>
                 </div>
             )}
         </div>

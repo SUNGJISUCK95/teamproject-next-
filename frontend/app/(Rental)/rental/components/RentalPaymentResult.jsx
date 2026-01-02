@@ -1,17 +1,18 @@
 "use client";
 
-import { useSearchParams, useNavigate } from "react-router-dom";
+import { useSearchParams, useRouter } from "next/navigation";
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import Link from "next/link";
 
 // 로컬주소를 통해 백엔드 연결하기 위해 엔드포인트 주소를 변수에 할당
-const API_URL = "http://localhost:8080/api/rental/status";
+const API_URL = "http://localhost:9000/api/rental/status";
 
-export function RentalPaymentResults() {
+export default function RentalPaymentResults() {
 
     // URL 쿼리를 읽기 위해 선언 useSearchParams() 훅선언
-    const [searchParams] = useSearchParams();
-    const navigate = useNavigate();
+    const searchParams = useSearchParams();
+    const navigate = useRouter();
 
     // 1. URL에서 주문번호(orderId)를 get (카카오페이 콜백 URL에는 pg_token도 있지만 여기서는 orderId만 사용)
     const orderId = searchParams.get("orderId");
@@ -69,7 +70,6 @@ export function RentalPaymentResults() {
 
         fetchFinalStatus();
     }, [orderId]);
-
     // --- 4. 렌더링 ---
 
     if (rentalStatus.loading) {
@@ -100,7 +100,7 @@ export function RentalPaymentResults() {
                     <p>다음 단계: 해당 자전거의 잠금 장치를 해제하고 이용을 시작해 주세요.</p>
                 </div>
 
-                <button onClick={() => navigate('/')}>메인 화면으로 돌아가기</button>
+                <Link href="/">메인 페이지로 이동</Link>
             </div>
         );
     }
@@ -116,7 +116,7 @@ export function RentalPaymentResults() {
                 <li>결제 과정에 문제가 발생했거나, 서버에서 최종 승인 처리에 실패했습니다. 잠시 후 다시 시도해 주세요.</li>
             </ul>
 
-            <button onClick={() => navigate('/rental')}>결제 다시 시도하기</button>
+            <Link href='/rental'>결제 다시 시도하기</Link>
         </div>
     );
 }

@@ -1,4 +1,4 @@
-import React from 'react'
+"use client";
 
 import RentalPayment from '@/app/(Rental)/rental/components/RentalPayment';
 

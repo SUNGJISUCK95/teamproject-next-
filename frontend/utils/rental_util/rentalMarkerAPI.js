@@ -1,5 +1,7 @@
 import axios from 'axios';
 import { axiosData } from "@/utils/dataFetch.js";
+import { useAuthStore } from '@/store/authStore';
+import { useRentalStore } from '@/store/useRentalStore';
 
 const getCookie = (name) => {
     // JavaScript 표준 API를 사용하여 쿠키에서 XSRF-TOKEN 값을 추출
@@ -30,18 +32,17 @@ const axiosPost = async (url, formData) => {
 }
 
 export const showMarkerAPI = async () => {
-        return axiosData("/data/rental_data/rentalMarker.json");
+    return axiosData("/data/rental_data/rentalMarker.json");
 }
 
-export const getRentalPayment = (priceInfo, paymentMethod) => async(getState) => {
-    const state = getState();
+export const getRentalPayment = async (priceInfo, paymentMethod) => {
 
-    const selectedStation = state.rentalData.selectedStation;
-    const userId = state.auth.userId;
+    const userId = useAuthStore.getState().userId;
+    const selectedStation = useRentalStore.getState().selectedStation;
 
-    if(!selectedStation || !userId) {
+    if (!selectedStation || !userId) {
         console.error("결제 실패: 사용자 정보 또는 대여소 정보 누락");
-        return {status:"FAILURE", message:"필수 데이터 누락"};
+        return { status: "FAILURE", message: "필수 데이터 누락" };
     }
 
     const rentalPayload = {
@@ -49,11 +50,18 @@ export const getRentalPayment = (priceInfo, paymentMethod) => async(getState) =>
         userId: userId,
         stationId: selectedStation?.id || "UNKNOWN",
         stationName: selectedStation?.name || "UNKNOWN",
-        paymentMethod:paymentMethod
+        paymentMethod: paymentMethod
     };
 
+    console.log("🔍 결제 직전 상태", {
+        userId: useAuthStore.getState().userId,
+        selectedStation: useRentalStore.getState().selectedStation,
+        priceInfo,
+        paymentMethod,
+    });
+    
     try {
-        const url = "http://localhost:8080/kakaopay/ready";
+        const url = "http://localhost:9000/kakaopay/ready";
         const result = await axiosPost(url, rentalPayload); // result는 DTO 객체
 
         console.log("백엔드로부터의 최종 응답:", result);
@@ -70,16 +78,17 @@ export const getRentalPayment = (priceInfo, paymentMethod) => async(getState) =>
             window.location.href = redirectUrl;
 
             // 2. handlePayment에 리다이렉션 시작 신호 전달
-            return {status:"REDIRECTING", url: redirectUrl};
+            return { status: "REDIRECTING", url: redirectUrl };
 
         } else {
             // URL이 없는데 성공 응답이 온 경우
-            return {status:"FAILURE", message:"카카오페이 URL 획득 실패"};
+            return { status: "FAILURE", message: "카카오페이 URL 획득 실패" };
         }
 
-    } catch(error) {
+    } catch (error) {
         console.error("결제 요청 중 서버 통신 에러 발생:", error);
         const errorMessage = error.response ? error.response.data : error.message;
         return { status: "ERROR", message: errorMessage };
     }
+
 }

@@ -79,19 +79,24 @@ const useRentalInfoLogic = () => {
         }
 
     }
+    
 
     // 결제 버튼 클릭 시 결제 정보를 API 파일로 전송
     // 데이터를 서버를 이용하여 백엔드로 보내야 하므로 데이터를 전달 할 때에도 비동기 처리 필수
     const handlePayment = async () => {
-        const result = await getRentalPayment(calculatedPrice, selectedPayment);
+    const result = await getRentalPayment(calculatedPrice, selectedPayment);
+    console.log("결제 정보", result);
 
-        if (result && result.status === "SUCCESS") {
-            alert("자전거 대여 및 결제가 완료되었습니다!");
-            onClose();
-        } else {
-            alert(`결제 실패: ${result?.message || '알 수 없는 오류'}`);
-        }
+    if (result?.status === "REDIRECTING") {
+        return;
     }
+
+    if (result?.status === "SUCCESS") {
+        alert("자전거 대여 및 결제가 완료되었습니다!");
+        return;
+    }
+    alert(`결제 실패: ${result?.message || '알 수 없는 오류'}`);
+};
 
     // 렌탈 시간과 금액을 timePaymenet 변수에 할당하고
     // useEffect를 이용해 slice에 상태 저장
