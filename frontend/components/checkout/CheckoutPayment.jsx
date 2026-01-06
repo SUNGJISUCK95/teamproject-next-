@@ -4,8 +4,9 @@ import { loadTossPayments, ANONYMOUS } from "@tosspayments/tosspayments-sdk";
 import {requestTossPay} from "@/utils/payment/PaymentAPI.js";
 import Swal from "sweetalert2";
 import useCartStore from "@/store/useCartStore";
+// import process from "next/dist/build/webpack/loaders/resolve-url-loader/lib/postcss";
 
-const clientKey = "test_gck_docs_Ovk5rk1EwkEbP0W43n07xlzm";
+const clientKey = process.env.NEXT_PUBLIC_TOSS_CLIENT_KEY;
 
 export function CheckoutPayment({ totalPrice, cartList }) {
     const { receiverInfo} = useCartStore();
@@ -103,7 +104,7 @@ export function CheckoutPayment({ totalPrice, cartList }) {
             <div className="payment-button-section">
                 <button
                     className="payment-button"
-                    onClick={handlePayment} // 12번 함수 연결
+                    onClick={handlePayment}
                     disabled={totalPrice <= 0}
                 >
                     {totalPrice > 0 ? `${totalPrice.toLocaleString()}원 결제하기` : "결제할 금액이 없습니다"}

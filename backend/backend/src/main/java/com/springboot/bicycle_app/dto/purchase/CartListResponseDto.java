@@ -21,7 +21,7 @@ public class CartListResponseDto {
     private String category;
     private String name;
     private String subinfo;
-    private List<String> desciption;
+    private List<String> description;
     private String image;
     private long price;
     private String color;
@@ -42,7 +42,7 @@ public class CartListResponseDto {
         this.category = entity.getProduct().getCategory();
         this.name = entity.getProduct().getName();
         this.subinfo = entity.getProduct().getSubinfo();
-        this.desciption = entity.getProduct().getDescription();
+        this.description = entity.getProduct().getDescription();
         this.image = entity.getProduct().getImage();
         this.price = entity.getProduct().getPrice();
         this.color = entity.getProduct().getColor();
