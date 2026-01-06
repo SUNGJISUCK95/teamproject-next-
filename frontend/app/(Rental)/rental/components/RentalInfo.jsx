@@ -1,22 +1,35 @@
 "use client";
 
-import { imagePath } from '@/app/(Rental)/rental/contents/rentalContent';
-import { useAuthStore } from '@/store/authStore';
+import Swal from "sweetalert2";
 import { useRouter } from 'next/navigation';
+import { useAuthStore } from '@/store/authStore';
+import { imagePath } from '@/app/(Rental)/rental/contents/rentalContent';
 
 export function RentalInfo({ data }) {
     const router = useRouter();
     const userId = useAuthStore((s) => s.userId) || null; // hook은 최상위에서 호출
 
-    const handleRentalClick = () => {
-        if (!userId || userId.trim() === "") {
-            alert("로그인이 필요합니다!");
-            router.push("/login");
-            return;
-        }
+    /** 장바구니 접근 시 로그인 필요 */
+    const handleRentalClick = (e) => {
+    if (!userId || userId.trim() === "") {
+        e.preventDefault();
 
-        router.push(`/rental/rental_payment/${data.id}`);
-    };
+        Swal.fire({
+            icon: "error",
+            title: "로그인이 필요합니다.",
+            text: "확인을 클릭하시면 로그인 페이지로 이동합니다",
+            confirmButtonText: "확인"
+        }).then((result) => {
+            if (result.isConfirmed) {
+                router.push("/login");
+            }
+        });
+
+        return;
+    }
+
+    router.push(`/rental/rental_payment/${data.id}`);
+};
 
     return (
         <div className='map_marker_data_info'>

@@ -2,10 +2,12 @@
 
 import { useEffect, useRef } from "react";
 import { useSearchParams } from "next/navigation";
+import { useRouter } from 'next/navigation';
 
 export default function TossSuccess() {
   const searchParams = useSearchParams();
   const calledRef = useRef(false);
+  const router = useRouter();
 
   useEffect(() => {
     if (calledRef.current) return;
@@ -43,6 +45,9 @@ export default function TossSuccess() {
       <h2>결제 완료</h2>
       <p>주문번호: <span>{searchParams.get("orderId")}</span></p>
       <p>결제 금액: <span>{Number(searchParams.get("amount")).toLocaleString()}원</span></p>
+      <button onClick={() => {
+        router.push("/rental");
+      }}>자전거 대여 페이지로 이동</button>
     </div>
   );
 }

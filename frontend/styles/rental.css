@@ -634,3 +634,18 @@ a {
 .toss_success > p > span {
     color: #333;
 }
+.toss_success > button {
+    display: block; 
+    width: 100%;
+    margin: 10px 0;
+    padding: 15px;
+    background-color: var(--color-blue);
+    border: 0;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 20px;
+    color: var(--color-white);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
