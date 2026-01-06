@@ -8,9 +8,13 @@ import { useRentalStore } from "@/store/useRentalStore";
 import useKakaoLoader from "@/utils/rental_util/useKakaoLoader";
 import { defaultMarkerImage, selectedMarkerImage } from '@/app/(Rental)/rental/contents/rentalContent';
 import { getDistance } from '@/app/(Rental)/rental/contents/rentalContent';
+import { useRouter } from 'next/navigation';
+import { useRef } from 'react';
 
 const RentalPayment = () => {
     useKakaoLoader();
+    const mapRef = useRef(null);
+    const router = useRouter();
 
     const {
         rentalTime,
@@ -44,7 +48,12 @@ const RentalPayment = () => {
                             className='payment_map'
                             center={latLon}
                             level={4}
-                            style={{ width: "100%", height:"40vh"}}
+                            style={{ width: "100%", height: "40vh" }}
+
+                            onCreate={(map) => {
+                                mapRef.current = map;
+                            }}
+
                             onIdle={(map) => {
                                 const center = map.getCenter();
 
@@ -52,7 +61,9 @@ const RentalPayment = () => {
                                     lat: center.getLat(),
                                     lng: center.getLng(),
                                 };
+
                                 setMapCenter(newCenter);
+
                                 const RADIUS = 0.5;
                                 const MAX_MARKERS = 10;
 
@@ -78,7 +89,18 @@ const RentalPayment = () => {
                                     key={station.id}
                                     position={{ lat: station.latitude, lng: station.longitude }}
                                     image={station.id === selectedStation?.id ? selectedMarkerImage : defaultMarkerImage}
-                                    onClick={() => setSelectedStation(station)}
+                                    onClick={() => {
+                                        setSelectedStation(station);
+
+                                        if (mapRef.current) {
+                                            mapRef.current.panTo(
+                                                new kakao.maps.LatLng(
+                                                    station.latitude,
+                                                    station.longitude
+                                                )
+                                            );
+                                        }
+                                    }}
                                 />
                             ))}
                         </Map>
@@ -130,18 +152,18 @@ const RentalPayment = () => {
                                         />
                                     </li>
                                     {/* <li>
-                                <label htmlFor="otmerpayment">
-                                    <img src={paymentJsonData[3]?.choice?.naverpay_img} alt={paymentJsonData[3]?.choice?.naver} />
-                                </label>
-                                    <input
-                                        type="radio"
-                                        id='otmerpayment'
-                                        name='paymentCheckd'
-                                        value="otmerpayment"
-                                        onChange={handlePaymentChange}
-                                        checked={selectedPayment === 'otmerpayment'}
-                                    />
-                            </li> */}
+                                        <label htmlFor="otmerpayment">
+                                            <img src={paymentJsonData[3]?.choice?.naverpay_img} alt={paymentJsonData[3]?.choice?.naver} />
+                                        </label>
+                                        <input
+                                            type="radio"
+                                            id='otmerpayment'
+                                            name='paymentCheckd'
+                                            value="otmerpayment"
+                                            onChange={handlePaymentChange}
+                                            checked={selectedPayment === 'otmerpayment'}
+                                        />
+                                    </li> */}
                                     <li>
                                         <button
                                             type='button'
@@ -164,6 +186,9 @@ const RentalPayment = () => {
                             <button
                                 className='payment_info_close'
                                 type='button'
+                                onClick={() => {
+                                    router.push("/rental");
+                                }}
                             >{paymentJsonData[4]?.price_button?.price_back}
                             </button>
                         </form>

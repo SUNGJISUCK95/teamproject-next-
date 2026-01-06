@@ -1,26 +1,27 @@
 "use client"
 
 import React, { useEffect, useState } from 'react'
-import { useRentalStore } from '@/store/useRentalStore';
+import Swal from "sweetalert2";
 import { axiosData } from '@/utils/dataFetch';
+import { useRentalStore } from '@/store/useRentalStore';
 import { getRentalPayment } from '@/utils/rental_util/rentalMarkerAPI.js';
 
 const useRentalInfoLogic = () => {
 
-// 렌탈 시간 상태관리 함수
+    // 렌탈 시간 상태관리 함수
     const [rentalTime, setRentalTime] = useState(0);
 
     // 결제 방법 선택 상태 함수
     const [selectedPayment, setSelectdPayment] = useState('');
-    
+
     // 결제 금액 전달 상태 함수
     const [paymentJsonData, setPaymentJsonData] = useState([]);
-    
+
     // 다른 결제수단 컴포넌트 상태 함수
     const [otherPayment, setOtherPayment] = useState(false);
 
-    const setPaymentDetails = useRentalStore((s)=> s.setPaymentDetails);
-    
+    const setPaymentDetails = useRentalStore((s) => s.setPaymentDetails);
+
     // 시작 금액
     const pricePerHour = 500;
     // 기본 대여시작 시간인 30분 단위를 고정
@@ -36,7 +37,7 @@ const useRentalInfoLogic = () => {
         // 3.30분 단위 증가에 맞춰 500원씩 증가
         calculatedPrice = (rentalTime / timeUnit) * pricePerHour;
     }
-    
+
     // 버튼 클릭 시 시간이 1시간 단위인30분씩 더해지는 클릭 이벤트 함수
     function handleTimeIncrease() {
         // 최대 270분 (4.5시간)까지 증가 허용 (300분 종일권은 별도)
@@ -67,45 +68,54 @@ const useRentalInfoLogic = () => {
         const newPaymentMethod = event.target.value;
 
         // 선택된 결제 수단 상태 업데이트
-        setSelectdPayment(event.target.value); 
-        
+        setSelectdPayment(event.target.value);
+
         // 변수에 담긴 타겟 값을 활용하여 유저에게 확인용 메시지를 alert을 이용해 고지
-        if (newPaymentMethod === 'kakaopay'){
-            alert("카카오 페이를 선택하셨습니다.")
+        if (newPaymentMethod === 'kakaopay') {
+            Swal.fire({
+                icon: "success",
+                title: "카카오페이를 선택하셨습니다.",
+                text: "카카오페이로 결제를 진행합니다",
+                confirmButtonText: "확인"
+            })
 
-        } else if (newPaymentMethod === 'otmerpayment'){
-            alert("다른 결제 수단을 선택하셨습니다.")
-
+        } else if (newPaymentMethod === 'otmerpayment') {
+            Swal.fire({
+                icon: "success",
+                title: "토스페이 결제를 선택하셨습니다.",
+                text: "토스페이에 포함된 결제 방식으로 진행합니다.",
+                confirmButtonText: "확인"
+            })
         }
 
     }
-    
+
 
     // 결제 버튼 클릭 시 결제 정보를 API 파일로 전송
     // 데이터를 서버를 이용하여 백엔드로 보내야 하므로 데이터를 전달 할 때에도 비동기 처리 필수
     const handlePayment = async () => {
-    const result = await getRentalPayment(calculatedPrice, selectedPayment);
-    console.log("결제 정보", result);
+        const result = await getRentalPayment(calculatedPrice, selectedPayment);
+        console.log("결제 정보", result);
 
-    if (result?.status === "REDIRECTING") {
-        return;
-    }
+        if (result?.status === "REDIRECTING") {
+            return;
+        }
 
-    if (result?.status === "SUCCESS") {
-        alert("자전거 대여 및 결제가 완료되었습니다!");
-        return;
-    }
-    alert(`결제 실패: ${result?.message || '알 수 없는 오류'}`);
-};
+        if (result?.status === "SUCCESS") {
+            alert("자전거 대여 및 결제가 완료되었습니다!");
+            return;
+        }
+        alert(`결제 실패: ${result?.message || '알 수 없는 오류'}`);
+    };
 
     // 렌탈 시간과 금액을 timePaymenet 변수에 할당하고
     // useEffect를 이용해 slice에 상태 저장
-    const timePaymenet = {rentalTime, calculatedPrice};
+    const timePaymenet = { rentalTime, calculatedPrice };
     useEffect(() => {
         setPaymentDetails(timePaymenet);
     }, [rentalTime, calculatedPrice]);
 
-    
+
     useEffect(() => {
         const paymentInfoData = async () => {
             const jsonData = await axiosData("/data/rental_data/rentalPayment.json");
@@ -115,18 +125,18 @@ const useRentalInfoLogic = () => {
     }, []);
 
     return {
-    rentalTime,
-    selectedPayment,
-    paymentJsonData,
-    calculatedPrice,
-    otherPayment,
-    setOtherPayment,
-    handleTimeIncrease,
-    handleTimeDecrease,
-    handleTimeAllDay,
-    handlePaymentChange,
-    handlePayment,
-  };
+        rentalTime,
+        selectedPayment,
+        paymentJsonData,
+        calculatedPrice,
+        otherPayment,
+        setOtherPayment,
+        handleTimeIncrease,
+        handleTimeDecrease,
+        handleTimeAllDay,
+        handlePaymentChange,
+        handlePayment,
+    };
 
 }
 
