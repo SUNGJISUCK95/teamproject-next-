@@ -21,7 +21,7 @@ export function SocialLogin(){
         let urldata=""
         if(hostName==="localhost")
         {
-            urldata='http://localhost:3000/auth';
+            urldata='http://172.16.250.24:3000/auth';
         }
         else{
             urldata='http://'+hostName+':3000/auth';

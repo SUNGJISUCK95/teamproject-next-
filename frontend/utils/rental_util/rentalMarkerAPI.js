@@ -61,7 +61,8 @@ export const getRentalPayment = async (priceInfo, paymentMethod) => {
     });
     
     try {
-        const url = "http://localhost:9000/kakaopay/ready";
+        // const url = "http://localhost:9000/kakaopay/ready";
+        const url = "http://172.16.250.24:9000/kakaopay/ready";
         const result = await axiosPost(url, rentalPayload); // result는 DTO 객체
 
         console.log("백엔드로부터의 최종 응답:", result);
