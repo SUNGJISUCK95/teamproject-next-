@@ -16,7 +16,9 @@ export default function AppShell({ children }) {
         "/travel",
         "/travel/",
         "/rental",
-        "/rental/"
+        "/rental/",
+        "/login",
+        "/login/"
     ];
 
     const hideFooter = hideFooterPaths.some((path) =>
