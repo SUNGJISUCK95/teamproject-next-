@@ -28,6 +28,7 @@ const axiosPost = async (url, formData) => {
 
     // 3. 요청 실행
     const response = await axios.post(url, formData, { headers: headers });
+    console.log("확인" + response)
     return response.data;
 }
 

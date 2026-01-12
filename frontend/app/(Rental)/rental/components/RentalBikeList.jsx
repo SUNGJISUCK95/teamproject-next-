@@ -14,7 +14,6 @@ const RentalBikeList = () => {
 	
 	const addData = useRentalStore((s) => s.addData);
 
-
 	// 비동기 API 호출을 통해 전체 마커 데이터(rentalMarker.js)를 가져와 전역 상태(Slice)에 저장
 	useEffect(() => {
 			const bikeListData = async () => {
