@@ -24,8 +24,8 @@ function StoreMap({ storeList = {}, selectedStore, onMarkerClick }) {
 
     const imageSize = { width: 18, height: 18 };
     const imageOption = { offset: { x: 12, y: 35 } };
-    const greenMarkerSrc = "http://localhost:3000/images/travel_markers/marker_main.png";
-    const redMarkerSrc = "http://localhost:3000/images/travel_markers/marker_main_select.png";
+    const greenMarkerSrc = "http://172.16.250.24:3000/images/travel_markers/marker_main.png";
+    const redMarkerSrc = "http://172.16.250.24:3000/images/travel_markers/marker_main_select.png";
 
     if (loading) return <div>지도를 불러오는 중입니다...</div>;
     if (error) return <div>지도를 가져오는데 실패했습니다.</div>;

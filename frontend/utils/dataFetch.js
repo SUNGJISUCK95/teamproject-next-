@@ -6,7 +6,7 @@ import { useAuthStore } from "@/store/authStore.js";
  * @type {axios.AxiosInstance}
  */
 const api = axios.create({
-    // baseURL: "http://localhost:9000",
+    baseURL: "http://172.16.250.24:9000",
     withCredentials: true,
 });
 
@@ -163,7 +163,7 @@ export const fetchData = async(url) => {
 
 export const axiosGet = async (url) => {
     try{
-        const reqUrl = `http://localhost:9000${url}`;
+        const reqUrl = `${url}`;
         // const reqUrl = `${url}`;
         const response = await api.get(reqUrl);
         return response?.data;
@@ -195,7 +195,8 @@ export const axiosGet = async (url) => {
 
 export const axiosPost = async (url, data) => {
     try{
-        const reqUrl = `http://localhost:9000${url}`;
+        // const reqUrl = `http://localhost:9000${url}`;
+        const reqUrl = `${url}`;
         const csrfToken = getCsrfTokenFromCookie();//보낼때 헤더에 토큰 넣어서 보내기.
         const headers = { "Content-Type": "application/json"}
         if(csrfToken){
