@@ -1,8 +1,12 @@
+"use client"
+
 import {create} from 'zustand';
 import { immer } from 'zustand/middleware/immer';
 import { cartItemsCheck } from '@/utils/cart.js';
 import {axiosPost} from "@/utils/dataFetch";
 import Swal from "sweetalert2";
+import {createJSONStorage, persist} from "zustand/middleware";
+// import {createJSONStorage, persist} from "zustand/middleware/persist";
 
 const initialState = {
     cartList: [],
@@ -23,6 +27,7 @@ const initialState = {
     }
 }
 const useCartStore = create(
+    persist(
     immer((set,get)=>({
         ...initialState,
         addCartItem: (cartItem) => set((state)=>{
@@ -138,7 +143,12 @@ const useCartStore = create(
             removeCartItem(cid);
             updateTotalPrice();
         }
-    }))
+    })),
+        {
+            name: 'cart-storage',
+            storage: createJSONStorage(() => sessionStorage)
+        }
+)
 )
 
 export default useCartStore;

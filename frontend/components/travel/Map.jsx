@@ -208,8 +208,8 @@ export default function Map({ travelFoodList,
                         const host = window.location.hostname;
 
                         const BASE_URL = host === "localhost"
-                            ? "http://localhost:3000"
-                            : "http://172.16.250.24:3000";   // 필요 시 포트 포함
+                            ? "http://54.180.89.176:3000"
+                            : "http://54.180.89.176:3000";   // 필요 시 포트 포함
 
                         const greenMarkerSrc  = `${BASE_URL}/images/travel_markers/marker_main.png`;
                         const redMarkerSrc    = `${BASE_URL}/images/travel_markers/marker_main_select.png`;
@@ -331,8 +331,8 @@ export default function Map({ travelFoodList,
             const host = window.location.hostname;
 
             const BASE_URL = host === "localhost"
-                ? "http://localhost:3000"
-                : "http://172.16.250.24:3000";   // 필요 시 포트 포함
+                ? "http://54.180.89.176:3000"
+                : "http://54.180.89.176:3000";   // 필요 시 포트 포함
 
             let orangeMarkerSrc = '';
             let selectMarkerSrc = '';

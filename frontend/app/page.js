@@ -27,6 +27,7 @@ export default function Home() {
 
     return (
         <div className="home">
+            <CsrfTokenInitializer/>
             {/* Hero */}
             <section className="hero-section" style={{ opacity }}>
                 <Swiper
