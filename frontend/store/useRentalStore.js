@@ -8,9 +8,11 @@ export const useRentalStore = create((set) => ({
   filteredBikeList: [],
   selectedStation: null,
 
-  // 지도 관련 상태
-  latLon: { lat: 37.494717, lng: 126.030071 },
-  mapCenter: { lat: 37.494717, lng: 126.030071 },
+
+  // 지도 관련 기본 위치 상태 
+  latLon: { lat: 37.575877, lng: 126.976897 },
+  mapCenter: { lat: 37.575877, lng: 126.976897 },
+
   showSearchButton: false,
 
   paymentDetails: { rentalTime: 0, calculatedPrice: 0 },
