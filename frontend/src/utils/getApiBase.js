@@ -3,7 +3,7 @@
 export function getApiBase() {
     // 🚨 서버 컴포넌트에서 실행 방지
     if (typeof window === "undefined") {
-        return "http://localhost:9000";
+        return "http://3.35.3.78:9000";
     }
 
     let API_BASE = null;
@@ -27,17 +27,17 @@ export function getApiBase() {
             hostname.startsWith("10.");
 
         if (isLocal) {
-            API_BASE = "http://localhost:9000";
+            API_BASE = "http://3.35.3.78:9000";
         }
 
         // 3) fallback
         if (!API_BASE) {
-            API_BASE = "http://localhost:9000";
+            API_BASE = "http://3.35.3.78:9000";
         }
 
     } catch (e) {
         console.error("API_BASE 파싱 실패:", e);
-        API_BASE = "http://localhost:9000";
+        API_BASE = "http://3.35.3.78:9000";
     }
 
     return API_BASE;

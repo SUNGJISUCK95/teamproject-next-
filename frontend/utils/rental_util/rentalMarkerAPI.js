@@ -60,7 +60,7 @@ export const getRentalPayment = async (priceInfo, paymentMethod) => {
         priceInfo,
         paymentMethod,
     });
-    
+
     try {
         // const url = "http://localhost:9000/kakaopay/ready";
         const url = "http://54.180.89.176:9000/kakaopay/ready";
