@@ -100,7 +100,7 @@
     }
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 767px) {
     /* ACTIVE 메뉴 */
     .menu-item.active {
     color: var(--color-blue);

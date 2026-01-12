@@ -10,6 +10,7 @@ const api = axios.create({
     withCredentials: true,
 });
 
+
 /**
  * 제목 : 요청(Request) 인터셉터
  * 브라우저(클라이언트)에서 '요청주소(ex. /product/all)'로 실제 요청을 보내기 직전에 실행된다.
@@ -211,7 +212,7 @@ export const axiosPost = async (url, data) => {
         );
         return response.data;
     }catch(error) {
-       console.log("🎯 에러발생, 페이지 이동합니다!!", error);
+        console.log("🎯 에러발생, 페이지 이동합니다!!", error);
     }
 }
 

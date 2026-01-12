@@ -21,7 +21,7 @@ export default function TossSuccess() {
 
     async function confirmPayment() {
       try {
-        const res = await fetch("http://localhost:9000/confirm", {
+        const res = await fetch("http://3.35.3.78:9000/confirm", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify(requestData),
