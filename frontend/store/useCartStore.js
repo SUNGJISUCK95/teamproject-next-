@@ -6,7 +6,7 @@ import { cartItemsCheck } from '@/utils/cart.js';
 import {axiosPost} from "@/utils/dataFetch";
 import Swal from "sweetalert2";
 import {createJSONStorage, persist} from "zustand/middleware";
-// import {createJSONStorage, persist} from "zustand/middleware/persist";
+
 
 const initialState = {
     cartList: [],

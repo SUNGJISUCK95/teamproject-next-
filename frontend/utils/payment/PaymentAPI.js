@@ -87,7 +87,7 @@ export const confirmPayment = async (paymentKey,orderId,amount,cartList) => {
 //     if (!loginInfo || !loginInfo.userId) {
 //         return;
 //     }
-//     const url = "http://localhost:9000/payment/order";
+//     const url = "http://3.35.3.78:9000/payment/order";
 //     const data = {"userId":loginInfo.userId};
 //     const response = await axiosPost(url,data);
 //     showOrderItem(response);
