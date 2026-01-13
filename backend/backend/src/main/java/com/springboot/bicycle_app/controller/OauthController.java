@@ -26,7 +26,7 @@ import java.util.Map;
 
 @RequestMapping("/auth")
 @RestController
-@CrossOrigin(origins = {"http://localhost:3000"})
+@CrossOrigin(origins = {"https://teamproject-next-frontend.vercel.app"})
 public class OauthController {
 
     private final OauthService oauthService;

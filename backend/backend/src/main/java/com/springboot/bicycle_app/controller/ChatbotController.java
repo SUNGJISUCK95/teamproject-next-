@@ -14,7 +14,7 @@ import java.util.Map;
 @RestController
 @RequestMapping("/api/chatbot")
 @RequiredArgsConstructor
-@CrossOrigin(origins = "http://localhost:3000") // React에서의 요청 허용
+@CrossOrigin(origins = "https://teamproject-next-frontend.vercel.app") // React에서의 요청 허용
 public class ChatbotController {
 
     private final ChatbotService chatbotService;

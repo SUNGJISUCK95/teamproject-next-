@@ -58,8 +58,9 @@ public class KakaoPayController {
             // 브라우저가 Spring Boot 포트(8080) 대신 React 포트(3000)로 이동하도록 지시
 
  
+            String frontendUrl = "https://teamproject-next-frontend.vercel.app/rental/payment/complete?orderId=" + partnerOrderId;
 //            String frontendUrl = "http://localhost:3000/rental/payment/complete?orderId=" + partnerOrderId;
-            String frontendUrl = "http://54.180.89.176:3000/rental/payment/complete?orderId=" + partnerOrderId;
+//            String frontendUrl = "http://54.180.89.176:3000/rental/payment/complete?orderId=" + partnerOrderId;
 
             return new RedirectView(frontendUrl); // 성공 시, React 라우트로 리다이렉트
 
