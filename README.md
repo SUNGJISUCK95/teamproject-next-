@@ -1,1 +1,1 @@
-#[프레젠테이션 자료] 📎 [Bicycle-App 프레젠테이션.pdf](./Bicycle-App 프레젠테이션.pdf)
+#[프레젠테이션 자료] 📎 [Bicycle-App_프레젠테이션.pdf](./Bicycle-App_프레젠테이션.pdf)
