@@ -21,7 +21,9 @@ export function SocialLogin(){
         let urldata=""
         if(hostName==="localhost")
         {
-            urldata='http://54.180.89.176:3000/auth';
+            urldata='https://teamproject-next-frontend.vercel.app/auth';
+//             urldata='http://54.180.89.176:3000/auth';
+//             urldata='http://localhost:3000/auth';
         }
         else{
             urldata='http://'+hostName+':3000/auth';

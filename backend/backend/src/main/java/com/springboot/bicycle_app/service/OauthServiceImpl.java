@@ -72,7 +72,7 @@ public class OauthServiceImpl implements OauthService{
             if( token.getSocial().equals("kakao")){
                 sb.append("&client_id=ef9794cb2ff6a12a26f6432f5ec9a04b"); // TODO REST_API_KEY 입력
                 if(token.getHostName().equals("localhost")) {
-                    sb.append("&redirect_uri=http://localhost:3000/auth"); // TODO 인가코드 받은 redirect_uri 입력
+                    sb.append("&redirect_uri=https://teamproject-next-frontend.vercel.app/auth"); // TODO 인가코드 받은 redirect_uri 입력
                 }
                 else {
                     sb.append("&redirect_uri=http://54.180.89.176:3000/auth");// 로컬망 내 다른 PC 접속을 위해 루트 돌림

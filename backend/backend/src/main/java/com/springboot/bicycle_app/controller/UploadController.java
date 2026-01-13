@@ -54,7 +54,7 @@ public class UploadController {
             Files.copy(file.getInputStream(), uploadPath, StandardCopyOption.REPLACE_EXISTING);
 
             // 5. 프론트엔드에서 접근 가능한 파일 URL 생성
-            String fileUrl = "http://localhost:9000/uploads/" + newFileName;
+            String fileUrl = "http://54.180.89.176:9000/uploads/" + newFileName;
 
             return Map.of("url", fileUrl);
 

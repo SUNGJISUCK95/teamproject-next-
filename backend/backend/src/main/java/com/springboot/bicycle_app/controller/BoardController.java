@@ -23,7 +23,7 @@ import java.util.Optional;
 @RestController
 @RequestMapping("/api/board")
 @RequiredArgsConstructor
-@CrossOrigin(origins = "http://localhost:3000", allowCredentials = "true") // ✅ 수정
+@CrossOrigin(origins = "https://teamproject-next-frontend.vercel.app", allowCredentials = "true") // ✅ 수정
 public class BoardController {
 
     private final BoardService boardService;

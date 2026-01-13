@@ -34,7 +34,7 @@ public class WebConfig implements WebMvcConfigurer {
 
     /**
      * CORS 설정 Bean
-     * - 프론트엔드(React: http://localhost:3000)에서 백엔드 API 호출 시
+     * - 프론트엔드(React: https://teamproject-next-frontend.vercel.app)에서 백엔드 API 호출 시
      *   CORS 오류 발생하지 않도록 허용
      * - withCredentials(true)를 쓰려면 Origin을 "*"로 설정하면 안됨 → 특정 도메인만 등록해야 함
      */
@@ -44,7 +44,7 @@ public class WebConfig implements WebMvcConfigurer {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/**")
-                        .allowedOrigins("http://localhost:3000", "http://54.180.89.176:3000")
+                        .allowedOrigins("http://localhost:3000", "http://54.180.89.176:3000", "https://teamproject-next-frontend.vercel.app")
                         .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                         .allowedHeaders("*")
                         .allowCredentials(true);
